@@ -10,3 +10,53 @@ Within each detection window, packet counts and protocol-specific activity are a
 The output from the hardware detection logic is communicated to a MicroBlaze processor, which performs higher-level aggregation and reporting. Detected attacks and traffic statistics are then transmitted to the serial monitor via a UART interface.
 
 A block diagram of the overall system architecture is shown in Fig.~\ref{fig:System_Architecture}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.5\textheight]{System_Architecture.png}
+    \caption{Block diagram of the FPGA-based intrusion detection system architecture}
+    \label{fig:System_Architecture}
+\end{figure}
+
+The system architecture shown in Fig.~\ref{fig:System_Architecture} shows the flow of packet data through the FPGA-based IDS. Packet data is first retrieved from BRAM and passed through a hardware packet parser, where protocol fields are extracted. These extracted features are then used to update protocol-specific counters, which are aggregated over a sliding time window to analyse traffic behaviour.
+
+The detection logic looks at the aggregated statistics against predefined thresholds to identify potential DoS attacks. When an attack condition is met, the system generates detection flags, which are read by the MicroBlaze processor for further processing and communication via UART. This pipelined architecture enables efficient, real-time analysis of network traffic.
+
+
+\subsection{Packet Replay from BRAM}
+The intrusion detection system utilises on-chip Block RAM (BRAM) as a controlled source of network traffic for testing and evaluation. Packet data is pre-defined and stored in memory, then replayed into the FPGA processing pipeline to emulate real network traffic conditions.
+
+Each packet is represented as a sequence of 32-bit words, which are transmitted sequentially into the system using a simple streaming interface. Control signals, including \texttt{TVALID} and \texttt{TLAST}, are used to indicate valid data and the end of a packet, respectively. This enables the hardware modules to correctly interpret packet boundaries and process data in a structured manner.
+
+Packet transmission is managed by the MicroBlaze processor, which reads packet data from memory and writes it to the hardware interface via memory-mapped GPIO. This allows precise control over packet timing and ordering, enabling different traffic scenarios, including both normal and malicious patterns, to be evaluated.
+
+Initial approaches using pre-initialised memory formats (e.g., \texttt{.coe} and \texttt{.hex}) were explored for loading packet data into BRAM. However, these methods proved inflexible for dynamic testing, leading to the adoption of a runtime packet replay mechanism. This approach provides greater flexibility, allowing different datasets to be tested without requiring hardware reconfiguration.
+
+The use of BRAM-based packet replay enables repeatable and deterministic testing, ensuring that the system can be evaluated under consistent conditions while still simulating realistic network behaviour.
+
+\begin{lstlisting}[language=C, caption={Packet transmission using TVALID and TLAST}]
+static void send_packet(const packet_record_t *pkt) {
+  for (int i = 0; i < pkt->len_words; i++) {
+    uint32_t ctrl = CTRL_TVALID;
+    if (i == pkt->len_words - 1)
+      ctrl |= CTRL_TLAST;
+
+    Xil_Out32(GPIO_PKT_BASE, pkt->words[i]);
+    Xil_Out32(GPIO_CTRL_BASE, ctrl);
+    usleep(10);
+    Xil_Out32(GPIO_CTRL_BASE, 0);
+  }
+}
+\end{lstlisting}
+
+\subsection{Packet Parsing}
+
+\subsection{Feature Extraction and Traffic Monitoring}
+
+\subsection{Sliding Window Detection}
+
+
+\subsection{Volumetric Based Detection Logic}
+
+\subsection{Microblaze integration}
+

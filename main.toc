@@ -10,23 +10,29 @@
 \contentsline {section}{\numberline {3}\textbf {Literature Review}}{5}{section.3}%
 \contentsline {section}{\numberline {4}\textbf {System Design and Development}}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}High Level System Overview}{6}{subsection.4.1}%
-\contentsline {section}{\numberline {5}\textbf {Results and Testing}}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Testing}{7}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{7}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{8}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Results}{9}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{9}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt {usleep(5000)}}{10}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt {usleep(10000)}}{10}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt {usleep(20000)}}{10}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{11}{subsubsection.5.2.5}%
-\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{11}{subsubsection.5.2.6}%
-\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{12}{subsubsection.5.2.7}%
-\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{14}{subsubsection.5.2.8}%
-\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{14}{subsubsection.5.2.9}%
-\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{15}{subsubsection.5.2.10}%
-\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{16}{subsubsection.5.2.11}%
-\contentsline {subsection}{\numberline {5.3}System Limitations}{16}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{17}{subsection.5.4}%
-\contentsline {section}{\numberline {6}\textbf {Ethical Considerations}}{18}{section.6}%
-\contentsline {section}{\numberline {7}Conclusions and Future Work}{19}{section.7}%
+\contentsline {subsection}{\numberline {4.2}Packet Replay from BRAM}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Packet Parsing}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Feature Extraction and Traffic Monitoring}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Sliding Window Detection}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Volumetric Based Detection Logic}{7}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Microblaze integration}{7}{subsection.4.7}%
+\contentsline {section}{\numberline {5}\textbf {Results and Testing}}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Testing}{8}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{8}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{9}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Results}{10}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{10}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt {usleep(5000)}}{11}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt {usleep(10000)}}{11}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt {usleep(20000)}}{11}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{12}{subsubsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{12}{subsubsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{13}{subsubsection.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{15}{subsubsection.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{15}{subsubsection.5.2.9}%
+\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{16}{subsubsection.5.2.10}%
+\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{17}{subsubsection.5.2.11}%
+\contentsline {subsection}{\numberline {5.3}System Limitations}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{18}{subsection.5.4}%
+\contentsline {section}{\numberline {6}\textbf {Ethical Considerations}}{19}{section.6}%
+\contentsline {section}{\numberline {7}Conclusions and Future Work}{20}{section.7}%

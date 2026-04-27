@@ -519,6 +519,24 @@ INPUT ./Images/Sudden-spike-in-traffic-during-DDoS-attack.png
 INPUT ./Sections/System Design and Development/development.tex
 INPUT ./Sections/System Design and Development/development.tex
 INPUT Sections/System Design and Development/development.tex
+INPUT ./Images/System_Architecture.png
+INPUT ./Images/System_Architecture.png
+INPUT ./Images/System_Architecture.png
+INPUT ./Images/System_Architecture.png
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Sections/Results and Testing/results.tex
 INPUT ./Sections/Results and Testing/results.tex
 INPUT Sections/Results and Testing/results.tex
@@ -539,8 +557,6 @@ INPUT ./Images/SYN-Packet.jpg
 INPUT ./Images/SYN-Packet.jpg
 INPUT ./Images/SYN-Packet.jpg
 INPUT ./Images/SYN-Packet.jpg
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Images/SYN_32_targets_proof_dynamic_memory.png
 INPUT ./Images/SYN_32_targets_proof_dynamic_memory.png
 INPUT ./Images/SYN_32_targets_proof_dynamic_memory.png
