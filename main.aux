@@ -75,63 +75,80 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}High Level System Overview}{6}{subsection.4.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Block diagram of the FPGA-based intrusion detection system architecture}}{6}{figure.caption.10}\protected@file@percent }
 \newlabel{fig:System_Architecture}{{3}{6}{Block diagram of the FPGA-based intrusion detection system architecture}{figure.caption.10}{}}
+\abx@aux@cite{0}{noauthor_ieee_2022}
+\abx@aux@segm{0}{0}{noauthor_ieee_2022}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Packet Replay from BRAM}{7}{subsection.4.2}\protected@file@percent }
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces Packet transmission using TVALID and TLAST}}{7}{lstlisting.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Packet Parsing}{7}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Feature Extraction and Traffic Monitoring}{7}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Sliding Window Detection}{7}{subsection.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Volumetric Based Detection Logic}{7}{subsection.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Microblaze integration}{7}{subsection.4.7}\protected@file@percent }
+\newlabel{lst:packet_record}{{1}{7}{Example packet representation used in the C header datasets}{lstlisting.1}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}{\ignorespaces Example packet representation used in the C header datasets}}{7}{lstlisting.1}\protected@file@percent }
+\newlabel{lst:packet_tx}{{2}{7}{Packet transmission using TVALID and TLAST control signals}{lstlisting.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}{\ignorespaces Packet transmission using TVALID and TLAST control signals}}{7}{lstlisting.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Annotated Vivado block diagram of the FPGA-based IDS system}}{9}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:vivado_block}{{4}{9}{Annotated Vivado block diagram of the FPGA-based IDS system}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Packet Parsing}{10}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Packet structure and assumptions}{10}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Streaming interface behaviour}{10}{subsubsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Word-index based extraction}{10}{subsubsection.4.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.4}Protocol classification logic}{10}{subsubsection.4.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.5}Verilog implementation}{11}{subsubsection.4.3.5}\protected@file@percent }
+\newlabel{lst:parser}{{3}{11}{Extraction of protocol fields using word indexing}{lstlisting.3}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {3}{\ignorespaces Extraction of protocol fields using word indexing}}{11}{lstlisting.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.6}Design considerations and challenges}{11}{subsubsection.4.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.7}Output of the parser}{11}{subsubsection.4.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Feature Extraction and Traffic Monitoring}{11}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Sliding Window Detection}{11}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Volumetric Based Detection Logic}{11}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Microblaze integration}{11}{subsection.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}GUI}{11}{subsection.4.8}\protected@file@percent }
 \abx@aux@cite{0}{noauthor_7_2020}
 \abx@aux@segm{0}{0}{noauthor_7_2020}
-\@writefile{toc}{\contentsline {section}{\numberline {5}\textbf  {Results and Testing}}{8}{section.5}\protected@file@percent }
-\newlabel{sec:Results_and_testing}{{5}{8}{\textbf {Results and Testing}}{section.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Testing}{8}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{8}{subsubsection.5.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay.}}{8}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:packet_comparison}{{4}{8}{Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay}{figure.caption.11}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A Typical IPv4 TCP header}}{9}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:ipv4_tcp_headers}{{5}{9}{A Typical IPv4 TCP header}{figure.caption.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{9}{subsubsection.5.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection.}}{10}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:packet_examples}{{6}{10}{Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection}{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Results}{10}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{10}{subsubsection.5.2.1}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Effect of packet transmission delay on volumetric detection}}{11}{table.caption.14}\protected@file@percent }
-\newlabel{tab:packet_rate_results}{{1}{11}{Effect of packet transmission delay on volumetric detection}{table.caption.14}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt  {usleep(5000)}}{11}{subsubsection.5.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt  {usleep(10000)}}{11}{subsubsection.5.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt  {usleep(20000)}}{11}{subsubsection.5.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{12}{subsubsection.5.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{12}{subsubsection.5.2.6}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of SYN flood detection for different SYN dataset sizes}}{12}{table.caption.15}\protected@file@percent }
-\newlabel{tab:syn_results}{{2}{12}{Comparison of SYN flood detection for different SYN dataset sizes}{table.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Extracted destination ports from the SYN packet dataset using \texttt  {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour.}}{12}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:syn_ports}{{7}{12}{Extracted destination ports from the SYN packet dataset using \texttt {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour}{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{13}{subsubsection.5.2.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Mixed traffic scenario generated using the IDS attack scenario builder}}{13}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:mixed_topology}{{8}{13}{Mixed traffic scenario generated using the IDS attack scenario builder}{figure.caption.17}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Network Node Configuration}}{13}{table.caption.18}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Window-level output for mixed traffic scenario}}{14}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:mixed_results}{{9}{14}{Window-level output for mixed traffic scenario}{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{15}{subsubsection.5.2.8}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces ICMP flood detection results using CICIDS2017 dataset}}{15}{table.caption.20}\protected@file@percent }
-\newlabel{tab:icmp_results}{{4}{15}{ICMP flood detection results using CICIDS2017 dataset}{table.caption.20}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{15}{subsubsection.5.2.9}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces NULL scan detection results using CICIDS2017 dataset}}{15}{table.caption.21}\protected@file@percent }
-\newlabel{tab:null_results}{{5}{15}{NULL scan detection results using CICIDS2017 dataset}{table.caption.21}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{16}{subsubsection.5.2.10}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces XMAS scan detection results}}{16}{table.caption.22}\protected@file@percent }
-\newlabel{tab:xmas_results}{{6}{16}{XMAS scan detection results}{table.caption.22}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{17}{subsubsection.5.2.11}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces UDP flood detection results}}{17}{table.caption.23}\protected@file@percent }
-\newlabel{tab:udp_results}{{7}{17}{UDP flood detection results}{table.caption.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}System Limitations}{17}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{18}{subsection.5.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison between FPGA-based IDS and software IDS}}{18}{table.caption.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}\textbf  {Ethical Considerations}}{19}{section.6}\protected@file@percent }
-\newlabel{sec:Ethics}{{6}{19}{\textbf {Ethical Considerations}}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions and Future Work}{20}{section.7}\protected@file@percent }
-\newlabel{sec: Conclusions}{{7}{20}{Conclusions and Future Work}{section.7}{}}
-\abx@aux@read@bbl@mdfivesum{5C04231464FF99F310FFA6534CF04366}
-\gdef \@abspage@last{27}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\textbf  {Results and Testing}}{12}{section.5}\protected@file@percent }
+\newlabel{sec:Results_and_testing}{{5}{12}{\textbf {Results and Testing}}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Testing}{12}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{12}{subsubsection.5.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay.}}{12}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:packet_comparison}{{5}{12}{Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A Typical IPv4 TCP header}}{13}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:ipv4_tcp_headers}{{6}{13}{A Typical IPv4 TCP header}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{13}{subsubsection.5.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection.}}{14}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:packet_examples}{{7}{14}{Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Results}{14}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{14}{subsubsection.5.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Effect of packet transmission delay on volumetric detection}}{15}{table.caption.15}\protected@file@percent }
+\newlabel{tab:packet_rate_results}{{1}{15}{Effect of packet transmission delay on volumetric detection}{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt  {usleep(5000)}}{15}{subsubsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt  {usleep(10000)}}{15}{subsubsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt  {usleep(20000)}}{15}{subsubsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{16}{subsubsection.5.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{16}{subsubsection.5.2.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of SYN flood detection for different SYN dataset sizes}}{16}{table.caption.16}\protected@file@percent }
+\newlabel{tab:syn_results}{{2}{16}{Comparison of SYN flood detection for different SYN dataset sizes}{table.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Extracted destination ports from the SYN packet dataset using \texttt  {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour.}}{16}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:syn_ports}{{8}{16}{Extracted destination ports from the SYN packet dataset using \texttt {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{17}{subsubsection.5.2.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Mixed traffic scenario generated using the IDS attack scenario builder}}{17}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:mixed_topology}{{9}{17}{Mixed traffic scenario generated using the IDS attack scenario builder}{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Network Node Configuration}}{17}{table.caption.19}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Window-level output for mixed traffic scenario}}{18}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:mixed_results}{{10}{18}{Window-level output for mixed traffic scenario}{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{19}{subsubsection.5.2.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces ICMP flood detection results using CICIDS2017 dataset}}{19}{table.caption.21}\protected@file@percent }
+\newlabel{tab:icmp_results}{{4}{19}{ICMP flood detection results using CICIDS2017 dataset}{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{19}{subsubsection.5.2.9}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces NULL scan detection results using CICIDS2017 dataset}}{19}{table.caption.22}\protected@file@percent }
+\newlabel{tab:null_results}{{5}{19}{NULL scan detection results using CICIDS2017 dataset}{table.caption.22}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{20}{subsubsection.5.2.10}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces XMAS scan detection results}}{20}{table.caption.23}\protected@file@percent }
+\newlabel{tab:xmas_results}{{6}{20}{XMAS scan detection results}{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{21}{subsubsection.5.2.11}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces UDP flood detection results}}{21}{table.caption.24}\protected@file@percent }
+\newlabel{tab:udp_results}{{7}{21}{UDP flood detection results}{table.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}System Limitations}{21}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{22}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison between FPGA-based IDS and software IDS}}{22}{table.caption.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}\textbf  {Ethical Considerations}}{23}{section.6}\protected@file@percent }
+\newlabel{sec:Ethics}{{6}{23}{\textbf {Ethical Considerations}}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions and Future Work}{24}{section.7}\protected@file@percent }
+\newlabel{sec: Conclusions}{{7}{24}{Conclusions and Future Work}{section.7}{}}
+\abx@aux@read@bbl@mdfivesum{82CD854A00A664DEE6258F92E1AFB2EF}
+\gdef \@abspage@last{31}

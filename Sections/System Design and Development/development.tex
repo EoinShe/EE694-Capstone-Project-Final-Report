@@ -1,40 +1,146 @@
-This section presents the design and development of the FPGA-based IDS. It describes the architectural decisions, hardware implementation, and software integration required to achieve real-time detection of DoS attacks. The system is designed as a packet processing pipeline, incorporating packet parsing, feature extraction, and a sliding window-based detection mechanism. Each component of the system is detailed, along with the design considerations and challenges encountered during development.
+This section presents the design and development of the FPGA-based IDS. It
+describes the architectural decisions, hardware implementation, and software
+integration required to achieve real-time detection of DoS attacks. The system
+is designed as a packet processing pipeline, incorporating packet parsing,
+feature extraction, and a sliding window-based detection mechanism. Each
+component of the system is detailed, along with the design considerations and
+challenges encountered during development.
 
 \subsection{High Level System Overview}
-The FPGA-based intrusion detection system is designed as a data processing pipeline for real-time analysis of network traffic. Rather than relying on sequential software processing, the system performs packet inspection directly in hardware, enabling high-throughput and low-latency detection of DoS attacks.
+The FPGA-based intrusion detection system is designed as a data processing
+pipeline for real-time analysis of network traffic. Rather than relying on
+sequential software processing, the system performs packet inspection directly
+in hardware, enabling high-throughput and low-latency detection of DoS attacks.
 
-Network traffic is supplied to the system from on-chip Block RAM (BRAM), where pre-processed packet data is stored and replayed into the FPGA. As packets are streamed into the system, a hardware packet parser extracts key fields such as protocol type, destination IP address, and TCP flags. These features are then passed to a detection module, which implements a sliding window-based approach to analyse traffic patterns over fixed time intervals.
+Network traffic is supplied to the system by the MicroBlaze processor, which
+replays pre-processed packet datasets stored as C header files into the FPGA
+packet input interface. As packets are streamed into the system, a hardware
+packet parser extracts key fields such as protocol type, destination IP
+address, and TCP flags. These features are then passed to a detection module,
+which implements a sliding window-based approach to analyse traffic patterns
+over fixed time intervals.
 
-Within each detection window, packet counts and protocol-specific activity are aggregated and compared against thresholds to identify malicious behaviour. When an attack condition is met, the system flags the detected behaviour in hardware and outputs status signals with the detected attack type, which are then read by the MicroBlaze processor for aggregation and reporting.
+Within each detection window, packet counts and protocol-specific activity are
+aggregated and compared against thresholds to identify malicious behaviour.
+When an attack condition is met, the system flags the detected behaviour in
+hardware and outputs status signals with the detected attack type, which are
+then read by the MicroBlaze processor for aggregation and reporting.
 
-The output from the hardware detection logic is communicated to a MicroBlaze processor, which performs higher-level aggregation and reporting. Detected attacks and traffic statistics are then transmitted to the serial monitor via a UART interface.
+The output from the hardware detection logic is communicated to a MicroBlaze
+processor, which performs higher-level aggregation and reporting. Detected
+attacks and traffic statistics are then transmitted to the serial monitor via a
+UART interface.
 
-A block diagram of the overall system architecture is shown in Fig.~\ref{fig:System_Architecture}.
+A block diagram of the overall system architecture is shown in
+Fig.~\ref{fig:System_Architecture}.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[height=0.5\textheight]{System_Architecture.png}
-    \caption{Block diagram of the FPGA-based intrusion detection system architecture}
-    \label{fig:System_Architecture}
+  \centering
+  \includegraphics[height=0.45\textheight]{System_Architecture.png}
+  \caption{Block diagram of the FPGA-based intrusion detection system architecture}
+  \label{fig:System_Architecture}
 \end{figure}
 
-The system architecture shown in Fig.~\ref{fig:System_Architecture} shows the flow of packet data through the FPGA-based IDS. Packet data is first retrieved from BRAM and passed through a hardware packet parser, where protocol fields are extracted. These extracted features are then used to update protocol-specific counters, which are aggregated over a sliding time window to analyse traffic behaviour.
+The system architecture shown in Fig.~\ref{fig:System_Architecture} shows the
+flow of packet data through the FPGA-based IDS. Packet data is first retrieved
+by the MicroBlaze processor from the selected software defined dataset and
+passed through a hardware packet parser, where protocol fields are extracted.
+These extracted features are then used to update protocol-specific counters,
+which are aggregated over a sliding time window to analyse traffic behaviour.
 
-The detection logic looks at the aggregated statistics against predefined thresholds to identify potential DoS attacks. When an attack condition is met, the system generates detection flags, which are read by the MicroBlaze processor for further processing and communication via UART. This pipelined architecture enables efficient, real-time analysis of network traffic.
-
+The detection logic looks at the aggregated statistics against predefined
+thresholds to identify potential DoS attacks. When an attack condition is met,
+the system generates detection flags, which are read by the MicroBlaze
+processor for further processing and communication via UART. This pipelined
+architecture enables efficient, real-time analysis of network traffic.
 
 \subsection{Packet Replay from BRAM}
-The intrusion detection system utilises on-chip Block RAM (BRAM) as a controlled source of network traffic for testing and evaluation. Packet data is pre-defined and stored in memory, then replayed into the FPGA processing pipeline to emulate real network traffic conditions.
+The IDS uses on-chip Block RAM (BRAM) as a source of network traffic for
+testing. Packet data is pre-defined and stored in memory, then replayed into
+the FPGA to emulate real network traffic conditions.
 
-Each packet is represented as a sequence of 32-bit words, which are transmitted sequentially into the system using a simple streaming interface. Control signals, including \texttt{TVALID} and \texttt{TLAST}, are used to indicate valid data and the end of a packet, respectively. This enables the hardware modules to correctly interpret packet boundaries and process data in a structured manner.
+Each packet is stored in a C header file as a sequence of 32-bit words. The
+active dataset is selected in the Vitis application, allowing different packet
+sets to be tested by changing the included header file and associated dataset
+definition. During execution, the MicroBlaze processor reads the selected
+packet records from software memory and writes each 32-bit word to the FPGA
+packet input interface.
 
-Packet transmission is managed by the MicroBlaze processor, which reads packet data from memory and writes it to the hardware interface via memory-mapped GPIO. This allows precise control over packet timing and ordering, enabling different traffic scenarios, including both normal and malicious patterns, to be evaluated.
+Listing~\ref{lst:packet_record} shows the packet representation used in the
+software-defined datasets. Each packet contains a length field and an array of
+32-bit words, allowing packets of different sizes to be replayed through the
+same transmission function.
 
-Initial approaches using pre-initialised memory formats (e.g., \texttt{.coe} and \texttt{.hex}) were explored for loading packet data into BRAM. However, these methods proved inflexible for dynamic testing, leading to the adoption of a runtime packet replay mechanism. This approach provides greater flexibility, allowing different datasets to be tested without requiring hardware reconfiguration.
+Control signals, including \texttt{TVALID} and \texttt{TLAST}, are asserted
+during this transfer to indicate valid data and the final word of a packet,
+respectively. This enables the hardware modules to correctly interpret packet
+boundaries and process incoming data in a structured manner.
 
-The use of BRAM-based packet replay enables repeatable and deterministic testing, ensuring that the system can be evaluated under consistent conditions while still simulating realistic network behaviour.
+In real-world network interfaces, such as Ethernet Media Access Control (MAC)
+layers, packet boundaries are defined by frame structures within the hardware
+layer~\cite{noauthor_ieee_2022}. The use of control signals in this system
+therefore emulates real-world packet streaming behaviour within a controlled
+test environment.
 
-\begin{lstlisting}[language=C, caption={Packet transmission using TVALID and TLAST}]
+Packet transmission is managed by the MicroBlaze processor, which reads packet
+data from memory and writes it to the hardware interface via memory-mapped
+GPIO. This allows precise control over packet timing and ordering, enabling
+different traffic scenarios, including both normal and malicious patterns, to
+be evaluated.
+
+Initial approaches for sending packet data to the system involved the use of
+pre-initialised memory formats (e.g.\texttt{ .coe} and \texttt{.hex}). This was
+implemented using a Vivado Distributed Memory Generator configured as a ROM,
+with packet data preloaded via memory initialization files. While this approach
+allowed static dataset initialisation within the hardware design, it required
+regeneration of bitstream and re-synthesis when switching between datasets.
+
+Additionally, the ROM introduced a one-cycle read delay, meaning that data was
+not available until the following clock cycle. This caused the parser to read
+the wrong word positions during early development, leading to incorrect
+extraction of protocol fields, for example TCP flags.
+
+To address this, the design was changed to use a runtime packet replay
+mechanism. Packet data is defined in software and sent to the FPGA by the
+MicroBlaze processor, rather than being preloaded into memory. This makes it
+easier to switch between datasets during testing without requiring hardware
+reconfiguration, while also ensuring that packet data is correctly aligned
+during processing.
+
+The selected packet record is transmitted to the FPGA one word at a time, as
+shown in Listing~\ref{lst:packet_tx}. The final word of each packet is marked
+using \texttt{TLAST}.
+
+\begin{lstlisting}[
+    language=C,
+    caption={Example packet representation used in the C header datasets},
+    label={lst:packet_record},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    breaklines=true
+]
+static const packet_record_t syn_packet_real_world[] = {
+  {
+    .len_words = 15,
+    .words = {
+      0x90B11CA2,
+      0xC0D370F3,
+      ...
+    }
+  }
+};
+\end{lstlisting}
+
+\begin{lstlisting}[
+    language=C,
+    caption={Packet transmission using TVALID and TLAST control signals},
+    label={lst:packet_tx},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    breaklines=true
+]
 static void send_packet(const packet_record_t *pkt) {
   for (int i = 0; i < pkt->len_words; i++) {
     uint32_t ctrl = CTRL_TVALID;
@@ -49,14 +155,146 @@ static void send_packet(const packet_record_t *pkt) {
 }
 \end{lstlisting}
 
+\newpage
+
+\begin{landscape}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.8\textwidth]{verilog_RTL_block_diagram_circled_numbered.png}
+    \caption{Annotated Vivado block diagram of the FPGA-based IDS system}
+    \label{fig:vivado_block}
+  \end{figure}
+\end{landscape}
+
+\newpage
+The annotated Vivado block diagram shown in Fig.~\ref{fig:vivado_block}
+illustrates the overall architecture of the system. For clarity, key subsystems
+are highlighted using coloured regions and labelled accordingly.
+
+\begin{itemize}
+  \item[\textbf{(1)}] \textbf{Clock and Reset Generation (orange):}
+        Provides a stable clock signal and synchronised reset for all components,
+        ensuring reliable system operation.
+
+  \item[\textbf{(2)}] \textbf{MicroBlaze Processor System (green):}
+        Acts as a software-based MicroBlaze processor, serving as the central control
+        unit for packet replay, configuration of detection thresholds, and collection
+        of detection results.
+
+  \item[\textbf{(3)}] \textbf{AXI Interconnect (brown):}
+        Allows communication between the MicroBlaze processor and all peripheral
+        modules through AXI interfaces.
+
+  \item[\textbf{(4A)}] \textbf{AXI GPIO Inputs (red):}
+        Used to transmit packet data, control signals, and configuration parameters
+        from the processor to the hardware modules. In particular, \textbf{(4A1)}
+        corresponds to control and configuration interfaces (e.g.\ thresholds and
+        trigger signals), while \textbf{(4A2)} is used for packet data input, where
+        individual packet words are streamed from the MicroBlaze processor into the
+        IDS hardware.
+
+  \item[\textbf{(4B)}] \textbf{AXI GPIO Outputs (purple):}
+        Return detection results and traffic statistics from the hardware modules back
+        to the processor.
+
+  \item[\textbf{(5)}] \textbf{Custom IDS Hardware Module (blue):}
+        Implements packet parsing, feature extraction, and attack detection in hardware,
+        processing incoming data streams in real time.
+
+  \item[\textbf{(6)}] \textbf{UART Output Interface (black):}
+        Sends detection results to an external system via UART.
+\end{itemize}
+
 \subsection{Packet Parsing}
+The packet parsing module is responsible for extracting relevant protocol
+fields from incoming packet data streams. This forms a critical stage in the
+system, as it converts raw packet data into structured information that can be
+used for detection of malicious traffic patterns.
+
+\subsubsection{Packet structure and assumptions}
+The parser operates under the assumption that packets follow a standard
+Ethernet frame structure with IPv4 encapsulation. As a result, key protocol
+fields are located at fixed positions within the packet header. This allows the
+design to avoid complex parsing logic and instead rely on fixed offsets within
+the data stream.
+
+\subsubsection{Streaming interface behaviour}
+Packets are received as a sequence of 32-bit words via a streaming interface,
+with \texttt{TVALID} indicating valid data and \texttt{TLAST} marking the final
+word of a packet. This enables the parser to process packets sequentially
+without requiring full buffering of packet contents.
+
+\subsubsection{Word-index based extraction}
+A word index counter is used to track the position within each packet as it is
+received. Based on this index, specific protocol fields are extracted at known
+offsets within the packet structure. This approach allows for efficient
+hardware implementation, as field extraction is performed using simple
+combinational logic rather than complex parsing algorithms.
+
+For example, the EtherType field is extracted from word 3, the IP protocol from
+word 5, and TCP flags from word 11. By using fixed offsets, the parser can
+quickly identify packet types and relevant header information with minimal
+latency.
+
+\subsubsection{Protocol classification logic}
+Using the extracted fields, the parser classifies packets based on protocol
+type. IPv4 packets are identified using the EtherType field, after which the IP
+protocol field is used to distinguish between TCP, UDP, and ICMP traffic.
+
+For TCP packets, additional inspection of the TCP flags field allows the system
+to identify specific patterns such as SYN packets, as well as scan-based
+behaviour including NULL and XMAS packets. These classifications form the basis
+for subsequent detection logic.
+
+\subsubsection{Verilog implementation}
+
+\begin{lstlisting}[
+    language=Verilog,
+    caption={Extraction of protocol fields using word indexing},
+    label={lst:parser},
+    basicstyle=\ttfamily\small,
+    breaklines=true
+]
+case (word_index)
+  8'd3:  ethertype <= tdata[31:16];
+  8'd5:  ip_proto  <= tdata[7:0];
+  8'd7:  dst_ip[31:16] <= tdata[15:0];
+  8'd8:  dst_ip[15:0]  <= tdata[31:16];
+  8'd11: tcp_flags <= tdata[7:0];
+endcase
+\end{lstlisting} 
+
+As shown in Listing~\ref{lst:parser}, protocol fields are extracted based on
+the current value of the \texttt{word\_index} signal. This ensures that each
+field is captured at the correct position within the packet stream.
+
+
+\subsubsection{Design considerations and challenges}
+A key design consideration was ensuring correct alignment between the word index
+and incoming data. During early development, the use of ROM-based packet storage
+introduced a one-cycle read delay, which caused incorrect field extraction due
+to misalignment between expected and actual data positions.
+
+This issue was resolved by transitioning to a streaming-based packet replay
+mechanism, ensuring that packet data arrives in a correctly aligned manner.
+This allowed the parser to operate reliably using fixed word offsets.
+
+
+\subsubsection{Output of the parser}
+The output of the parsing module consists of protocol indicators and packet
+classification signals, including identification of TCP, UDP, and ICMP traffic,
+as well as specific TCP flag patterns. These signals are passed to the next stage
+of the system, where they are used for feature extraction and detection of
+potential attacks.
+
 
 \subsection{Feature Extraction and Traffic Monitoring}
 
 \subsection{Sliding Window Detection}
 
-
 \subsection{Volumetric Based Detection Logic}
 
 \subsection{Microblaze integration}
+
+\subsection{GUI}
 
