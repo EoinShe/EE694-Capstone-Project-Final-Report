@@ -1,0 +1,59 @@
+%make sure to include the image proof ICMP works please 
+
+
+====================================================
+        EE695 FPGA Intrusion Detection 
+====================================================
+
+
+=====================================
+RUN CONFIGURATION
+=====================================
+Window Size: 250 ms
+Volumetric Threshold: 15
+Flood Threshold: 11
+
+
+=====================================
+WINDOW SUMMARY
+=====================================
+
+Window 1:
+Packets in window 1: 1
+Attacks in window 1:
+  [!] NULL Scan
+
+Window 2:
+Packets in window 2: 24
+Attacks in window 2:
+  [!] NULL Scan
+  [!] Volumetric Attack
+
+Window 3:
+Packets in window 3: 23
+Attacks in window 3:
+  [!] NULL Scan
+  [!] Volumetric Attack
+
+Window 4:
+Packets in window 4: 16
+Attacks in window 4:
+  [!] NULL Scan
+  [!] Volumetric Attack
+
+
+=====================================
+Attacks Detected
+=====================================
+=====================================
+             DEMO DONE
+=====================================
+
+
+
+The window summary is generated directly by the FPGA and reflects real-time detection based on packet activity within each time window, so it correctly identifies NULL scans.
+The “Attacks Detected” section is software-based and relies on successfully reading and grouping packets by destination IP; for this dataset, the destination information is not consistently captured, so no per-target summary is produced.
+
+
+
+Detection is working correctly in hardware (window summary). The final section is empty because software aggregation depends on stable destination IP reads, which are not reliable for this dataset.

@@ -1,2 +1,8 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces DDoS attack diagram~\blx@tocontentsinit {0}\cite {kimachia_ddos_2022}.}}{1}{figure.caption.8}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Spike in traffic diagram~\blx@tocontentsinit {0}\cite {noauthor_fig_nodate}.}}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay.}}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {4}{\ignorespaces A Typical IPv4 TCP header}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection.}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Extracted destination ports from the SYN packet dataset using \texttt {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour.}}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Mixed traffic scenario generated using the IDS attack scenario builder}}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Window-level output for mixed traffic scenario}}{13}{figure.caption.18}%

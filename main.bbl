@@ -882,6 +882,19 @@
       \verb https://www.netscout.com/blog/why-firewalls-are-targets-ddos-attacks
       \endverb
     \endentry
+    \entry{noauthor_7_2020}{article}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{7 {Series} {FPGAs} {Data} {Sheet}: {Overview} ({DS180})}
+      \field{year}{2020}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\YPTXBJIT\\2020 - 7 Series FPGAs Data Sheet Overview (DS180).pdf:application/pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

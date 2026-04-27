@@ -72,11 +72,57 @@
 \newlabel{sec:Lit_Review}{{3}{5}{\textbf {Literature Review}}{section.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}\textbf  {System Design and Development}}{6}{section.4}\protected@file@percent }
 \newlabel{sec:Design_and_Development}{{4}{6}{\textbf {System Design and Development}}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}High Level System Overview}{6}{subsection.4.1}\protected@file@percent }
+\abx@aux@cite{0}{noauthor_7_2020}
+\abx@aux@segm{0}{0}{noauthor_7_2020}
 \@writefile{toc}{\contentsline {section}{\numberline {5}\textbf  {Results and Testing}}{7}{section.5}\protected@file@percent }
 \newlabel{sec:Results_and_testing}{{5}{7}{\textbf {Results and Testing}}{section.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}\textbf  {Ethical Considerations}}{8}{section.6}\protected@file@percent }
-\newlabel{sec:Ethics}{{6}{8}{\textbf {Ethical Considerations}}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions and Future Work}{9}{section.7}\protected@file@percent }
-\newlabel{sec: Conclusions}{{7}{9}{Conclusions and Future Work}{section.7}{}}
-\abx@aux@read@bbl@mdfivesum{3FDDBCDDE48D465DDA89C991A068F9D8}
-\gdef \@abspage@last{16}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Testing}{7}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{7}{subsubsection.5.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay.}}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:packet_comparison}{{3}{7}{Comparison of packet representations. The original PCAP format contains full protocol information, while the compact format stores packets as fixed 32-bit words for FPGA replay}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A Typical IPv4 TCP header}}{8}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:ipv4_tcp_headers}{{4}{8}{A Typical IPv4 TCP header}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{8}{subsubsection.5.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection.}}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:packet_examples}{{5}{9}{Example packets used in testing. Left: normal TCP traffic. Right: TCP SYN packet, showing the SYN flag used for attack detection}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Results}{9}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{9}{subsubsection.5.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Effect of packet transmission delay on volumetric detection}}{10}{table.caption.13}\protected@file@percent }
+\newlabel{tab:packet_rate_results}{{1}{10}{Effect of packet transmission delay on volumetric detection}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt  {usleep(5000)}}{10}{subsubsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt  {usleep(10000)}}{10}{subsubsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt  {usleep(20000)}}{10}{subsubsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{11}{subsubsection.5.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{11}{subsubsection.5.2.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of SYN flood detection for different SYN dataset sizes}}{11}{table.caption.14}\protected@file@percent }
+\newlabel{tab:syn_results}{{2}{11}{Comparison of SYN flood detection for different SYN dataset sizes}{table.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Extracted destination ports from the SYN packet dataset using \texttt  {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour.}}{11}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:syn_ports}{{6}{11}{Extracted destination ports from the SYN packet dataset using \texttt {tcpdump}. The repeated destination IP with varying ports indicates SYN-based scanning or probing behaviour}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{12}{subsubsection.5.2.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Mixed traffic scenario generated using the IDS attack scenario builder}}{12}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:mixed_topology}{{7}{12}{Mixed traffic scenario generated using the IDS attack scenario builder}{figure.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Network Node Configuration}}{12}{table.caption.17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Window-level output for mixed traffic scenario}}{13}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:mixed_results}{{8}{13}{Window-level output for mixed traffic scenario}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{14}{subsubsection.5.2.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces ICMP flood detection results using CICIDS2017 dataset}}{14}{table.caption.19}\protected@file@percent }
+\newlabel{tab:icmp_results}{{4}{14}{ICMP flood detection results using CICIDS2017 dataset}{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{14}{subsubsection.5.2.9}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces NULL scan detection results using CICIDS2017 dataset}}{14}{table.caption.20}\protected@file@percent }
+\newlabel{tab:null_results}{{5}{14}{NULL scan detection results using CICIDS2017 dataset}{table.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{15}{subsubsection.5.2.10}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces XMAS scan detection results}}{15}{table.caption.21}\protected@file@percent }
+\newlabel{tab:xmas_results}{{6}{15}{XMAS scan detection results}{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{16}{subsubsection.5.2.11}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces UDP flood detection results}}{16}{table.caption.22}\protected@file@percent }
+\newlabel{tab:udp_results}{{7}{16}{UDP flood detection results}{table.caption.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}System Limitations}{16}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{17}{subsection.5.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison between FPGA-based IDS and software IDS}}{17}{table.caption.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}\textbf  {Ethical Considerations}}{18}{section.6}\protected@file@percent }
+\newlabel{sec:Ethics}{{6}{18}{\textbf {Ethical Considerations}}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions and Future Work}{19}{section.7}\protected@file@percent }
+\newlabel{sec: Conclusions}{{7}{19}{Conclusions and Future Work}{section.7}{}}
+\abx@aux@read@bbl@mdfivesum{5C04231464FF99F310FFA6534CF04366}
+\gdef \@abspage@last{26}

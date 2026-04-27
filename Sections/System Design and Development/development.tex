@@ -1,0 +1,12 @@
+This section presents the design and development of the FPGA-based IDS. It describes the architectural decisions, hardware implementation, and software integration required to achieve real-time detection of DoS attacks. The system is designed as a packet processing pipeline, incorporating packet parsing, feature extraction, and a sliding window-based detection mechanism. Each component of the system is detailed, along with the design considerations and challenges encountered during development.
+
+\subsection{High Level System Overview}
+The FPGA-based intrusion detection system is designed as a data processing pipeline for real-time analysis of network traffic. Rather than relying on sequential software processing, the system performs packet inspection directly in hardware, enabling high-throughput and low-latency detection of DoS attacks.
+
+Network traffic is supplied to the system from on-chip Block RAM (BRAM), where pre-processed packet data is stored and replayed into the FPGA. As packets are streamed into the system, a hardware packet parser extracts key fields such as protocol type, destination IP address, and TCP flags. These features are then passed to a detection module, which implements a sliding window-based approach to analyse traffic patterns over fixed time intervals.
+
+Within each detection window, packet counts and protocol-specific activity are aggregated and compared against thresholds to identify malicious behaviour. When an attack condition is met, the system flags the detected behaviour in hardware and outputs status signals with the detected attack type, which are then read by the MicroBlaze processor for aggregation and reporting.
+
+The output from the hardware detection logic is communicated to a MicroBlaze processor, which performs higher-level aggregation and reporting. Detected attacks and traffic statistics are then transmitted to the serial monitor via a UART interface.
+
+A block diagram of the overall system architecture is shown in Fig.~\ref{fig:System_Architecture}.
