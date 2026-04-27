@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  27 APR 2026 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  27 APR 2026 20:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1499,7 +1499,7 @@ pdfTeX warning (dest): name{cite.0@noauthor_fig_nodate} has been referenced but 
 pdfTeX warning (dest): name{cite.0@kimachia_ddos_2022} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2025/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (31 pages, 1479883 bytes).
+Output written on main.pdf (31 pages, 1479889 bytes).
 PDF statistics:
  718 PDF objects out of 1000 (max. 8388607)
  599 compressed objects within 6 object streams
