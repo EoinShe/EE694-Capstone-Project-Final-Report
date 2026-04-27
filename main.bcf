@@ -2374,6 +2374,31 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="3" intorder="1">noauthor_world_nodate</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">noauthor_global_nodate</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">noauthor_enisa_2025</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">su_comprehensive_2024</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">abiramasundari_distributed_2025</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">bergamini_de_neira_distributed_nodate</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">bergamini_de_neira_distributed_nodate</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">a_mims_botnet_2025</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">a_mims_botnet_2025</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">panicker_botnets_2008</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">noauthor_what_2025</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">kimachia_ddos_2022</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">kimachia_ddos_2022</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">noauthor_active_nodate</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">noauthor_fig_nodate</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">noauthor_fig_nodate</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">arash_evolving_2025</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">garcia-teodoro_anomaly-based_2009</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">wong_effectiveness_nodate</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">rajaboevich_comparative_2020</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">noauthor_defending_2025</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">orosz_real-time_2025</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">noauthor_can_nodate</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">mogul_eliminating_1997</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">noauthor_why_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -1,4 +1,14 @@
 \contentsline {section}{Declaration}{i}{section*.1}%
-\contentsline {section}{Abstract}{ii}{section*.2}%
-\contentsline {section}{Contents}{iii}{section*.4}%
-\contentsline {section}{List of Figures}{iv}{section*.6}%
+\contentsline {section}{Acknowledgements}{ii}{section*.2}%
+\contentsline {section}{Abstract}{iii}{section*.3}%
+\contentsline {section}{Contents}{iv}{section*.5}%
+\contentsline {section}{List of Figures}{v}{section*.7}%
+\contentsline {section}{\numberline {1}\textbf {Introduction}}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Statement and Project Solution}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Report Structure}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}\textbf {Technical Background}}{4}{section.2}%
+\contentsline {section}{\numberline {3}\textbf {Literature Review}}{5}{section.3}%
+\contentsline {section}{\numberline {4}\textbf {System Design and Development}}{6}{section.4}%
+\contentsline {section}{\numberline {5}\textbf {Results and Testing}}{7}{section.5}%
+\contentsline {section}{\numberline {6}\textbf {Ethical Considerations}}{8}{section.6}%
+\contentsline {section}{\numberline {7}Conclusions and Future Work}{9}{section.7}%

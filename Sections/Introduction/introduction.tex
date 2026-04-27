@@ -1,0 +1,83 @@
+Information and Communication Technology (ICT) services are a fundamental part
+of modern society, supporting critical infrastructure across sectors such as
+healthcare, government, and finance~\cite{noauthor_world_nodate}. As noted by the World
+Economic Forum, this increasing reliance has expanded the overall potential digital attack
+surface, making systems more susceptible to malicious disruption~\cite{noauthor_global_nodate}.
+
+While common cyber threats such as malware, phishing, and ransomware primarily
+target data integrity and confidentiality, attacks that target system
+availability remain a major concern. According to the ENISA Threat Landscape
+2024 report, Denial of Service (DoS) and Distributed Denial of Service (DDoS)
+attacks ``play a significant role in the cybersecurity threat landscape''~\cite{noauthor_enisa_2025}. These attacks aim to overwhelm network resources,
+preventing legitimate users from accessing essential services.
+
+DoS (Denial of Service) attacks are a class of cyberattack in which an attacker attempts to render a system or network resource unavailable to legitimate users by overwhelming it with malicious traffic~\cite{su_comprehensive_2024}. A Distributed Denial of Service (DDoS) attack extends this concept by originating from multiple sources simultaneously, significantly increasing the scale and impact of the attack~\cite{abiramasundari_distributed_2025}. These attacks are among the most disruptive threats to network availability, capable of causing large-scale service outages and significant financial and reputational damage~\cite{bergamini_de_neira_distributed_nodate}.
+
+In 2020, experts identified 1,560,000 more DDoS attacks than in 2019 as described by~\cite{bergamini_de_neira_distributed_nodate}. As shown in Figure~\ref{fig:DDoS_Attack_Diagram}, an attacker can use a network of compromised devices, known as a botnet. Botnets are small malicious programs that are created and controlled by an attacker~\cite{a_mims_botnet_2025} A botnet consists of multiple infected hosts, each running malicious software that can be remotely controlled by an attacker~\cite{a_mims_botnet_2025}. This distributed nature provides scalability and anonymity, making DDoS attacks particularly difficult to mitigate using traditional defence mechanisms~\cite{panicker_botnets_2008}. DoS attacks exploit vulnerabilities in network
+infrastructure and can be launched using various methods. The main goal of a DoS attack is to disrupt normal operations, which can cause system downtime which results in service interruptions, revenue loss, and damage to the organization's reputation and cause downtime and potentially inflict financial or reputational damage~\cite{noauthor_what_2025}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png}
+    \caption{DDoS attack diagram~\cite{kimachia_ddos_2022}.}
+    \label{fig:DDoS_Attack_Diagram}
+\end{figure}
+
+An effective approach to network security requires consideration of multiple layers within an organisation's infrastructure, as attacks may target different points within the network stack (the hierarchical implementation of networking protocols (e.g., TCP/IP) in software or firmware, managing data transmission from an application down to the physical network). Network attacks are unauthorised actions aimed at compromising the confidentiality, integrity, or availability of data and services. These attacks can broadly be classified as either passive or active. Passive attacks involve the interception of data without modification, whereas active attacks involve altering, disrupting, or destroying network traffic or system resources~\cite{noauthor_active_nodate}.
+
+DDoS attacks fall into the category of active attacks, as their primary objective is to disrupt normal system operation by overwhelming network resources. Mitigation strategies for such attacks can be implemented using either software-based or hardware-based approaches, each offering different trade-offs in terms of performance, scalability, and cost. Software-based solutions provide flexibility and ease of deployment, while hardware-based approaches offer higher throughput and lower latency, making them better suited to handling high-speed network traffic.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Sudden-spike-in-traffic-during-DDoS-attack.png}
+    \caption{Spike in traffic diagram~\cite{noauthor_fig_nodate}.}
+    \label{fig:Spike_Traffic_Diagram}
+\end{figure}
+
+\par
+Detecting these attacks is a complex task, as it requires monitoring high
+volumes of traffic, distinguishing between legitimate and malicious requests,
+and responding to rapidly evolving attack methods. One of the main challenges is the scale of traffic generated during an attack. As shown in Fig.~\ref{fig:Spike_Traffic_Diagram}, attacks are characterised by sudden and significant spikes in packet rates compared to normal network behaviour. Such surges can overwhelm both network infrastructure and processing systems, making real time analysis difficult.
+
+In addition to high traffic volume, distributed botnets obscure the true origin of attacks and often employ evasion techniques that mimic legitimate traffic patterns, further complicating detection~\cite{arash_evolving_2025}. To address these issues a range of detection/mitigation techniques have been developed. These include anomaly detection, which identifies unusual traffic behaviors that deviate from normal patterns~\cite{garcia-teodoro_anomaly-based_2009}, rate limiting, a technique that restricts the number of requests from a single source within a given time frame to prevent overloading a server~\cite{wong_effectiveness_nodate}, and traffic filtering, which blocks malicious packets based on predefined rules or signatures~\cite{rajaboevich_comparative_2020}.
+
+However, implementing these techniques at scale requires significant computational resources. Large-scale DDoS attacks can generate traffic volumes in the terabit per second range, requiring inspection of millions of packets per second (pps). For example, recent reports show that Cloudflare mitigated a 7.3 Tbps DDoS attack, delivering approximately 37.4 terabytes of data in just 45 seconds~\cite{noauthor_defending_2025}. Processing traffic at this scale places substantial demands on detection systems, as packets must be analysed in real time. This shows the need for high-performance detection mechanisms capable of operating at line rate, motivating the use of hardware-accelerated solutions such as FPGAs.
+
+
+Traditional software-based defenses running on general-purpose Central Processing Units (CPUs) face inherent limitations. As described by~\cite{orosz_real-time_2025}, CPU based systems, even those with multi-core architectures, face challenges in scaling because of the ``Von Neumann bottleneck'' which is where the CPU must sequentially interrupt its processing to fetch packet data from memory~\cite{noauthor_can_nodate}. This can cause the CPU to enter into a state of ``receive livelock'' where the processor consumes all available interrupts, leaving no resources for other necessary tasks~\cite{mogul_eliminating_1997}. This can cause the defence system to crash, in fact industry reports show that over 80\% of interviewed respondents firewalls have crashed during DDoS attacks~\cite{noauthor_why_nodate}.
+
+
+\subsection{Problem Statement and Project Solution}
+The goal of this project was to develop a Field Programmable Gate Array (FPGA) based Intrusion Detection System (IDS) on the Xilinx VC707 platform, capable of detecting Denial of Service (DoS) attacks in real-time. The system implements a packet inspection pipeline designed to overcome the limitations of traditional software-based approaches.
+
+Modern software-based defenses are limited in their ability to process high volumes of network traffic due to CPU bottlenecks, interrupt overhead, and the sequential nature of packet processing. This motivates the use of FPGA-based architectures, which enable parallel processing and low-latency analysis, making them well-suited for high-throughput network monitoring.
+
+A ``monitor-analyse-mitigate'' framework is implemented, where incoming packet streams are monitored in real-time, analysed for anomalous behaviour, and used to generate alerts indicating potential DoS attacks. Packet data is replayed from on-chip Block RAM (BRAM) and processed by a hardware packet parser, which extracts key features including protocol type, destination IP address, and TCP flags. These features are then evaluated using a sliding window detection mechanism, where packet counts and protocol-specific activity are aggregated over fixed time intervals.
+
+Detection is performed using configurable thresholds for both volumetric and protocol-based attacks. The system is capable of identifying multiple attack types, including SYN floods, ICMP floods, UDP floods, and TCP-based scan attacks such as NULL and XMAS scans. Upon detection, alert signals are generated in hardware and communicated to an on-chip MicroBlaze processor, which aggregates results and outputs them to a host system via a UART interface.
+
+Testing was conducted using both synthetic and real-world network traffic datasets, including CICIDS2017 and CICIDS2019 captures, to evaluate system behaviour under a range of attack scenarios. The system was assessed in terms of packet classification accuracy, sliding window detection performance, and responsiveness to varying traffic rates.
+
+\subsection{Report Structure}
+\noindent The rest of this report is organised as follows:
+
+
+\begin{description}[leftmargin=2.5cm, labelwidth=2.2cm, align=left]
+
+    \item[Section~\ref{sec:Technical}] Covers the technical background necessary to
+          understand the proposed solution.
+
+    \item[Section~\ref{sec:Lit_Review}] Provides a literature review of relevant
+          literature, as well as discussing previous projects trying to achieve similar
+          objectives.
+
+    \item[Section~\ref{sec:Design_and_Development}]
+    
+    \item[Section~\ref{sec:Results_and_testing}]
+    
+    \item[Section~\ref{sec:Ethics}]
+    
+    \item[Section~\ref{sec: Conclusions}]
+
+\end{description}

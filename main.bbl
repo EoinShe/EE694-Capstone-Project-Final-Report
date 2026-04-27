@@ -1,0 +1,888 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{noauthor_world_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Information related to the World Development Report 2016: Digital Dividends}
+      \field{journaltitle}{World Bank}
+      \field{shorttitle}{World {Development} {Report} 2016}
+      \field{title}{World {Development} {Report} 2016: {Digital} {Dividends}}
+      \field{type}{Text/{HTML}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\FFFL39P5\\wdr2016.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.worldbank.org/en/publication/wdr2016
+      \endverb
+      \verb{url}
+      \verb https://www.worldbank.org/en/publication/wdr2016
+      \endverb
+    \endentry
+    \entry{noauthor_global_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Global Cybersecurity Outlook 2025 highlights key trends shaping economies and societies in 2025, along with insights into emerging threats and solutions.}
+      \field{journaltitle}{World Economic Forum}
+      \field{title}{Global {Cybersecurity} {Outlook} 2025}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\CNY8NJPR\\global-cybersecurity-outlook-2025.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.weforum.org/publications/global-cybersecurity-outlook-2025/
+      \endverb
+      \verb{url}
+      \verb https://www.weforum.org/publications/global-cybersecurity-outlook-2025/
+      \endverb
+    \endentry
+    \entry{noauthor_enisa_2025}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ENISA: Every day we experience the Information Society. Interconnected networks touch our everyday lives, at home and at work. It is therefore vital that computers, mobile phones, banking, and the Internet function, to support Europe’s digital economy. That is why ENISA is working with Cybersecurity for the EU and the Member States.}
+      \field{month}{11}
+      \field{title}{{ENISA} {Threat} {Landscape} 2024 {|} {ENISA}}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\R6MFW73C\\enisa-threat-landscape-2024.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
+      \endverb
+      \verb{url}
+      \verb https://www.enisa.europa.eu/publications/enisa-threat-landscape-2024
+      \endverb
+    \endentry
+    \entry{su_comprehensive_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=38b160936bc68d87906d0021266ca076}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Yinghao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7445fbd0990462a9760b9c6f6795306b}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Dapeng},
+           giveni={D\bibinitperiod}}}%
+        {{hash=be27346aa9ed4f83d13d6fbac803e53d}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Kechang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b2eccb185095fccfeb40fdffd8b2105f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{012a3c99c2b33c699a462c265c7a4b76}
+      \strng{fullhash}{d3e35109379f13b41f933cb210f660dd}
+      \strng{fullhashraw}{d3e35109379f13b41f933cb210f660dd}
+      \strng{bibnamehash}{d3e35109379f13b41f933cb210f660dd}
+      \strng{authorbibnamehash}{d3e35109379f13b41f933cb210f660dd}
+      \strng{authornamehash}{012a3c99c2b33c699a462c265c7a4b76}
+      \strng{authorfullhash}{d3e35109379f13b41f933cb210f660dd}
+      \strng{authorfullhashraw}{d3e35109379f13b41f933cb210f660dd}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The widespread adoption of software-defined networking (SDN) technology has brought revolutionary changes to network control and management. Compared to traditional networks, SDN enhances security by separating the control plane from the data plane and replacing the traditional network architecture with a more flexible one. However, due to its inherent architectural flaws, SDN still faces new security threats. This paper expounds on the architecture and security of SDN, analyzes the vulnerabilities of SDN architecture, and introduces common distributed denial of service (DDoS) attacks within the SDN architecture. This article also provides a review of the relevant literature on DDoS attack detection and mitigation in the current SDN environment based on the technologies used, including statistical analysis, machine learning, policy-based, and moving target defense techniques. The advantages and disadvantages of these technologies, in terms of deployment difficulty, accuracy, and other factors, are analyzed. Finally, this study summarizes the SDN experimental environment and DDoS attack traffic generators and datasets of the reviewed literature and the limitations of current defense methods and suggests potential future research directions.}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{month}{1}
+      \field{number}{4}
+      \field{title}{A {Comprehensive} {Survey} of {Distributed} {Denial} of {Service} {Detection} and {Mitigation} {Technologies} in {Software}-{Defined} {Network}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{807}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics13040807
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\W3KF393W\\Su et al. - 2024 - A Comprehensive Survey of Distributed Denial of Service Detection and Mitigation Technologies in Sof.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/13/4/807
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/13/4/807
+      \endverb
+      \keyw{distributed denial of service attacks,intrusion detection,network security,software-defined network}
+    \endentry
+    \entry{abiramasundari_distributed_2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=93e6ec7c104fdfc40aa934fd8f1ef2a9}{%
+           family={Abiramasundari},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f38b2158b13637e1d96e0c9829531cb5}{%
+           family={Ramaswamy},
+           familyi={R\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{fullhash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{fullhashraw}{7f398586c8c024d9f3794631cba976dd}
+      \strng{bibnamehash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{authorbibnamehash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{authornamehash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{authorfullhash}{7f398586c8c024d9f3794631cba976dd}
+      \strng{authorfullhashraw}{7f398586c8c024d9f3794631cba976dd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed Denial-of-Service (DDoS) attacks have become a critical issue in cyber security. This can lead to a temporary or even prolonged loss of service for users. These attacks mainly target e-commerce platforms, online services, and financial institutions. DDoS attacks need to be detected since they cause serious problems. Supervised machine learning models are effective mechanisms for detecting DDoS attacks. In this paper, a PCA-based Enhanced Distributed DDoS Attack Detection (EDAD) framework has been proposed. Various Machine Learning (ML) algorithms and feature selection techniques have been used to detect DDoS attacks. Support Vector Machine (SVM), Logistic Regression (LR), Random Forest (RF), K-Nearest Neighbours (KNN), Decision Tree (DT) supervised models, and Principle Component Analysis (PCA) feature selection method are used to differentiate between attack and regular traffic. The CICIDS2018, CICIDS2017, and CICDDoS-2019 datasets are used to evaluate the performances of ML algorithms. Various performance metrics of these algorithms are studied and compared to find the best algorithm that yields the highest accuracy. It is found that RF yields the highest accuracy of 98.9\% on CICIDS2017. In the CICDDoS2019 dataset, RF and KNN yield a higher accuracy of 98.7. On the CICIDS2018 dataset, SVM gives the highest accuracy of 98.7\%.}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{Distributed denial-of-service ({DDOS}) attack detection using supervised machine learning algorithms}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{13098}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-024-84879-y
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\9XD57H6B\\Abiramasundari and Ramaswamy - 2025 - Distributed denial-of-service (DDOS) attack detection using supervised machine learning algorithms.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-024-84879-y
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-024-84879-y
+      \endverb
+      \keyw{Engineering,Mathematics and computing}
+    \endentry
+    \entry{bergamini_de_neira_distributed_nodate}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=40e4bd5ad33bdc68a52aee7be6acabcc}{%
+           family={Bergamini\bibnamedelimb de\bibnamedelima Neira},
+           familyi={B\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Anderson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1358d7e1cda2f19781d70c9159cd508}{%
+           family={Kantarci},
+           familyi={K\bibinitperiod},
+           given={Burak},
+           giveni={B\bibinitperiod}}}%
+        {{hash=11b1349702dc5e348710329066330558}{%
+           family={Nogueira},
+           familyi={N\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{09540299dfd7e4c754ebc0a3e0c0bc23}
+      \strng{fullhash}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \strng{fullhashraw}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \strng{bibnamehash}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \strng{authorbibnamehash}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \strng{authornamehash}{09540299dfd7e4c754ebc0a3e0c0bc23}
+      \strng{authorfullhash}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \strng{authorfullhashraw}{b5eb62f9edea1f61f23f14dfe5e84f73}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Networks}
+      \field{number}{1389-1286}
+      \field{title}{Distributed denial of service attack prediction: {Challenges}, open issues and opportunities}
+      \field{volume}{222}
+      \field{pages}{109553}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.comnet.2022.109553
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1389128622005874
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1389128622005874
+      \endverb
+    \endentry
+    \entry{a_mims_botnet_2025}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=ae17db27830f93b1df3e3bb8aaacf304}{%
+           family={A.\bibnamedelimi Mims},
+           familyi={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Nailah},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{fullhash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{fullhashraw}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{bibnamehash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{authorbibnamehash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{authornamehash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{authorfullhash}{ae17db27830f93b1df3e3bb8aaacf304}
+      \strng{authorfullhashraw}{ae17db27830f93b1df3e3bb8aaacf304}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer and {Information} {Security} {Handbook} ({Fourth} {Edition})}
+      \field{isbn}{978-0-443-13223-0}
+      \field{title}{The {Botnet} {Problem}}
+      \field{year}{2025}
+      \field{pages}{261\bibrangedash 272}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/B978-0-443-13223-0.00014-X
+      \endverb
+    \endentry
+    \entry{panicker_botnets_2008}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=060dcfbdafe5ad2c5502d9376e66915d}{%
+           family={Panicker},
+           familyi={P\bibinitperiod},
+           given={Anilkumar},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {San Jose State University}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {San Jose, CA, USA}%
+      }
+      \strng{namehash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{fullhash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{fullhashraw}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{bibnamehash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{authorbibnamehash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{authornamehash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{authorfullhash}{060dcfbdafe5ad2c5502d9376e66915d}
+      \strng{authorfullhashraw}{060dcfbdafe5ad2c5502d9376e66915d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Botnets and {Distributed} {Denial} of {Service} {Attacks}}
+      \field{type}{Master of {Science}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.31979/etd.6dts-8228
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\NTWMRMCN\\Panicker - 2008 - Botnets and Distributed Denial of Service Attacks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://scholarworks.sjsu.edu/etd_projects/102
+      \endverb
+      \verb{url}
+      \verb https://scholarworks.sjsu.edu/etd_projects/102
+      \endverb
+    \endentry
+    \entry{noauthor_what_2025}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Distributed denial-of-service (DDoS) attacks flood websites and other network resources with malicious traffic, making apps and services unavailable to users.}
+      \field{month}{5}
+      \field{shorttitle}{What is a {Distributed} {Denial}-of-{Service} ({DDos}) attack?}
+      \field{title}{What is a {Distributed} {Denial}-of-{Service} ({DDos}) attack? {|} {IBM}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\CAQALW88\\ddos.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ibm.com/think/topics/ddos
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/think/topics/ddos
+      \endverb
+    \endentry
+    \entry{kimachia_ddos_2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1b4267bc9f7b52f9deda9aee0db644a}{%
+           family={Kimachia},
+           familyi={K\bibinitperiod},
+           given={Kihara},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{fullhash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{fullhashraw}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{bibnamehash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{authorbibnamehash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{authornamehash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{authorfullhash}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \strng{authorfullhashraw}{c1b4267bc9f7b52f9deda9aee0db644a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A distributed denial-of-service (DDoS) attack. Learn about the types, motives, methods, and protection against DDoS attacks.}
+      \field{journaltitle}{eSecurity Planet}
+      \field{month}{12}
+      \field{shorttitle}{{DDoS} {Attacks}}
+      \field{title}{{DDoS} {Attacks}: {Disabling} {Networks} with {Overwhelming} {Traffic}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\5ZPUSPUH\\ddos.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.esecurityplanet.com/networks/ddos/
+      \endverb
+      \verb{url}
+      \verb https://www.esecurityplanet.com/networks/ddos/
+      \endverb
+    \endentry
+    \entry{noauthor_active_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.}
+      \field{journaltitle}{GeeksforGeeks}
+      \field{note}{Section: Ethical Hacking}
+      \field{title}{Active and {Passive} attacks in {Information} {Security}}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\A6XJJMAS\\active-and-passive-attacks-in-information-security.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/ethical-hacking/active-and-passive-attacks-in-information-security/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/ethical-hacking/active-and-passive-attacks-in-information-security/
+      \endverb
+    \endentry
+    \entry{noauthor_fig_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Download scientific diagram {|} Sudden spike in traffic during DDoS attack. from publication: A two level security mechanism to detect a DDoS flooding attack in software-defined networks using entropy-based and C4.5 technique {|} Software-Defined Networking {|} ResearchGate, the professional network for scientists.}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Fig. 4. {Sudden} spike in traffic during {DDoS} attack.}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\UEHXHFVQ\\Sudden-spike-in-traffic-during-DDoS-attack_fig4_339832894.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/Sudden-spike-in-traffic-during-DDoS-attack_fig4_339832894
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/Sudden-spike-in-traffic-during-DDoS-attack_fig4_339832894
+      \endverb
+    \endentry
+    \entry{arash_evolving_2025}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=4312c196ad9b9679d51985462bffb633}{%
+           family={Arash},
+           familyi={A\bibinitperiod},
+           given={Mahboubi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3bda29d71672547ccd996c5410cabfb4}{%
+           family={Khanh},
+           familyi={K\bibinitperiod},
+           given={Luong},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d1e556feae73e7231123eb1efaf35a71}{%
+           family={Hamed},
+           familyi={H\bibinitperiod},
+           given={Aboutorab},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6f3f296cfb5eae1a3ed77eddffb86479}{%
+           family={Hang\bibnamedelima Thanh},
+           familyi={H\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Bui},
+           giveni={B\bibinitperiod}}}%
+        {{hash=98769ecc3459eb79ca4acdb8c6edb495}{%
+           family={Seyit},
+           familyi={S\bibinitperiod},
+           given={Camtepe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=76df33387af81fef8590ce02231222a7}{%
+           family={Keyvan},
+           familyi={K\bibinitperiod},
+           given={Ansari},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2a251e23961eda4358946824bef107ef}{%
+           family={Bazara},
+           familyi={B\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{005a17d8a6e9fc26672ca2769033d391}
+      \strng{fullhash}{9d96b6203ec9c7c44f3861c03e416939}
+      \strng{fullhashraw}{9d96b6203ec9c7c44f3861c03e416939}
+      \strng{bibnamehash}{005a17d8a6e9fc26672ca2769033d391}
+      \strng{authorbibnamehash}{005a17d8a6e9fc26672ca2769033d391}
+      \strng{authornamehash}{005a17d8a6e9fc26672ca2769033d391}
+      \strng{authorfullhash}{9d96b6203ec9c7c44f3861c03e416939}
+      \strng{authorfullhashraw}{9d96b6203ec9c7c44f3861c03e416939}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2542-6605}
+      \field{journaltitle}{Internet of Things}
+      \field{title}{The evolving threat landscape of botnets: {Comprehensive} analysis of detection techniques in the age of artificial intelligence}
+      \field{volume}{33}
+      \field{year}{2025}
+      \field{pages}{101728}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.iot.2025.101728
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2542660525002422
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2542660525002422
+      \endverb
+    \endentry
+    \entry{garcia-teodoro_anomaly-based_2009}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=db8cc1521b6ed7d6ccc956384ec14061}{%
+           family={García-Teodoro},
+           familyi={G\bibinithyphendelim T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f1d49810c6551ad056a30043724385ed}{%
+           family={Díaz-Verdejo},
+           familyi={D\bibinithyphendelim V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6ffe147666f18709101423b350207b8e}{%
+           family={Maciá-Fernández},
+           familyi={M\bibinithyphendelim F\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=08139b5c882904055187fab00a76b4fc}{%
+           family={Vázquez},
+           familyi={V\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f75967126d7b1f7f744f563fc922b9f}
+      \strng{fullhash}{449b5f7f71447b7b6af7a40b88908493}
+      \strng{fullhashraw}{449b5f7f71447b7b6af7a40b88908493}
+      \strng{bibnamehash}{449b5f7f71447b7b6af7a40b88908493}
+      \strng{authorbibnamehash}{449b5f7f71447b7b6af7a40b88908493}
+      \strng{authornamehash}{2f75967126d7b1f7f744f563fc922b9f}
+      \strng{authorfullhash}{449b5f7f71447b7b6af7a40b88908493}
+      \strng{authorfullhashraw}{449b5f7f71447b7b6af7a40b88908493}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The Internet and computer networks are exposed to an increasing number of security threats. With new types of attacks appearing continually, developing flexible and adaptive security oriented approaches is a severe challenge. In this context, anomaly-based network intrusion detection techniques are a valuable technology to protect target systems and networks against malicious activities. However, despite the variety of such methods described in the literature in recent years, security tools incorporating anomaly detection functionalities are just starting to appear, and several important problems remain to be solved. This paper begins with a review of the most well-known anomaly-based intrusion detection techniques. Then, available platforms, systems under development and research projects in the area are presented. Finally, we outline the main challenges to be dealt with for the wide scale deployment of anomaly-based intrusion detectors, with special emphasis on assessment issues.}
+      \field{issn}{0167-4048}
+      \field{journaltitle}{Computers \& Security}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{Anomaly-based network intrusion detection}
+      \field{title}{Anomaly-based network intrusion detection: {Techniques}, systems and challenges}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{28}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{18\bibrangedash 28}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.cose.2008.08.003
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\TN884ICC\\S0167404808000692.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404808000692
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404808000692
+      \endverb
+      \keyw{Anomaly detection,Assessment,IDS systems and platforms,Intrusion detection,Network security,Threat}
+    \endentry
+    \entry{wong_effectiveness_nodate}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=03e5da79e834b9bc9f6b0810f8909513}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ad85eb817642e5f3cd21664a66e915a7}{%
+           family={Bielski},
+           familyi={B\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=011bd79b44fbbe6b2b2e95465b775512}{%
+           family={Studer},
+           familyi={S\bibinitperiod},
+           given={Ahren},
+           giveni={A\bibinitperiod}}}%
+        {{hash=47f64381ad069e88d82016d4c642356d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chenxi},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6cadc482f9b43e4b887f752b72679c67}
+      \strng{fullhash}{1341e994749dad5ceb2135a938926437}
+      \strng{fullhashraw}{1341e994749dad5ceb2135a938926437}
+      \strng{bibnamehash}{1341e994749dad5ceb2135a938926437}
+      \strng{authorbibnamehash}{1341e994749dad5ceb2135a938926437}
+      \strng{authornamehash}{6cadc482f9b43e4b887f752b72679c67}
+      \strng{authorfullhash}{1341e994749dad5ceb2135a938926437}
+      \strng{authorfullhashraw}{1341e994749dad5ceb2135a938926437}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One class of worm defense techniques that received attention of late is to “rate limit” outbound trafﬁc to contain fast spreading worms. Several proposals of rate limiting techniques have appeared in the literature, each with a different take on the impetus behind rate limiting. This paper presents an empirical analysis on different rate limiting schemes using real trafﬁc and attack traces from a sizable network. In the analysis we isolate and investigate the impact of the critical parameters for each scheme and seek to understand how these parameters might be set in realistic network settings. Analysis shows that using DNS-based rate limiting has substantially lower error rates than schemes based on other trafﬁc statistics. The empirical analysis additionally brings to light a number of issues with respect to rate limiting in practice. We explore the impact of these issues in the context of general worm containment.}
+      \field{title}{On the {Effectiveness} of {Rate} {Limiting} {Mechanisms}}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\WKP75TE5\\Wong et al. - On the Effectiveness of Rate Limiting Mechanisms.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{rajaboevich_comparative_2020}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1920db532ff566ca2796780ca64204db}{%
+           family={Rajaboevich},
+           familyi={R\bibinitperiod},
+           given={Gulomov\bibnamedelima Sherzod},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1920db532ff566ca2796780ca64204db}
+      \strng{fullhash}{1920db532ff566ca2796780ca64204db}
+      \strng{fullhashraw}{1920db532ff566ca2796780ca64204db}
+      \strng{bibnamehash}{1920db532ff566ca2796780ca64204db}
+      \strng{authorbibnamehash}{1920db532ff566ca2796780ca64204db}
+      \strng{authornamehash}{1920db532ff566ca2796780ca64204db}
+      \strng{authorfullhash}{1920db532ff566ca2796780ca64204db}
+      \strng{authorfullhashraw}{1920db532ff566ca2796780ca64204db}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper are analyzed the technical methods for filtering network traffic, their advantages and disadvantages. As well as A comparative analysis are carried out of the method of monitoring and filtering network traffic by intercepting network packets implementing deep packet analysis technologies, the machine learning method Random Forest for filtering traffic, which is an ensemble method that works by constructing many decision trees, the method of filtering traffic by calculating the entropy increment for each of the filter attributes, the method of filtering http-packets allows you to reduce the user waiting time for the requested information and the scheme protection of information availability algorithm based on neural network system.}
+      \field{issn}{23473983}
+      \field{journaltitle}{International Journal of Emerging Trends in Engineering Research}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Comparative {Analysis} of {Methods} {Content} {Filtering} {Network} {Traffic}}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{1561\bibrangedash 1569}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.30534/ijeter/2020/15852020
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\JHJBRGSY\\Rajaboevich - 2020 - Comparative Analysis of Methods Content Filtering Network Traffic.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.warse.org/IJETER/static/pdf/file/ijeter15852020.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.warse.org/IJETER/static/pdf/file/ijeter15852020.pdf
+      \endverb
+    \endentry
+    \entry{noauthor_defending_2025}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In mid-May 2025, blocked the largest DDoS attack ever recorded: a staggering 7.3 terabits per second (Tbps).}
+      \field{journaltitle}{The Cloudflare Blog}
+      \field{month}{6}
+      \field{shorttitle}{Defending the {Internet}}
+      \field{title}{Defending the {Internet}: {How} {Cloudflare} blocked a monumental 7.3 {Tbps} {DDoS} attack}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\ZL2KYUZ8\\defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://blog.cloudflare.com/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/
+      \endverb
+      \verb{url}
+      \verb https://blog.cloudflare.com/defending-the-internet-how-cloudflare-blocked-a-monumental-7-3-tbps-ddos/
+      \endverb
+    \endentry
+    \entry{orosz_real-time_2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6cebc26149db430962da257129726586}{%
+           family={Orosz},
+           familyi={O\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=715f1fad9ce2ff28e846f5086e9fd525}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Balazs},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f585522b0aff5aef5da8ee51adfe8fd1}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{8ecfad4d41b2445f016655f98b04f377}
+      \strng{fullhash}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \strng{fullhashraw}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \strng{bibnamehash}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \strng{authorbibnamehash}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \strng{authornamehash}{8ecfad4d41b2445f016655f98b04f377}
+      \strng{authorfullhash}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \strng{authorfullhashraw}{43d9e4d5eac2ba03f2c00b827c3bbc66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The recent worldwide turbulence of events from the pandemic lockdown through increased industrial digitization to geopolitical unease shifted towards new primary targets for the latest generation of DDoS threats. Although certain characteristics of current DDoS attack patterns existed before the pandemic or the cloud platform boom, they have now gained prominence and reached their current level of sophistication. In addition to employing innovative methods and tools, the frequency, scale, and complexity of these attacks have also experienced a significant surge. The amalgamation of diverse attack vectors has paved the way for multi-vector attacks, incorporating a distinctive combination of L3–L7 attacking profiles. The integration of the hit-and-run strategy with the multi-vector approach has notably bolstered the success rate. This paper centers around two main aspects. Firstly, it explores the characteristics of the most recent DDoS attacks identified within actual data center infrastructures. To underscore the changes in attack profiles, we reference samples collected recently from diverse data center networks. Secondly, it offers an extensive overview of the cutting-edge methods and techniques for detecting and mitigating recent attacks. The paper places particular emphasis on the precision and speed of these detection and mitigation approaches, predominantly those related to networking. Additionally, we establish criteria, both quantitative and qualitative, to aid in the development of detection methods capable of addressing the latest threat profiles.}
+      \field{issn}{1999-5903}
+      \field{journaltitle}{Future Internet}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Real-{Time} {Detection} and {Mitigation} {Strategies} {Newly} {Appearing} for {DDoS} {Profiles}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{17}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{400}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/fi17090400
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\LGFDJBZI\\Orosz et al. - 2025 - Real-Time Detection and Mitigation Strategies Newly Appearing for DDoS Profiles.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1999-5903/17/9/400
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1999-5903/17/9/400
+      \endverb
+      \keyw{cloud service,CPS,data center,DDoS,real-time detection,real-time mitigation}
+    \endentry
+    \entry{noauthor_can_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Can programming be liberated from the von {Neumann} style?}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1145/359576.359579
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\C3JC5KIF\\359576.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/epdf/10.1145/359576.359579
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/epdf/10.1145/359576.359579
+      \endverb
+    \endentry
+    \entry{mogul_eliminating_1997}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=3e41c386f4e55fb47491ac84292b7c8d}{%
+           family={Mogul},
+           familyi={M\bibinitperiod},
+           given={Jeffrey\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7c6c08c52f1ffd02fc65a88adbee1e4f}{%
+           family={Ramakrishnan},
+           familyi={R\bibinitperiod},
+           given={K.\bibnamedelimi K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{fullhash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{fullhashraw}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{bibnamehash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{authorbibnamehash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{authornamehash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{authorfullhash}{ea0da13d7be33ae7eefca08792714cc2}
+      \strng{authorfullhashraw}{ea0da13d7be33ae7eefca08792714cc2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Most operating systems use interface interrupts to schedule network tasks. Interrupt-driven systems can provide low overhead and good latency at low offered load, but degrade significantly at higher arrival rates unless care is taken to prevent several pathologies. These are various forms ofreceive livelock, in which the system spends all of its time processing interrupts, to the exclusion of other necessary tasks. Under extreme conditions, no packets are delivered to the user application or the output of the system. To avoid livelock and related problems, an operating system must schedule network interrupt handling as carefully as it schedules process execution. We modified an interrupt-driven networking implementation to do so; this modification eliminates receive livelock without degrading other aspects of system performance. Our modifications include the use of polling when the system is heavily loaded, while retaining the use of interrupts ur.Jer lighter load. We present measurements demonstrating the success of our approach.}
+      \field{issn}{0734-2071}
+      \field{journaltitle}{ACM Trans. Comput. Syst.}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Eliminating receive livelock in an interrupt-driven kernel}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{1997}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 252}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1145/263326.263335
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/263326.263335
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/263326.263335
+      \endverb
+    \endentry
+    \entry{noauthor_why_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Firewalls are targets for state exhaustion DDoS attacks. The only way to stop those attacks is to implement an intelligent DDoS mitigation solution that operates in a stateless or semi-stateless manner.}
+      \field{title}{Why {Firewalls} {Are} {Targets} for {DDoS} {Attacks} {|} {NETSCOUT}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\ZGF6FJJ6\\why-firewalls-are-targets-ddos-attacks.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.netscout.com/blog/why-firewalls-are-targets-ddos-attacks
+      \endverb
+      \verb{url}
+      \verb https://www.netscout.com/blog/why-firewalls-are-targets-ddos-attacks
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

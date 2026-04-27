@@ -4,6 +4,7 @@
   % --- DOCUMENT LAYOUT & STYLING ---
   \usepackage{geometry} % Control page margins
   \usepackage{pgfgantt}
+  \usepackage{parskip}
   \usepackage{indentfirst} 
   \usepackage{tablefootnote}
 \usepackage{pdflscape} % Allows landscape rotation for just this page
@@ -33,10 +34,11 @@
   \tcbuselibrary{skins}
   % This creates a new environment to force full justification.
   \newenvironment{justifyblock}
-  {\justifying}
+  {\justifying} 
   {}
-
-
+  \usepackage{abstract}
+  \renewcommand{\abstractnamefont}{\normalfont\Large\bfseries} % Make "Abstract" heading bigger
+  \renewcommand{\abstracttextfont}{\normalfont\small} % Make abstract text slightly smaller than main text
   % --- SPECIAL PACKAGES ---
   \usepackage{float}      % Improved control over floats (figures, tables)
   \usepackage{chronology} % For creating timelines
@@ -104,16 +106,30 @@
 
 % >>> THIS BLOCK CONTROLS ALL PAGE NUMBERS <<<
 % --- PAGE STYLE SETUP ---
-\pagestyle{fancy} % Set the default page style for the document
-\fancyhf{} % Clear all header and footer fields
-\renewcommand{\headrulewidth}{0pt} % Remove the header line
-\cfoot{\thepage} % Put the page number in the Center of the Footer
-% >>> END OF BLOCK <<<
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear all settings
 
-\title{FPGA-based Intrusion Detection for DoS Attack \\[1ex] \large Interim Report}
-\author{Eoin Sheerin \\ ID: 20465956 \\ eoin.sheerin.2021@mumail.ie}
-\date{December 2025}
+% 1. Setup the Header
+\renewcommand{\headrulewidth}{0.4pt} % The horizontal line
+\lhead{\nouppercase{\rightmark}}      % Pulls the Section title
 
+% 2. Setup the Footer
+\cfoot{\thepage} % Page number in center
+
+% 3. This command ensures the text updates and REMOVES the section number
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% 4. Fix the "Plain" style for the first page of sections
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \cfoot{\thepage}
+  \renewcommand{\headrulewidth}{0pt} % No line on the very first page of a section
+}
+
+\title{\textbf{FPGA-based Intrusion Detection for DoS Attack \\[1ex]}}
+\author{\textbf{\textit{Eoin Sheerin}} \\ \textbf{\textit{ID: 20465956}} \\ \textbf{\textit{eoin.sheerin.2021@mumail.ie}}}
+\date{}
 \begin{document}
 
 \maketitle
@@ -122,24 +138,23 @@
 
 %TC:ignore
 \begin{center}
-  \includegraphics[scale=0.35]{images/logo.png}
+    \includegraphics[scale=0.6]{images/logo.png}
 
-  \vspace{0.8cm}
+    \vspace{0.8cm}
 
-  Engineering Department\\ National University of Ireland, Maynooth\\ Ireland
+    Department of Electronic Engineering \\ National University of Ireland, Maynooth\\ Ireland
 
-  \vspace{0.8cm}
+    \vspace{0.8cm}
 
-  Submitted in partial fulfilment of the requirements for the Master of
-  Meng(Hons) Electronic Engineering
+    Submitted to the Department of Electronic Engineering in partial fulfilment of the requirements for the Master of Electronic Engineering Meng(Hons) degree
 
-  \vspace{0.8cm}
+    \vspace{0.8cm}
 
-  \textit{Facilitator} Dr. Erivelton Nepomuceno
+    \textit{Facilitator:} Dr. Erivelton Nepomuceno
 
-  \vspace{0.8cm}
+    \vspace{0.8cm}
 
-  Word Count: (17780)
+    Word Count: (x)
 
 \end{center}
 \pagebreak
@@ -148,32 +163,55 @@
 
 \phantomsection
 \addcontentsline{toc}{section}{Declaration}
+\thispagestyle{plain} 
 \input{Sections/Declaration/Declaration.tex}
 \pagebreak
 
-\begin{abstract}
+
+\phantomsection
+\addcontentsline{toc}{section}{Acknowledgements}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\input{Sections/Acknowledgements/acknowledgements.tex}
+\pagebreak
+
 \phantomsection
 \addcontentsline{toc}{section}{Abstract}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
 \input{Sections/Abstract/Abstract.tex}
-\end{abstract}
-\input{Sections/Abstract/Keywords.tex}
-
 \pagebreak
-
-\pagebreak
-
+\thispagestyle{plain} 
 \setcounter{tocdepth}{3}
 \phantomsection
 \tableofcontents
 \pagebreak
+\thispagestyle{plain}
 \phantomsection
 \listoffigures
 \pagebreak
 
 \pagenumbering{arabic}
-
-
+\section{\textbf{Introduction}}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\input{Sections/Introduction/introduction.tex}
+\pagebreak
+\section{\textbf{Technical Background}} \label{sec:Technical}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\pagebreak
+\section{\textbf{Literature Review}} \label{sec:Lit_Review}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\pagebreak
+\section{\textbf{System Design and Development}} \label{sec:Design_and_Development}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\pagebreak
+\section{\textbf{Results and Testing}} \label{sec:Results_and_testing}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\pagebreak
+\section{\textbf{Ethical Considerations}} \label{sec:Ethics}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
+\pagebreak 
+\section{Conclusions and Future Work} \label{sec: Conclusions}
+\thispagestyle{plain} % This hides the header and line for ONLY this page
 
 \pagebreak
-\includepdf[pages=2, pagecommand={}]{Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm}
+\includepdf[pages=2, pagecommand={}]{Sections/Appendix/RA_Form}
 \end{document}

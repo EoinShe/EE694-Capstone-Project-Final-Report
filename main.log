@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.2)  23 APR 2026 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.2)  26 APR 2026 20:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,36 +310,42 @@ File: pgfcalendar.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \gtt@calendar@startofweek=\count331
 \gtt@left@slot=\count332
 \gtt@right@slot=\count333
-) (c:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
+) (c:/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count334
+)) (c:/texlive/2025/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/tablefootnote/tablefootnote.sty
 Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
- (c:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/texlive/2025/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+ (c:/texlive/2025/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
  (c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count334
-\calc@Bcount=\count335
+\calc@Acount=\count335
+\calc@Bcount=\count336
 \calc@Adimen=\dimen266
 \calc@Bdimen=\dimen267
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count336
+\calc@Ccount=\count337
 \calc@Cskip=\skip53
 ) (c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 ) (c:/texlive/2025/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count337
-)) (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+))) (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
  (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
@@ -736,6 +742,13 @@ File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowlength=\dimen321
 \pgfarrowwidth=\dimen322
 \pgfarrowlinewidth=\dimen323
+) (c:/texlive/2025/texmf-dist/tex/latex/abstract/abstract.sty
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip89
+\absleftindent=\skip90
+\absrightindent=\skip91
+\absparindent=\skip92
+\absparsep=\skip93
 ) (c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count380
@@ -759,16 +772,14 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 \c@yearstart=\count385
 \c@yearstop=\count386
 \c@deltayears=\count387
-\xstart=\skip89
-\xstop=\skip90
-\unit=\skip91
-\timelinewidth=\skip92
+\xstart=\skip94
+\xstop=\skip95
+\unit=\skip96
+\timelinewidth=\skip97
 \timelinebox=\box110
 ) (c:/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (c:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+ (c:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (c:/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
@@ -778,9 +789,7 @@ Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-))
+)
 \c@section@level=\count388
 )
 \@linkdim=\dimen324
@@ -844,7 +853,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
-\Hy@SectionHShift=\skip93
+\Hy@SectionHShift=\skip98
 ) (c:/texlive/2025/texmf-dist/tex/latex/moreverb/moreverb.sty
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \tab@position=\count399
@@ -908,14 +917,14 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@sectionciteorderinternal@0=\count446
 \blx@entrysetcounter=\count447
 \blx@biblioinstance=\count448
-\labelnumberwidth=\skip94
-\labelalphawidth=\skip95
-\biblabelsep=\skip96
-\bibitemsep=\skip97
-\bibnamesep=\skip98
-\bibinitsep=\skip99
-\bibparsep=\skip100
-\bibhang=\skip101
+\labelnumberwidth=\skip99
+\labelalphawidth=\skip100
+\biblabelsep=\skip101
+\bibitemsep=\skip102
+\bibnamesep=\skip103
+\bibinitsep=\skip104
+\bibparsep=\skip105
+\bibhang=\skip106
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language90
@@ -999,20 +1008,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count517
 \c@pageref=\count518
 \c@savedpageref=\count519
-\shorthandwidth=\skip102
-\shortjournalwidth=\skip103
-\shortserieswidth=\skip104
-\shorttitlewidth=\skip105
-\shortauthorwidth=\skip106
-\shorteditorwidth=\skip107
-\locallabelnumberwidth=\skip108
-\locallabelalphawidth=\skip109
-\localshorthandwidth=\skip110
-\localshortjournalwidth=\skip111
-\localshortserieswidth=\skip112
-\localshorttitlewidth=\skip113
-\localshortauthorwidth=\skip114
-\localshorteditorwidth=\skip115
+\shorthandwidth=\skip107
+\shortjournalwidth=\skip108
+\shortserieswidth=\skip109
+\shorttitlewidth=\skip110
+\shortauthorwidth=\skip111
+\shorteditorwidth=\skip112
+\locallabelnumberwidth=\skip113
+\locallabelalphawidth=\skip114
+\localshorthandwidth=\skip115
+\localshortjournalwidth=\skip116
+\localshortserieswidth=\skip117
+\localshorttitlewidth=\skip118
+\localshortauthorwidth=\skip119
+\localshorteditorwidth=\skip120
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -1093,24 +1102,24 @@ Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1171,7 +1180,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count539
-Package hyperref Info: Link coloring OFF on input line 117.
+Package hyperref Info: Link coloring OFF on input line 133.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1187,96 +1196,169 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 117.
-Package biblatex Info: Reference segment=0 on input line 117.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121.
-(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 133.
+Package biblatex Info: Reference segment=0 on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/logo.png, id=59, 361.35pt x 153.57375pt>
+<images/logo.png, id=99, 361.35pt x 153.57375pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 125.
-(pdftex.def)             Requested size: 126.4744pt x 53.7516pt.
+Package pdftex.def Info: images/logo.png  used on input line 141.
+(pdftex.def)             Requested size: 216.81168pt x 92.14494pt.
  [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/logo.png>] (./Sections/Declaration/declaration.tex
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 (Font)              scaled to size 14.40002pt on input line 40.
-) [1] (./Sections/Abstract/abstract.tex) (./Sections/Abstract/keywords.tex) [2] (./main.toc)
+) [1] (./Sections/Acknowledgements/acknowledgements.tex) [2] (./Sections/Abstract/abstract.tex) [3] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3] (./main.lof)
+ [4] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [4]
-<Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, id=98, 597.55246pt x 845.07718pt>
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf  used on input line 178.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, id=100, page=2, 597.55246pt x 845.07718pt>
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf , page2 used on input line 178.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf , page2 used on input line 178.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf , page2 used on input line 178.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf , page2 used on input line 178.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [5] (./Sections/Introduction/introduction.tex
+<Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png, id=170, 204.765pt x 212.2329pt>
+File: Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png Graphic file (type png)
+<use Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png>
+Package pdftex.def Info: Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png  used on input line 22.
+(pdftex.def)             Requested size: 241.84842pt x 250.68523pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.178 ...RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm}
-                                                  
-File: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf Graphic file (type pdf)
-<use Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf , page2 used on input line 178.
+l.30 
+      [1 <./Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png>]
+<Images/Sudden-spike-in-traffic-during-DDoS-attack.png, id=190, 639.89063pt x 378.66469pt>
+File: Images/Sudden-spike-in-traffic-during-DDoS-attack.png Graphic file (type png)
+<use Images/Sudden-spike-in-traffic-during-DDoS-attack.png>
+Package pdftex.def Info: Images/Sudden-spike-in-traffic-during-DDoS-attack.png  used on input line 33.
+(pdftex.def)             Requested size: 314.39998pt x 186.04999pt.
+ [2 <./Images/Sudden-spike-in-traffic-during-DDoS-attack.png>]) [3] [4] [5] [6] [7] [8] [9]
+<Sections/Appendix/RA_Form.pdf, id=252, 597.55246pt x 845.07718pt>
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf  used on input line 216.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<Sections/Appendix/RA_Form.pdf, id=254, page=2, 597.55246pt x 845.07718pt>
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf, page 2>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 216.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf, page 2>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 216.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [1
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf, page 2>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 216.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf, page 2>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 216.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
+<use Sections/Appendix/RA_Form.pdf, page 2>
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 216.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [10
 
- <./Sections/Appendix/4th YEAR PROJECT RISK ASSESSMENT FORM_Rev_3_For_use-EN_jm.pdf>] (./main.aux)
+ <./Sections/Appendix/RA_Form.pdf>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D44916D6626101217A678483527D8EF3;392.
+(rerunfilecheck)             Checksum: 2AB5D0924400EEE507ACD87D06EC26D2;1984.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42080 strings out of 467538
- 873882 string characters out of 5423725
- 1834093 words of memory out of 5000000
- 70286 multiletter control sequences out of 15000+600000
- 636664 words of font info for 74 fonts, out of 8000000 for 9000
+ 42547 strings out of 467538
+ 884864 string characters out of 5423725
+ 1843479 words of memory out of 5000000
+ 70697 multiletter control sequences out of 15000+600000
+ 637329 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,17n,121p,1272b,807s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (6 pages, 287874 bytes).
+ 117i,17n,121p,1778b,1074s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@noauthor_why_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@mogul_eliminating_1997} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_can_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@orosz_real-time_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_defending_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@rajaboevich_comparative_2020} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@wong_effectiveness_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@garcia-teodoro_anomaly-based_2009} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@arash_evolving_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_active_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_what_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@panicker_botnets_2008} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@a_mims_botnet_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@bergamini_de_neira_distributed_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@abiramasundari_distributed_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@su_comprehensive_2024} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_enisa_2025} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_global_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_world_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@noauthor_fig_nodate} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{cite.0@kimachia_ddos_2022} has been referenced but does not exist, replaced by a fixed one
+
+<c:/texlive/2025/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (16 pages, 504121 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 12 named destinations out of 1000 (max. 500000)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
