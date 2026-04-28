@@ -57,14 +57,15 @@ architecture enables efficient, real-time analysis of network traffic.
 \subsection{Packet Replay from BRAM}
 The IDS uses on-chip Block RAM (BRAM) as a source of network traffic for
 testing. Packet data is pre-defined and stored in memory, then replayed into
-the FPGA to emulate real network traffic conditions.
+the FPGA to simulate real network traffic conditions.
 
-Each packet is stored in a C header file as a sequence of 32-bit words. The
-active dataset is selected in the Vitis application, allowing different packet
-sets to be tested by changing the included header file and associated dataset
+Each packet is stored in a C header file as a sequence of 32-bit words, the
+format of which can be seen in Listing~\ref{lst:packet_record}. The active
+dataset is selected in the Vitis application, allowing different packet sets to
+be tested by changing the included header file and associated dataset
 definition. During execution, the MicroBlaze processor reads the selected
-packet records from software memory and writes each 32-bit word to the FPGA
-packet input interface.
+packet records from software memory and writes each 32-bit word to the FPGA via
+memory-mapped AXI GPIO interfaces.
 
 Listing~\ref{lst:packet_record} shows the packet representation used in the
 software-defined datasets. Each packet contains a length field and an array of
@@ -79,14 +80,13 @@ boundaries and process incoming data in a structured manner.
 In real-world network interfaces, such as Ethernet Media Access Control (MAC)
 layers, packet boundaries are defined by frame structures within the hardware
 layer~\cite{noauthor_ieee_2022}. The use of control signals in this system
-therefore emulates real-world packet streaming behaviour within a controlled
+therefore emulates real-world packet streaming behaviour within the controlled
 test environment.
 
 Packet transmission is managed by the MicroBlaze processor, which reads packet
 data from memory and writes it to the hardware interface via memory-mapped
-GPIO. This allows precise control over packet timing and ordering, enabling
-different traffic scenarios, including both normal and malicious patterns, to
-be evaluated.
+GPIO. This allows control over packet timing and ordering, allowing simulation
+of different traffic scenarios, including both normal and malicious patterns.
 
 Initial approaches for sending packet data to the system involved the use of
 pre-initialised memory formats (e.g.\texttt{ .coe} and \texttt{.hex}). This was
@@ -154,9 +154,8 @@ static void send_packet(const packet_record_t *pkt) {
   }
 }
 \end{lstlisting}
-
 \newpage
-
+\thispagestyle{plain}
 \begin{landscape}
   \begin{figure}[H]
     \centering
@@ -165,14 +164,13 @@ static void send_packet(const packet_record_t *pkt) {
     \label{fig:vivado_block}
   \end{figure}
 \end{landscape}
-
 \newpage
 The annotated Vivado block diagram shown in Fig.~\ref{fig:vivado_block}
-illustrates the overall architecture of the system. For clarity, key subsystems
+shows the overall architecture of the system. For clarity, key subsystems
 are highlighted using coloured regions and labelled accordingly.
 
 \begin{itemize}
-  \item[\textbf{(1)}] \textbf{Clock and Reset Generation (orange):}
+  \item[\textbf{(1)}] \textbf{Clock and Reset System (orange):}
         Provides a stable clock signal and synchronised reset for all components,
         ensuring reliable system operation.
 
@@ -207,29 +205,30 @@ are highlighted using coloured regions and labelled accordingly.
 
 \subsection{Packet Parsing}
 The packet parsing module is responsible for extracting relevant protocol
-fields from incoming packet data streams. This forms a critical stage in the
-system, as it converts raw packet data into structured information that can be
-used for detection of malicious traffic patterns.
+fields from incoming packet data. This stage converts raw packet data into
+information that can be used for attack detection.
 
 \subsubsection{Packet structure and assumptions}
 The parser operates under the assumption that packets follow a standard
-Ethernet frame structure with IPv4 encapsulation. As a result, key protocol
-fields are located at fixed positions within the packet header. This allows the
-design to avoid complex parsing logic and instead rely on fixed offsets within
-the data stream.
-
+Ethernet frame structure with IPv4 headers without optional fields. Although
+IPv4 headers can vary in length due to the presence of options, this design
+assumes a fixed header size. As a result, important protocol fields are located
+at fixed positions within the packet. It is worth keeping in mind, that in more
+general scenarios, where variable-length headers must be handled, more advanced
+parsing techniques may be required, such as the dynamic parsing approaches
+described in~\cite{attig_400_2011}.
 \subsubsection{Streaming interface behaviour}
 Packets are received as a sequence of 32-bit words via a streaming interface,
 with \texttt{TVALID} indicating valid data and \texttt{TLAST} marking the final
-word of a packet. This enables the parser to process packets sequentially
+word of a packet. This allows the parser to process packets sequentially
 without requiring full buffering of packet contents.
 
 \subsubsection{Word-index based extraction}
 A word index counter is used to track the position within each packet as it is
 received. Based on this index, specific protocol fields are extracted at known
 offsets within the packet structure. This approach allows for efficient
-hardware implementation, as field extraction is performed using simple
-combinational logic rather than complex parsing algorithms.
+hardware implementation, as field extraction is performed using combinational
+logic rather than complex parsing algorithms.
 
 For example, the EtherType field is extracted from word 3, the IP protocol from
 word 5, and TCP flags from word 11. By using fixed offsets, the parser can
@@ -248,6 +247,23 @@ for subsequent detection logic.
 
 \subsubsection{Verilog implementation}
 
+
+\begin{table}[H]
+\centering
+\caption{Protocol fields extracted by the packet parser}
+\label{tab:parser_fields}
+\begin{tabular}{c l l}
+\hline
+\textbf{Word index} & \textbf{Field extracted} & \textbf{Purpose} \\
+\hline
+3  & EtherType & Identifies IPv4 packets \\
+5  & IP protocol & Distinguishes TCP, UDP, and ICMP traffic \\
+7--8 & Destination IP address & Used for target-level reporting \\
+11 & TCP flags & Identifies SYN, NULL, and XMAS patterns \\
+\hline
+\end{tabular}
+\end{table}
+
 \begin{lstlisting}[
     language=Verilog,
     caption={Extraction of protocol fields using word indexing},
@@ -262,35 +278,128 @@ case (word_index)
   8'd8:  dst_ip[15:0]  <= tdata[31:16];
   8'd11: tcp_flags <= tdata[7:0];
 endcase
-\end{lstlisting} 
+\end{lstlisting}
 
-As shown in Listing~\ref{lst:parser}, protocol fields are extracted based on
-the current value of the \texttt{word\_index} signal. This ensures that each
-field is captured at the correct position within the packet stream.
+As shown in Listing~\ref{lst:parser}, protocol fields are extracted according
+to the current value of the \texttt{word\_index} signal. The parser increments
+this index as each 32-bit word is received, allowing the hardware to determine
+which part of the packet header is currently present on \texttt{tdata}.
 
+The EtherType field is captured at word 3 and is used to determine whether the
+packet contains IPv4 traffic. The IP protocol field is then captured at word 5,
+allowing the design to distinguish between TCP, UDP, and ICMP packets. The
+destination IP address spans two 32-bit words in the packet representation, so
+the upper and lower halves are extracted separately from words 7 and 8 before
+being combined into a single 32-bit value.
+
+For TCP packets, the flags field is extracted at word 11. This value is used to
+identify TCP-specific behaviours, including SYN packets and flag combinations
+associated with NULL and XMAS scans. These extracted fields form the input to
+the later classification and detection stages.
+
+This approach keeps the parsing logic simple and efficient, as the required
+fields can be extracted directly from known word positions without buffering
+the full packet.
 
 \subsubsection{Design considerations and challenges}
-A key design consideration was ensuring correct alignment between the word index
-and incoming data. During early development, the use of ROM-based packet storage
-introduced a one-cycle read delay, which caused incorrect field extraction due
-to misalignment between expected and actual data positions.
+A main challenge during development was keeping the word index aligned with the
+incoming packet data. When using ROM-based packet storage, the one-cycle delay
+in reading data meant that the parser was effectively looking at the wrong word.
+This led to incorrect extraction of protocol fields.
 
-This issue was resolved by transitioning to a streaming-based packet replay
-mechanism, ensuring that packet data arrives in a correctly aligned manner.
-This allowed the parser to operate reliably using fixed word offsets.
+To resolve this, the design was changed to use a streaming packet replay
+approach, where data is sent directly from the MicroBlaze. This ensured that
+the data stayed aligned with the word index, allowing fields to be extracted
+reliably using fixed offsets.
 
+Another issue was maintaining consistent packet alignment within the 32-bit
+data stream. Since packet sizes are not always naturally aligned to word
+boundaries, important fields such as TCP flags could shift position between
+packets. This was addressed by using fixed-size, word-aligned packet datasets,
+so that fields always appeared at the same positions.
+
+A further challenge was the difference in speed between hardware and software.
+Detection signals in hardware occur over a single clock cycle, while the
+MicroBlaze reads values much more slowly. To avoid missing these events,
+counting and aggregation were moved into hardware, allowing the processor to
+read stable results.
 
 \subsubsection{Output of the parser}
 The output of the parsing module consists of protocol indicators and packet
 classification signals, including identification of TCP, UDP, and ICMP traffic,
-as well as specific TCP flag patterns. These signals are passed to the next stage
-of the system, where they are used for feature extraction and detection of
-potential attacks.
+as well as specific TCP flag patterns. These signals are passed to the next
+stage of the system, where they are used for feature extraction and detection
+of potential attacks.
 
 bvfeib
 \subsection{Feature Extraction and Traffic Monitoring}
+\subsubsection{Feature Extraction}
+
+Following packet parsing, the extracted protocol fields are used to generate
+higher-level features that describe the behaviour of network traffic.
+
+The parser outputs signals indicating protocol type, such as TCP, UDP, and
+ICMP, as well as TCP flag information. These are used to identify patterns such
+as SYN packets and flag combinations associated with NULL and XMAS scans.
+
+\subsubsection{Traffic Monitoring}
+
+The generated feature signals are used to update a set of hardware counters,
+which track the occurrence of different types of traffic. These counters
+provide a simple representation of network activity over time.
+
+By monitoring these values, the system can identify abnormal traffic patterns,
+such as a high volume of SYN or ICMP packets, which are commonly associated
+with DoS attacks. These aggregated statistics are then passed to the sliding
+window detection module described in the following section.
 
 \subsection{Sliding Window Detection}
+
+\subsubsection{Overview}
+The sliding window detection module is responsible for analysing network
+traffic over time to identify patterns associated with DoS attacks. Rather than
+evaluating packets individually, the system aggregates traffic statistics over
+a fixed time window, allowing abnormal behaviour to be detected based on
+overall traffic trends.
+\subsubsection{Windowing approach}
+A fixed-size time window is used to group packets into discrete intervals. At
+the start of each window, counters are reset, and packet statistics are
+collected as packets are processed. Once the window completes, the aggregated
+values are evaluated before the counters are cleared for the next interval.
+
+This approach allows the system to continuously monitor traffic while
+maintaining a consistent view of activity over time, effectively creating a
+sliding window of recent network behaviour.
+\subsubsection{Counter aggregation}
+The feature signals generated during packet parsing are used to update a set of
+hardware counters. These counters track metrics such as the number of TCP, UDP,
+and ICMP packets, as well as the occurrence of specific TCP flag patterns.
+
+As packets are processed within a window, the corresponding counters are
+incremented, providing a summary of traffic behaviour over that interval. This
+aggregation allows the system to detect volumetric patterns that would not be
+visible from individual packets.
+\subsubsection{Detection logic}
+At the end of each window, the accumulated counter values are compared against
+predefined thresholds to determine whether an attack is present. For example, a
+high number of SYN packets within a short time period may indicate a SYN flood,
+while a large volume of ICMP packets may indicate a ping-based attack.
+
+If any of these thresholds are exceeded, the system generates a detection flag
+corresponding to the identified attack type. This flag is then passed to the
+output stage for reporting.
+\subsubsection{Implementation details}
+The sliding window mechanism is implemented entirely in hardware using a
+combination of counters and timing logic. A clock-driven counter is used to
+define the duration of each window, while separate counters track packet
+statistics in parallel.
+
+At the end of each window, the current counter values are evaluated and then
+reset for the next interval. This ensures that the system continuously monitors
+traffic without requiring software intervention, enabling real-time detection
+with minimal latency.
+
+
 
 \subsection{Volumetric Based Detection Logic}
 
