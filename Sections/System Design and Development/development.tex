@@ -1,20 +1,78 @@
-This section presents the design and development of the FPGA-based IDS. It
-describes the architectural decisions, hardware implementation, and software
-integration required to achieve real-time detection of DoS attacks. The system
-is designed as a packet processing pipeline, incorporating packet parsing,
-feature extraction, and a sliding window-based detection mechanism. Each
-component of the system is detailed, along with the design considerations and
-challenges encountered during development.
+This section describes the design and development of the FPGA-based intrusion
+detection system, including the key architectural decisions, hardware
+implementation, and software integration required for real-time DoS detection.
 
-\subsection{High Level System Overview}
+The system is structured as a packet processing pipeline, with stages for
+packet replay, parsing, feature extraction, and sliding window-based detection.
+
+To improve clarity, this section is divided into subsections corresponding to
+the main components of the system:
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item High-Level System Overview~(\ref{sec:high_level})
+    \item Packet Replay and Data Source~(\ref{sec:Packet_Replay})
+    \item IDS Module~(\ref{sec:IDS_Module})
+    \item MicroBlaze~(\ref{sec:MicroBlaze})
+    \item GUI~(\ref{sec:GUI})
+\end{itemize}
+
+A high-level overview is presented first, providing context for the detailed
+descriptions that follow.
+
+\subsection{High Level System Overview} \label{sec:high_level}
 The FPGA-based intrusion detection system is designed as a data processing
 pipeline for real-time analysis of network traffic. Rather than relying on
 sequential software processing, the system performs packet inspection directly
 in hardware, enabling high-throughput and low-latency detection of DoS attacks.
 
+\subsubsection{System Architecture}
+A block diagram of the overall system architecture is shown in
+Fig.~\ref{fig:system_architecture}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.45\textheight]{System_Architecture.png}
+    \caption{Block diagram of the FPGA-based intrusion detection system architecture}
+    \label{fig:system_architecture}
+\end{figure}
+
+To support communication between the MicroBlaze processor and the IDS
+hardware module, a set of standardised interfaces is used. These signals
+define how packet data, configuration parameters, and detection results
+are exchanged between the software and hardware components. The main
+signals used in the system are summarised in Table~\ref{tab:signal_interface}.
+
+\begin{table}[H]
+    \centering
+    \caption{Signal interface between MicroBlaze and IDS hardware}
+    \label{tab:signal_interface}
+    \begin{tabular}{l l l p{7cm}}
+        \hline
+        \textbf{Signal Name}        & \textbf{Interface} & \textbf{Direction}  & \textbf{Description}                                                                      \\
+        \hline
+
+        \texttt{tdata[31:0]}        & AXI-Stream         & MB $\rightarrow$ HW & 32-bit packet data word transmitted from the MicroBlaze to the IDS module.                \\
+
+        \texttt{tvalid}             & AXI-Stream         & MB $\rightarrow$ HW & Indicates that the current data word is valid and should be processed.                    \\
+
+        \texttt{tlast}              & AXI-Stream         & MB $\rightarrow$ HW & Marks the final word of a packet, allowing the parser to reset for the next packet.       \\
+
+        \texttt{thresholds[31:0]}   & AXI-Lite           & MB $\rightarrow$ HW & Contains detection thresholds for flood and volumetric analysis, configurable at runtime. \\
+
+        \texttt{status\_out[31:0]}  & AXI-Lite           & HW $\rightarrow$ MB & Status register containing detection flags and aggregated traffic statistics.             \\
+
+        \texttt{dst\_ip\_out[31:0]} & AXI-Lite           & HW $\rightarrow$ MB & Extracted destination IP address from the most recent packet.                             \\
+
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
+\subsubsection{Data Flow Through the System}
 Network traffic is supplied to the system by the MicroBlaze processor, which
 replays pre-processed packet datasets stored as C header files into the FPGA
-packet input interface. As packets are streamed into the system, a hardware
+packet input interface (as can be seen in listing~\ref{lst:packet_record}). As packets are streamed into the system, a hardware
 packet parser extracts key fields such as protocol type, destination IP
 address, and TCP flags. These features are then passed to a detection module,
 which implements a sliding window-based approach to analyse traffic patterns
@@ -31,30 +89,118 @@ processor, which performs higher-level aggregation and reporting. Detected
 attacks and traffic statistics are then transmitted to the serial monitor via a
 UART interface.
 
-A block diagram of the overall system architecture is shown in
-Fig.~\ref{fig:System_Architecture}.
-
+\subsubsection{Hardware-Software Partitioning}
 \begin{figure}[H]
-  \centering
-  \includegraphics[height=0.45\textheight]{System_Architecture.png}
-  \caption{Block diagram of the FPGA-based intrusion detection system architecture}
-  \label{fig:System_Architecture}
+    \centering
+    \includegraphics[height=0.45\textheight]{Hardware-software-architecture.drawio.png}
+    \caption{Hardware-Software architecture of the FPGA-based intrusion detection system}
+    \label{fig:system_hw_sw}
 \end{figure}
 
-The system architecture shown in Fig.~\ref{fig:System_Architecture} shows the
-flow of packet data through the FPGA-based IDS. Packet data is first retrieved
-by the MicroBlaze processor from the selected software defined dataset and
-passed through a hardware packet parser, where protocol fields are extracted.
-These extracted features are then used to update protocol-specific counters,
-which are aggregated over a sliding time window to analyse traffic behaviour.
+As shown in Fig.~\ref{fig:system_hw_sw}, the system is implemented as a
+hardware-software co-design.
 
-The detection logic looks at the aggregated statistics against predefined
-thresholds to identify potential DoS attacks. When an attack condition is met,
-the system generates detection flags, which are read by the MicroBlaze
-processor for further processing and communication via UART. This pipelined
-architecture enables efficient, real-time analysis of network traffic.
+The software layer, implemented on a MicroBlaze processor, is responsible for
+managing packet datasets, transmitting packet data to the hardware, and
+reporting detection results via UART.
 
-\subsection{Packet Replay from BRAM}
+The hardware layer is made up of of a module implemented in Vivado and then is programmed onto the FPGA.
+This module handles packet parsing, feature extraction, and detection as data
+is processed in a continuous stream. By offloading these operations to hardware, the system is able
+to process packets with low latency and high throughput.
+
+\newpage
+\subsubsection{Communication Interfaces and Interconnects}
+To facilitate the hardware--software co-design, a standardised communication
+interface was established between the MicroBlaze processor and the IDS hardware
+module. This interface allows high-speed packet injection while enabling runtime
+configuration and monitoring.
+
+\begin{table}[H]
+    \centering
+    \caption{Signal interface between MicroBlaze and IDS hardware}
+    \label{tab:signal_interface}
+    \begin{tabular}{l l l p{7cm}}
+        \hline
+        \textbf{Signal Name}        & \textbf{Interface} & \textbf{Direction}  & \textbf{Description}                                 \\
+        \hline
+        \texttt{tdata[31:0]}        & AXI GPIO           & MB $\rightarrow$ HW & Raw 32-bit packet word from dataset.                 \\
+        \texttt{tvalid}             & AXI GPIO           & MB $\rightarrow$ HW & Indicates valid packet data.                         \\
+        \texttt{tlast}              & AXI GPIO           & MB $\rightarrow$ HW & Marks end of packet; resets parser.                  \\
+        \texttt{thresholds[31:0]}   & AXI GPIO           & MB $\rightarrow$ HW & Detection thresholds for flood and volumetric logic. \\
+        \texttt{status\_out[31:0]}  & AXI GPIO           & HW $\rightarrow$ MB & Detection flags and window statistics.               \\
+        \texttt{dst\_ip\_out[31:0]} & AXI GPIO           & HW $\rightarrow$ MB & Extracted destination IP for reporting.              \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
+\subsubsection{Platform Integration and Physical Implementation}
+Communication between the software and hardware components is achieved using
+AXI-based interfaces.
+
+An AXI-Stream interface is used to transmit packet data from the MicroBlaze
+processor to the IDS hardware module. This allows packets to be processed as a
+continuous stream without requiring full buffering.
+
+AXI-Lite interfaces are used for configuration and status monitoring. The
+MicroBlaze writes detection thresholds to hardware registers and reads back
+detection results and traffic statistics via memory-mapped interfaces.
+The main subsystems in Fig.~\ref{fig:vivado_block} are as follows:
+\begin{itemize}
+    \item[\textbf{(1)}] \textbf{Clock and Reset System (orange):}
+          Provides a stable clock signal and synchronised reset for all components,
+          ensuring reliable system operation.
+
+    \item[\textbf{(2)}] \textbf{MicroBlaze Processor System (green):}
+          Acts as a software-based MicroBlaze processor, serving as the central control
+          unit for packet replay, configuration of detection thresholds, and collection
+          of detection results.
+
+    \item[\textbf{(3)}] \textbf{AXI Interconnect (brown):}
+          Allows communication between the MicroBlaze processor and all peripheral
+          modules through AXI interfaces.
+
+    \item[\textbf{(4A)}] \textbf{AXI GPIO Inputs (red):}
+          Used to transmit packet data, control signals, and configuration parameters
+          from the processor to the hardware modules. In particular, \textbf{(4A1)}
+          corresponds to control and configuration interfaces (e.g.\ thresholds and
+          trigger signals), while \textbf{(4A2)} is used for packet data input, where
+          individual packet words are streamed from the MicroBlaze processor into the
+          IDS hardware.
+
+    \item[\textbf{(4B)}] \textbf{AXI GPIO Outputs (purple):}
+          Return detection results and traffic statistics from the hardware modules back
+          to the processor.
+
+    \item[\textbf{(5)}] \textbf{IDS Hardware Module (blue):}
+          Implements packet parsing, feature extraction, and attack detection in hardware,
+          processing incoming data streams in real time.
+
+    \item[\textbf{(6)}] \textbf{UART Output Interface (black):}
+          Sends detection results to an external system via UART.
+\end{itemize}
+
+
+
+\newpage
+\thispagestyle{plain}
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=0.8\textwidth]{verilog_RTL_block_diagram_circled_numbered.png}
+        \caption{Annotated Vivado block diagram of the FPGA-based IDS system}
+        \label{fig:vivado_block}
+    \end{figure}
+\end{landscape}
+\newpage
+
+
+
+
+\subsection{Packet Replay and Data Source}~\label{sec:Packet_Replay}
+
 The IDS uses on-chip Block RAM (BRAM) as a source of network traffic for
 testing. Packet data is pre-defined and stored in memory, then replayed into
 the FPGA to simulate real network traffic conditions.
@@ -66,6 +212,32 @@ be tested by changing the included header file and associated dataset
 definition. During execution, the MicroBlaze processor reads the selected
 packet records from software memory and writes each 32-bit word to the FPGA via
 memory-mapped AXI GPIO interfaces.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.7\textheight]{memory_address.drawio.png}
+    \caption{32-bit word-aligned packet structure showing fixed offsets used by the hardware parser for protocol identification, target extraction, and attack signature detection}
+    \label{fig:mem_addr}
+\end{figure}
+
+
+Packet data is represented as a sequence of 32-bit words, arranged in a fixed
+layout that matches the expectations of the hardware parser. As shown in
+Fig.~\ref{fig:packet_memory_map}, each packet is structured such that specific
+protocol fields appear at known word indices.
+
+Each packet begins with a 32-bit \texttt{len\_words} field, which defines the
+length of the packet in words. The remaining data follows a fixed format, where
+important header fields are placed at predetermined offsets. For example, the
+EtherType field is located in Word~3 (bits [31:16]) for IPv4 identification,
+while the TCP flags are located in the lower byte of Word~11 and are used for
+detecting attack patterns.
+
+As illustrated in Fig.~\ref{fig:mem_addr}, these fixed offsets allow
+the hardware to extract relevant fields directly as each word arrives, without
+requiring a search across the packet. This keeps the parsing logic simple and
+allows fields to be captured in a single clock cycle during streaming.
+
 
 Listing~\ref{lst:packet_record} shows the packet representation used in the
 software-defined datasets. Each packet contains a length field and an array of
@@ -132,6 +304,12 @@ static const packet_record_t syn_packet_real_world[] = {
 };
 \end{lstlisting}
 
+An important detail in the \texttt{send\_packet} function is the 10~$\mu$s delay
+(\texttt{usleep(10)}) between writing each word. This delay acts as a simple synchronisation mechanism between the
+software and hardware domains. Since the GPIO interface does not provide
+hardware flow control, the delay ensures that the hardware parser has sufficient
+time to process each word before the next is transmitted.
+
 \begin{lstlisting}[
     language=C,
     caption={Packet transmission using TVALID and TLAST control signals},
@@ -154,61 +332,25 @@ static void send_packet(const packet_record_t *pkt) {
   }
 }
 \end{lstlisting}
-\newpage
-\thispagestyle{plain}
-\begin{landscape}
-  \begin{figure}[H]
-    \centering
-    \includegraphics[height=0.8\textwidth]{verilog_RTL_block_diagram_circled_numbered.png}
-    \caption{Annotated Vivado block diagram of the FPGA-based IDS system}
-    \label{fig:vivado_block}
-  \end{figure}
-\end{landscape}
-\newpage
+
 The annotated Vivado block diagram shown in Fig.~\ref{fig:vivado_block}
 shows the overall architecture of the system. For clarity, key subsystems
 are highlighted using coloured regions and labelled accordingly.
 
-\begin{itemize}
-  \item[\textbf{(1)}] \textbf{Clock and Reset System (orange):}
-        Provides a stable clock signal and synchronised reset for all components,
-        ensuring reliable system operation.
 
-  \item[\textbf{(2)}] \textbf{MicroBlaze Processor System (green):}
-        Acts as a software-based MicroBlaze processor, serving as the central control
-        unit for packet replay, configuration of detection thresholds, and collection
-        of detection results.
+\subsection{IDS Module}~\label{sec:IDS_Module}
+The IDS module is the main hardware block responsible for processing packet
+data and detecting potential attacks. It operates on a streaming input, meaning
+that packets are processed as they arrive, without storing the entire packet.
 
-  \item[\textbf{(3)}] \textbf{AXI Interconnect (brown):}
-        Allows communication between the MicroBlaze processor and all peripheral
-        modules through AXI interfaces.
+The design is split into a number of stages, including packet parsing, feature
+extraction, traffic monitoring, and detection. Each stage performs a specific
+task and passes the results to the next stage.
 
-  \item[\textbf{(4A)}] \textbf{AXI GPIO Inputs (red):}
-        Used to transmit packet data, control signals, and configuration parameters
-        from the processor to the hardware modules. In particular, \textbf{(4A1)}
-        corresponds to control and configuration interfaces (e.g.\ thresholds and
-        trigger signals), while \textbf{(4A2)} is used for packet data input, where
-        individual packet words are streamed from the MicroBlaze processor into the
-        IDS hardware.
+This structure allows the system to analyse packets continuously with low
+latency. The following sections describe each part of the module in more detail.
 
-  \item[\textbf{(4B)}] \textbf{AXI GPIO Outputs (purple):}
-        Return detection results and traffic statistics from the hardware modules back
-        to the processor.
-
-  \item[\textbf{(5)}] \textbf{Custom IDS Hardware Module (blue):}
-        Implements packet parsing, feature extraction, and attack detection in hardware,
-        processing incoming data streams in real time.
-
-  \item[\textbf{(6)}] \textbf{UART Output Interface (black):}
-        Sends detection results to an external system via UART.
-\end{itemize}
-
-\subsection{Packet Parsing}
-The packet parsing module is responsible for extracting relevant protocol
-fields from incoming packet data. This stage converts raw packet data into
-information that can be used for attack detection.
-
-\subsubsection{Packet structure and assumptions}
+\subsubsection{Packet Parsing}
 The parser operates under the assumption that packets follow a standard
 Ethernet frame structure with IPv4 headers without optional fields. Although
 IPv4 headers can vary in length due to the presence of options, this design
@@ -217,13 +359,13 @@ at fixed positions within the packet. It is worth keeping in mind, that in more
 general scenarios, where variable-length headers must be handled, more advanced
 parsing techniques may be required, such as the dynamic parsing approaches
 described in~\cite{attig_400_2011}.
-\subsubsection{Streaming interface behaviour}
+
 Packets are received as a sequence of 32-bit words via a streaming interface,
 with \texttt{TVALID} indicating valid data and \texttt{TLAST} marking the final
 word of a packet. This allows the parser to process packets sequentially
 without requiring full buffering of packet contents.
 
-\subsubsection{Word-index based extraction}
+
 A word index counter is used to track the position within each packet as it is
 received. Based on this index, specific protocol fields are extracted at known
 offsets within the packet structure. This approach allows for efficient
@@ -235,33 +377,21 @@ word 5, and TCP flags from word 11. By using fixed offsets, the parser can
 quickly identify packet types and relevant header information with minimal
 latency.
 
-\subsubsection{Protocol classification logic}
-Using the extracted fields, the parser classifies packets based on protocol
-type. IPv4 packets are identified using the EtherType field, after which the IP
-protocol field is used to distinguish between TCP, UDP, and ICMP traffic.
-
-For TCP packets, additional inspection of the TCP flags field allows the system
-to identify specific patterns such as SYN packets, as well as scan-based
-behaviour including NULL and XMAS packets. These classifications form the basis
-for subsequent detection logic.
-
-\subsubsection{Verilog implementation}
-
 
 \begin{table}[H]
-\centering
-\caption{Protocol fields extracted by the packet parser}
-\label{tab:parser_fields}
-\begin{tabular}{c l l}
-\hline
-\textbf{Word index} & \textbf{Field extracted} & \textbf{Purpose} \\
-\hline
-3  & EtherType & Identifies IPv4 packets \\
-5  & IP protocol & Distinguishes TCP, UDP, and ICMP traffic \\
-7--8 & Destination IP address & Used for target-level reporting \\
-11 & TCP flags & Identifies SYN, NULL, and XMAS patterns \\
-\hline
-\end{tabular}
+    \centering
+    \caption{Protocol fields extracted by the packet parser}
+    \label{tab:parser_fields}
+    \begin{tabular}{c l l}
+        \hline
+        \textbf{Word index} & \textbf{Field extracted} & \textbf{Purpose}                         \\
+        \hline
+        3                   & EtherType                & Identifies IPv4 packets                  \\
+        5                   & IP protocol              & Distinguishes TCP, UDP, and ICMP traffic \\
+        7--8                & Destination IP address   & Used for target-level reporting          \\
+        11                  & TCP flags                & Identifies SYN, NULL, and XMAS patterns  \\
+        \hline
+    \end{tabular}
 \end{table}
 
 \begin{lstlisting}[
@@ -301,7 +431,408 @@ This approach keeps the parsing logic simple and efficient, as the required
 fields can be extracted directly from known word positions without buffering
 the full packet.
 
-\subsubsection{Design considerations and challenges}
+
+
+
+\subsubsection{Feature Extraction and Signature Detection}
+Using the extracted fields, the parser classifies packets based on protocol
+type. IPv4 packets are identified using the EtherType field, after which the IP
+protocol field is used to distinguish between TCP, UDP, and ICMP traffic.
+
+For TCP packets, additional inspection of the TCP flags field allows the system
+to identify specific patterns such as SYN packets, as well as scan-based
+behaviour including NULL and XMAS packets. These classifications form the basis
+for subsequent detection logic.
+
+The generated feature signals are used to update a set of hardware counters,
+which track the occurrence of different types of traffic. These counters
+provide a simple representation of network activity over time.
+
+By monitoring these values, the system can identify abnormal traffic patterns,
+such as a high volume of SYN or ICMP packets, which are commonly associated
+with DoS attacks. These aggregated statistics are then passed to the sliding
+window detection module described in the following section.
+
+\paragraph{Attack Signature Identification}
+The Feature Extraction stage performs real-time pattern matching against known malicious signatures. By utilizing dedicated hardware comparators, the IDS identifies specific attack vectors at the transport layer. The primary detection signatures implemented in the RTL logic are detailed in Table~\ref{tab:signatures}.
+
+\begin{table}[H]
+    \centering
+    \caption{Hardware Detection Signatures and Logic Conditions}
+    \label{tab:signatures}
+    \begin{tabular}{l l l l}
+        \hline
+        \textbf{Attack Type} & \textbf{Protocol} & \textbf{TCP Flag (Hex)} & \textbf{Hardware Logic Condition}    \\ \hline
+        \textbf{SYN Flood}   & TCP (6)           & 0x02                    & \texttt{tcp\_flags == 8'h02}         \\
+        \textbf{NULL Scan}   & TCP (6)           & 0x00                    & \texttt{tcp\_flags == 8'h00}         \\
+        \textbf{XMAS Scan}   & TCP (6)           & 0x29                    & \texttt{FIN (1) + PSH (1) + URG (1)} \\
+        \textbf{UDP Flood}   & UDP (17)          & N/A                     & \texttt{ip\_proto == 8'h11}          \\
+        \textbf{ICMP Flood}  & ICMP (1)          & N/A                     & \texttt{ip\_proto == 8'h01}          \\ \hline
+    \end{tabular}
+\end{table}
+
+The signature matching logic is described below:
+\begin{itemize}
+    \item \textbf{SYN Flood Detection:} The hardware specifically monitors for packets where only the synchronization (\texttt{SYN}) bit is set. A high volume of these packets within the 250ms window indicates a half-open connection attack designed to exhaust target resources.
+    \item \textbf{NULL Scan Detection:} This probe utilizes packets with no control bits set. Under normal TCP operation, at least one flag is expected; the presence of \texttt{0x00} is a common signature for scanners attempting to bypass stateless firewalls.
+    \item \textbf{XMAS Scan Detection:} The system identifies this probe by the simultaneous assertion of the \texttt{FIN}, \texttt{PSH}, and \texttt{URG} flags (\texttt{0x29}). This atypical bit pattern is used by attackers for OS fingerprinting and port probing.
+\end{itemize}
+
+
+\subsubsection{Sliding Window}
+The sliding window detection module is responsible for analysing network
+traffic over time to identify patterns associated with DoS attacks. Rather than
+evaluating packets individually, the system aggregates traffic statistics over
+a fixed time window, allowing abnormal behaviour to be detected based on
+overall traffic trends.
+
+A fixed-size time window is used to group packets into discrete intervals. At
+the start of each window, counters are reset, and packet statistics are
+collected as packets are processed. Once the window completes, the aggregated
+values are evaluated before the counters are cleared for the next interval.
+
+This approach allows the system to continuously monitor traffic while
+maintaining a consistent view of activity over time, effectively creating a
+sliding window of recent network behaviour.
+
+
+The feature signals generated during packet parsing are used to update a set of
+hardware counters. These counters track metrics such as the number of TCP, UDP,
+and ICMP packets, as well as the occurrence of specific TCP flag patterns.
+
+As packets are processed within a window, the corresponding counters are
+incremented, providing a summary of traffic behaviour over that interval. This
+aggregation allows the system to detect volumetric patterns that would not be
+visible from individual packets.
+
+\subsection{Detection and Alert Generation}
+At the end of each window, the accumulated counter values are compared against
+predefined thresholds to determine whether an attack is present. For example, a
+high number of SYN packets within a short time period may indicate a SYN flood,
+while a large volume of ICMP packets may indicate a ping-based attack.
+
+If any of these thresholds are exceeded, the system generates a detection flag
+corresponding to the identified attack type. This flag is then passed to the
+output stage for reporting.
+
+The sliding window mechanism is implemented entirely in hardware using a
+combination of counters and timing logic. A clock-driven counter is used to
+define the duration of each window, while separate counters track packet
+statistics in parallel.
+
+At the end of each window, the current counter values are evaluated and then
+reset for the next interval. This ensures that the system continuously monitors
+traffic without requiring software intervention, enabling real-time detection
+with minimal latency.
+
+A window duration of 250~ms was chosen as a balance between responsiveness to rapid traffic bursts and reducing sensitivity to short-term fluctuations in packet rates.
+
+The volumetric detection logic is responsible for identifying attacks based on
+the volume of network traffic observed within each detection window. Rather
+than analysing individual packets in isolation, the system evaluates aggregated
+traffic statistics to determine whether abnormal behaviour is present.
+
+At the end of each sliding window, the accumulated packet counts are compared
+against predefined thresholds. These thresholds represent expected limits for
+normal traffic behaviour. If the number of packets for a given protocol exceeds
+its corresponding threshold, the system flags a potential attack.
+
+For example, a high number of TCP SYN packets within a short time interval may
+indicate a SYN flood attack, while a large volume of ICMP packets may indicate
+a ping flood. Similarly, elevated UDP traffic can be used to detect UDP-based
+flooding attacks.
+
+The detection logic is implemented using simple comparison operations in
+hardware, allowing all checks to be performed in parallel with minimal latency.
+This ensures that attack conditions can be identified in real time without
+impacting overall system throughput.
+
+The resulting detection flags are then passed to the MicroBlaze processor,
+where they are aggregated and reported to the user via the UART interface.
+
+
+
+
+
+
+\subsection{Microblaze}~\label{sec:MicroBlaze}
+The MicroBlaze processor acts as the control and interface layer between the
+hardware detection system and the user. It is responsible for configuring the
+system, initiating packet transmission, and collecting detection results from
+the FPGA.
+
+Packet data is stored in software as predefined datasets and transmitted to
+the FPGA using memory-mapped AXI GPIO interfaces. During execution, the
+MicroBlaze sends packet data sequentially while also controlling signals such
+as \texttt{TVALID} and \texttt{TLAST}.
+
+Detection results generated by the hardware are read back by the MicroBlaze
+through AXI GPIO interfaces. These include packet counts, window statistics,
+and detection flags indicating the presence of potential attacks.
+
+The processor aggregates this information and formats it for output via the
+UART interface, allowing results to be displayed on a serial terminal.
+
+
+\subsubsection{System Configuration}
+At system startup, the MicroBlaze configures the hardware detection module by
+writing threshold values to memory-mapped registers. The volumetric and flood
+thresholds are combined into a single 32-bit value and written to the
+\texttt{GPIO\_THR\_BASE} register using AXI-Lite.
+
+This initial configuration acts as a simple handshake between software and
+hardware, ensuring that the detection logic operates using the correct
+parameters before packet processing begins.
+
+By performing this configuration in software, the system can be easily adjusted
+for different traffic conditions without requiring modification of the FPGA
+bitstream.
+
+\subsubsection{Packet Transmission and Status Polling}
+Packet transmission is handled by the \texttt{send\_packet} function, which
+writes packet data to the FPGA one word at a time. Control signals such as
+\texttt{TVALID} and \texttt{TLAST} are asserted to indicate valid data and the
+end of a packet, allowing the hardware to correctly process packet boundaries.
+
+A short delay is introduced between writes using \texttt{usleep(10)} to ensure
+that the hardware has sufficient time to process each word. This is necessary
+as the GPIO interface does not provide a hardware backpressure mechanism.
+
+During execution, the software continuously monitors the window ID register
+(\texttt{GPIO\_WINID\_BASE}) to detect when a new processing window has
+completed. When a new window is detected, the corresponding status and packet
+statistics are read from the hardware and stored for later reporting.
+
+This polling-based approach allows the software to remain synchronised with the
+hardware without interrupting the packet processing pipeline.
+
+
+\subsubsection{Target Identification and Dynamic Tracking}
+In addition to detecting attacks, the system identifies which network node is
+being targeted. The hardware extracts the destination IP address from each
+packet and exposes it to the MicroBlaze through the \texttt{dst\_ip\_out}
+register.
+
+The software compares this address against a predefined list of known targets,
+such as virtual machines and servers. For matching entries, packet statistics
+are updated accordingly, including counts for SYN, UDP, and ICMP traffic.
+
+If a destination IP is not found in the predefined list, it is stored in a
+separate dynamic target array. This allows the system to track previously unseen
+addresses without requiring changes to the hardware design.
+
+
+The structure used to store this per-target information is shown in
+Fig.~\ref{fig:target_stats}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{structure_field.drawio.png}
+    \caption{Layout of the \texttt{target\_stats\_t} structure used for per-target traffic tracking}
+    \label{fig:target_stats}
+\end{figure}
+
+The \texttt{target\_stats\_t} structure is used by the MicroBlaze to track
+traffic statistics on a per-target basis. The \texttt{total} field stores the
+number of packets observed within the current detection window and is reset
+whenever a new window is detected, ensuring alignment with the hardware sliding
+window mechanism.
+
+Protocol-specific counters (\texttt{syn}, \texttt{udp}, and \texttt{icmp}) are
+also maintained on a per-window basis, allowing software-level tracking of
+flood-based behaviour. In contrast, scan-based indicators (\texttt{xmas} and
+\texttt{nulls}) are accumulated over the entire execution, enabling the system
+to detect low-frequency scan activity that may not exceed thresholds within a
+single window.
+
+
+By handling target identification in software, the hardware can remain focused
+on high-speed packet processing, while the MicroBlaze provides a more flexible
+layer for tracking and reporting network activity.
+
+\subsubsection{UART Reporting}
+Detection results are communicated to the user through a UART interface
+operating at 115,200 baud. The MicroBlaze formats the collected data into a
+readable output, including configuration parameters, per-window statistics, and
+detected attack types.
+
+Two levels of reporting are provided. First, a window summary displays packet
+counts and detected activity for each processing interval. This is followed by
+an aggregated summary, which highlights attack types and affected targets over
+the full duration of the test.
+
+Separating reporting from the hardware detection logic ensures that the
+high-speed packet processing pipeline is not affected by slower serial output
+operations.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{proof_multiple_packets.png}
+    \caption{UART output showing per-window statistics and detected attack types}
+    \label{fig:uart_output}
+\end{figure}
+
+
+An example of the system output is shown in Fig.~\ref{fig:uart_output}. The
+display includes configuration parameters, per-window packet statistics, and
+detected attack types, demonstrating that the system is able to process packet
+streams and report results in real time.
+
+
+\subsubsection{Software Operational Logic and Temporal Synchronisation}
+
+The execution flow of the MicroBlaze control logic, shown in
+Fig.~\ref{fig:software_flow}, is designed to maintain consistent
+synchronisation between the software layer and the high-speed hardware
+detection pipeline. The system follows a structured processing loop to
+ensure that all packets are analysed while maintaining alignment with
+the hardware sliding window mechanism.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.44\textwidth]{flowchart_system.drawio.png}
+    \caption{Software control flow of the MicroBlaze processor showing packet injection, window boundary detection, and synchronised latching of hardware statistics during real-time IDS operation}    \label{fig:targetsoftware_flow_stats}
+\end{figure}
+
+
+
+\paragraph{Initialisation and Hardware Configuration}
+At system startup, the software performs a configuration step by writing
+detection thresholds to the hardware via the AXI-Lite interface. The
+volumetric and flood thresholds are combined into a single 32-bit value,
+as shown in Listing~\ref{lst:config}, allowing runtime adjustment of
+detection sensitivity without requiring FPGA reconfiguration.
+
+\begin{lstlisting}[language=C, caption={Threshold configuration via AXI-Lite}, label={lst:config}]
+uint32_t threshold_val = ((uint32_t)flood_threshold << 16) | vol_threshold;
+Xil_Out32(GPIO_THR_BASE, threshold_val);
+\end{lstlisting}
+
+\paragraph{Packet Injection and Synchronisation}
+Packet transmission is handled within the main processing loop. Each
+packet is streamed to the hardware using AXI-Stream-style control
+signals (\texttt{TVALID} and \texttt{TLAST}). A short delay of 10~$\mu$s
+is inserted between transfers to compensate for the absence of hardware
+backpressure (i.e.\ no \texttt{TREADY} signal). This ensures that the
+hardware parser has sufficient time to capture each word before the next
+is transmitted.
+
+\paragraph{Window Synchronisation and Latching}
+The hardware maintains a fixed-duration window and increments a window
+identifier register at each boundary. The software polls this register
+to detect when a new window has completed. When a transition is detected
+(\texttt{last\_win < cur}), the software first reads the latched hardware
+statistics before they are overwritten.
+
+\begin{lstlisting}[language=C, caption={Window boundary detection and statistics latching}, label={lst:window}]
+while (last_win < cur && win_count < MAX_WINDOWS) {
+    uint32_t stat = Xil_In32(GPIO_STAT_BASE);
+    uint32_t ws   = Xil_In32(GPIO_WINSTATS_BASE);
+    uint32_t packets = (ws >> 16) & 0xFFFF;
+
+    windows[win_count].status  = stat;
+    windows[win_count].packets = packets;
+
+    last_win++;
+}
+\end{lstlisting}
+
+Following this, a reset operation is applied to software-side volumetric
+counters, aligning them with the start of the new window. This
+reset-before-update ordering ensures that packets processed at the
+boundary are correctly attributed to the new window rather than being
+cleared during the reset.
+
+\paragraph{Target Tracking and Reporting}
+For every processed packet, the destination IP address extracted by the
+hardware is used to update per-target statistics via the
+\texttt{update\_targets()} function. This allows the system to identify
+which hosts are being targeted during an attack.
+
+Once packet replay is complete, the collected statistics are aggregated
+and formatted into a final report, which is transmitted via the UART
+interface. By performing reporting in software, the high-speed hardware
+detection pipeline remains unaffected by slower output operations.
+
+
+
+\subsection{Graphical User Interface}~\label{sec:GUI}
+A graphical user interface (GUI) was developed to support the generation of
+test traffic scenarios for evaluating the IDS. Rather than manually constructing
+packet datasets in C, the GUI provides a structured interface for defining
+network traffic patterns, including source and destination nodes, attack types,
+and packet volumes. An example of the GUI is shown in Fig.~\ref{fig:gui}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{mixed_packets_scenario.png}
+    \caption{Graphical user interface used to generate network traffic scenarios and attack datasets for IDS evaluation}
+    \label{fig:GUI}
+\end{figure}
+
+This approach improves both the speed and reliability of test generation, while
+ensuring that experiments can be reproduced under consistent conditions.
+
+The interface is implemented in Python using the PySide6 framework. A topology view displays
+the available virtual machines, servers, network switch, and FPGA IDS node.
+Users can select endpoints and choose one or more traffic types, including
+normal traffic, SYN floods, UDP floods, ICMP floods, XMAS scans, and NULL scans.
+Each selected scenario is stored as a scenario item containing source and
+destination information, attack type, and packet count.
+
+Once a scenario has been created, the GUI uses a packet builder module to
+generate a C header file containing packets in the format expected by the FPGA
+parser. Each packet is converted into a sequence of 32-bit words, with fields
+placed at the word positions used by the Verilog parser. This ensures that the
+generated packets are compatible with the hardware detection pipeline.
+
+The generated header file can then be included in the Vitis application and
+replayed through the MicroBlaze processor during testing. This provides a faster
+and more consistent way to create synthetic traffic scenarios for validating the
+IDS.
+
+
+\begin{lstlisting}[
+    language=Python,
+    caption={Generation of parser-compatible packet words},
+    label={lst:packet_builder},
+    basicstyle=\ttfamily\scriptsize,
+    breaklines=true
+]
+def build_parser_compatible_packet(dst_ip: str, attack_type: str) -> list[int]:
+    proto, flags = attack_to_proto_flags(attack_type)
+    dst = ip_to_u32(dst_ip)
+
+    words = [0x00000000] * 12
+    words[3] = 0x0800 << 16
+    words[5] = proto & 0xFF
+    words[7] = (dst >> 16) & 0xFFFF
+    words[8] = (dst & 0xFFFF) << 16
+    words[11] = flags & 0xFF
+
+    return words
+\end{lstlisting}
+Listing~\ref{lst:packet_builder} shows how the GUI-generated packets are made
+compatible with the Verilog parser. The packet builder places key fields at the
+same word indices used by the hardware parser, including EtherType, protocol,
+destination IP address, and TCP flags.
+
+A key requirement of the evaluation process is the ability to produce
+repeatable and consistent test scenarios. Manually constructing packet
+datasets in C is error-prone and limits the flexibility of testing.
+The GUI automates this process, allowing predefined attack patterns and
+traffic mixes to be generated in a deterministic manner.
+
+In addition, the GUI enforces the 32-bit word-aligned format required by
+the hardware parser. Critical protocol fields such as EtherType and TCP
+flags are placed at fixed word offsets (e.g.\ Word 3 and Word 11), ensuring
+correct alignment between software-generated packets and the RTL parsing
+logic. This guarantees that features are extracted reliably during
+hardware inspection and prevents misalignment errors during testing.
+
+
+\subsection{Design considerations and challenges}
 A main challenge during development was keeping the word index aligned with the
 incoming packet data. When using ROM-based packet storage, the one-cycle delay
 in reading data meant that the parser was effectively looking at the wrong word.
@@ -324,86 +855,17 @@ MicroBlaze reads values much more slowly. To avoid missing these events,
 counting and aggregation were moved into hardware, allowing the processor to
 read stable results.
 
-\subsubsection{Output of the parser}
+\paragraph{Output of the parser}
 The output of the parsing module consists of protocol indicators and packet
 classification signals, including identification of TCP, UDP, and ICMP traffic,
 as well as specific TCP flag patterns. These signals are passed to the next
 stage of the system, where they are used for feature extraction and detection
 of potential attacks.
 
-bvfeib
-\subsection{Feature Extraction and Traffic Monitoring}
-\subsubsection{Feature Extraction}
-
+\subsubsection{Feature Extraction and Traffic Monitoring}
 Following packet parsing, the extracted protocol fields are used to generate
 higher-level features that describe the behaviour of network traffic.
 
 The parser outputs signals indicating protocol type, such as TCP, UDP, and
 ICMP, as well as TCP flag information. These are used to identify patterns such
 as SYN packets and flag combinations associated with NULL and XMAS scans.
-
-\subsubsection{Traffic Monitoring}
-
-The generated feature signals are used to update a set of hardware counters,
-which track the occurrence of different types of traffic. These counters
-provide a simple representation of network activity over time.
-
-By monitoring these values, the system can identify abnormal traffic patterns,
-such as a high volume of SYN or ICMP packets, which are commonly associated
-with DoS attacks. These aggregated statistics are then passed to the sliding
-window detection module described in the following section.
-
-\subsection{Sliding Window Detection}
-
-\subsubsection{Overview}
-The sliding window detection module is responsible for analysing network
-traffic over time to identify patterns associated with DoS attacks. Rather than
-evaluating packets individually, the system aggregates traffic statistics over
-a fixed time window, allowing abnormal behaviour to be detected based on
-overall traffic trends.
-\subsubsection{Windowing approach}
-A fixed-size time window is used to group packets into discrete intervals. At
-the start of each window, counters are reset, and packet statistics are
-collected as packets are processed. Once the window completes, the aggregated
-values are evaluated before the counters are cleared for the next interval.
-
-This approach allows the system to continuously monitor traffic while
-maintaining a consistent view of activity over time, effectively creating a
-sliding window of recent network behaviour.
-\subsubsection{Counter aggregation}
-The feature signals generated during packet parsing are used to update a set of
-hardware counters. These counters track metrics such as the number of TCP, UDP,
-and ICMP packets, as well as the occurrence of specific TCP flag patterns.
-
-As packets are processed within a window, the corresponding counters are
-incremented, providing a summary of traffic behaviour over that interval. This
-aggregation allows the system to detect volumetric patterns that would not be
-visible from individual packets.
-\subsubsection{Detection logic}
-At the end of each window, the accumulated counter values are compared against
-predefined thresholds to determine whether an attack is present. For example, a
-high number of SYN packets within a short time period may indicate a SYN flood,
-while a large volume of ICMP packets may indicate a ping-based attack.
-
-If any of these thresholds are exceeded, the system generates a detection flag
-corresponding to the identified attack type. This flag is then passed to the
-output stage for reporting.
-\subsubsection{Implementation details}
-The sliding window mechanism is implemented entirely in hardware using a
-combination of counters and timing logic. A clock-driven counter is used to
-define the duration of each window, while separate counters track packet
-statistics in parallel.
-
-At the end of each window, the current counter values are evaluated and then
-reset for the next interval. This ensures that the system continuously monitors
-traffic without requiring software intervention, enabling real-time detection
-with minimal latency.
-
-
-
-\subsection{Volumetric Based Detection Logic}
-
-\subsection{Microblaze integration}
-
-\subsection{GUI}
-

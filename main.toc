@@ -6,48 +6,53 @@
 \contentsline {section}{\numberline {1}\textbf {Introduction}}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Problem Statement and Project Solution}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Report Structure}{3}{subsection.1.2}%
-\contentsline {section}{\numberline {2}\textbf {Technical Background}}{4}{section.2}%
-\contentsline {section}{\numberline {3}\textbf {Literature Review}}{5}{section.3}%
-\contentsline {section}{\numberline {4}\textbf {System Design and Development}}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}High Level System Overview}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Packet Replay from BRAM}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Packet Parsing}{10}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Packet structure and assumptions}{10}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Streaming interface behaviour}{10}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Word-index based extraction}{10}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Protocol classification logic}{10}{subsubsection.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.5}Verilog implementation}{11}{subsubsection.4.3.5}%
-\contentsline {subsubsection}{\numberline {4.3.6}Design considerations and challenges}{11}{subsubsection.4.3.6}%
-\contentsline {subsubsection}{\numberline {4.3.7}Output of the parser}{11}{subsubsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.4}Feature Extraction and Traffic Monitoring}{12}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Feature Extraction}{12}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Traffic Monitoring}{12}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Sliding Window Detection}{12}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Overview}{12}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Windowing approach}{12}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Counter aggregation}{12}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Detection logic}{12}{subsubsection.4.5.4}%
-\contentsline {subsubsection}{\numberline {4.5.5}Implementation details}{12}{subsubsection.4.5.5}%
-\contentsline {subsection}{\numberline {4.6}Volumetric Based Detection Logic}{13}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Microblaze integration}{13}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}GUI}{13}{subsection.4.8}%
-\contentsline {section}{\numberline {5}\textbf {Results and Testing}}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Testing}{14}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{14}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{15}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Results}{16}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{16}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt {usleep(5000)}}{17}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt {usleep(10000)}}{17}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt {usleep(20000)}}{17}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{18}{subsubsection.5.2.5}%
-\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{18}{subsubsection.5.2.6}%
-\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{19}{subsubsection.5.2.7}%
-\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{21}{subsubsection.5.2.8}%
-\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{21}{subsubsection.5.2.9}%
-\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{22}{subsubsection.5.2.10}%
-\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{23}{subsubsection.5.2.11}%
-\contentsline {subsection}{\numberline {5.3}System Limitations}{23}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{24}{subsection.5.4}%
-\contentsline {section}{\numberline {6}\textbf {Ethical Considerations}}{25}{section.6}%
-\contentsline {section}{\numberline {7}Conclusions and Future Work}{26}{section.7}%
+\contentsline {section}{\numberline {2}\textbf {Technical Background}}{5}{section.2}%
+\contentsline {section}{\numberline {3}\textbf {Literature Review}}{6}{section.3}%
+\contentsline {section}{\numberline {4}\textbf {System Design and Development}}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}High Level System Overview}{7}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}System Architecture}{7}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Data Flow Through the System}{8}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Hardware-Software Partitioning}{9}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Communication Interfaces and Interconnects}{10}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Platform Integration and Physical Implementation}{10}{subsubsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.2}Packet Replay and Data Source}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}IDS Module}{14}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Packet Parsing}{14}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Feature Extraction and Signature Detection}{15}{subsubsection.4.3.2}%
+\contentsline {paragraph}{\numberline {4.3.2.1}Attack Signature Identification}{15}{paragraph.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.3}Sliding Window}{15}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Detection and Alert Generation}{16}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Microblaze}{16}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}System Configuration}{17}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Packet Transmission and Status Polling}{17}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Target Identification and Dynamic Tracking}{17}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}UART Reporting}{18}{subsubsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.5}Software Operational Logic and Temporal Synchronisation}{18}{subsubsection.4.5.5}%
+\contentsline {paragraph}{\numberline {4.5.5.1}Initialisation and Hardware Configuration}{19}{paragraph.4.5.5.1}%
+\contentsline {paragraph}{\numberline {4.5.5.2}Packet Injection and Synchronisation}{19}{paragraph.4.5.5.2}%
+\contentsline {paragraph}{\numberline {4.5.5.3}Window Synchronisation and Latching}{19}{paragraph.4.5.5.3}%
+\contentsline {paragraph}{\numberline {4.5.5.4}Target Tracking and Reporting}{20}{paragraph.4.5.5.4}%
+\contentsline {subsection}{\numberline {4.6}Graphical User Interface}{20}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Design considerations and challenges}{21}{subsection.4.7}%
+\contentsline {paragraph}{\numberline {4.7.0.1}Output of the parser}{21}{paragraph.4.7.0.1}%
+\contentsline {subsubsection}{\numberline {4.7.1}Feature Extraction and Traffic Monitoring}{21}{subsubsection.4.7.1}%
+\contentsline {section}{\numberline {5}\textbf {Results and Testing}}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Testing}{22}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Packet Representation for a FPGA system}{22}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Packet Dataset and Test Setup}{23}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Results}{24}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Threshold and Packet Rate Analysis}{24}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}High Packet Rate: \texttt {usleep(5000)}}{25}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Baseline Packet Rate: \texttt {usleep(10000)}}{25}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Low Packet Rate: \texttt {usleep(20000)}}{25}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Discussion}{26}{subsubsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.6}Syn Flood}{26}{subsubsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.7}Mixed Packets}{27}{subsubsection.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.8}ICMP Flood}{29}{subsubsection.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.2.9}NULL Scan Detection}{29}{subsubsection.5.2.9}%
+\contentsline {subsubsection}{\numberline {5.2.10}XMAS Scan Detection}{30}{subsubsection.5.2.10}%
+\contentsline {subsubsection}{\numberline {5.2.11}UDP Flood Detection}{31}{subsubsection.5.2.11}%
+\contentsline {subsection}{\numberline {5.3}System Limitations}{31}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Comparison with Software-Based IDS}{32}{subsection.5.4}%
+\contentsline {section}{\numberline {6}\textbf {Ethical Considerations}}{33}{section.6}%
+\contentsline {section}{\numberline {7}Conclusions and Future Work}{34}{section.7}%
