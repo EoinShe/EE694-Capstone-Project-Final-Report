@@ -1,0 +1,329 @@
+\subsection{Layers Of Networks}
+\begin{figure}[h]
+    \centering
+    % Ensure the image file is named correctly in your folder
+    \includegraphics[width=0.9\linewidth]{The 7 Layers of OSI.jpg}
+    \caption{7 Layers of OSI~\cite{bouchard_osi_nodate}.}
+    \label{fig:7_Layers}
+\end{figure}
+
+In the context of this project, three layers of the OSI model, which is a model
+of a conceptual framework that divides network communications functions into
+seven layers, as seen in Figure \ref{fig:7_Layers}. 3 layers are important, Layers 3 (Network), 4 (Transport), and
+7 (Application).
+
+\subsubsection{Layer 3}
+The Network Layer is responsible for the logical addressing and routing of
+packets between hosts. As shown by Kurose and Ross
+in Chapter 3 of ~\cite{kurose_computer_2013}, this layer dictates how data is forwarded
+through routers to reach its destination.
+
+\subsubsection{Layer 4}
+The Transport Layer ensures end-to-end communication reliability and flow
+control, mainly through TCP and UDP~\cite{oroo_oyondi_felix_tcpip_2024}. Unlike Layer 3, which focuses on volume, Layer 4 DoS attacks target the memory structures used to track active connections.
+
+\subsubsection{Layer 7}
+The Application Layer sits at the top of the OSI model and is responsible for
+integrating network services with end user software, such as web browsers. As
+described by Nikhil et al. vulnerabilities at this
+layer are unique because they target the computational resources of the server
+rather than the network bandwidth. At this level, the system must fully process
+requests, for example, loading a webpage or running a database query. The main
+danger lies in the asymmetry of resource consumption. A single Hypertext Transfer Protocol (HTTP) request can
+force the victim server to allocate significant CPU and memory to generate a
+response, allowing attackers to exhaust server capacity without requiring a
+high volume of network traffic~\cite{prasad_exhausted_2019}.
+
+\subsection{Types Of DoS Attacks}
+DoS attacks come in different types, each targeting specific weaknesses in the network. To build an effective detection system, it's important to review how these attacks work. Typically, these attacks are divided into three main types: Volumetric attacks, Protocol exploits, and Application-layer attacks. The next sections explain how each type works and how they impact systems.
+
+\subsubsection{Application Layer Attacks}
+While Volumetric and protocol attacks focus on disrupting the network
+infrastructure (Layers 3 and 4), Application Layer attacks focus on the highest
+level of the OSI model (Layer 7). Unlike the volumetric/protocol attacks, which
+try to overwhelm network bandwidth, these attacks target a web application's
+services, making them unavailable to users, which results in revenue loss for
+an organisation. Just one minute of downtime can cost a single company as much as
+$\mathdollar22,000$ in lost revenue. \cite{praseed_ddos_2019}.
+
+Because these attacks consume server resources rather than network capacity,
+they can be effective with a much lower volume of traffic, making them
+significantly harder to detect than volumetric floods \cite{nedza_detecting_2024}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/application-layer-DOS.jpg}
+    \caption[HTTP GET and POST Flood Attacks]{Botnet executing HTTP GET and POST floods against application targets \cite{noauthor_what_nodate-1}.}
+    \label{fig:app_layer}
+\end{figure}
+
+\paragraph{HTTP Floods}
+\mbox{}
+\par
+As shown in Figure \ref{fig:app_layer}, the threat actor uses a
+command and control server to direct bots to interact with specific parts of a
+web application. The traffic often mimics legitimate user behavior, such as a
+web browser requesting a page or a banking app submitting a form. 
+
+\begin{enumerate}
+    \item \textbf{HTTP GET Flood:} As shown in the top pathway, bots flood the target with requests for specific pages (e.g., \texttt{content.html}). While these requests are cheap for the bot to send, they force the server to exhaust its CPU by retrieving files and executing scripts for every single request, effectively overwhelming the system \cite{singh_application_2017}.
+
+    \item \textbf{HTTP POST Flood:} In the lower pathways, bots target sensitive areas like banking apps or login portals (e.g., \texttt{login.aspx}). This is an ``asymmetric'' attack: it requires little effort from the attacker but forces the victim server to perform expensive tasks—such as parsing data, querying databases, and verifying credentials—which drains resources significantly faster than a GET flood \cite{sreeram_http_2019}.
+\end{enumerate}
+
+To a standard firewall, a HTTP GET request from a bot looks identical to one from a legitimate user,
+making it challenging to distinguish between the two without looking into it further. \cite{sreeram_http_2019}
+\cite{hirsi_comprehensive_2025}.
+
+
+\subsubsection{Protocol Exploits}
+Protocol exploits target weaknesses in the specific design of network protocols
+(Layer 3 and Layer 4) rather than simply overwhelming the network pipe with raw
+volume as seen in the volumetric attack section above. By exploiting the
+communication protocols defined in TCP/IP, attackers can deplete essential
+server resources like memory buffers, CPU processing power, and state tables.
+
+\paragraph{TCP SYN Flood}
+\par
+One of the most common forms of DoS attacks is the TCP SYN Flood. This attack targets
+the stateful nature of the TCP ``three way handshake''. A three way handshake is where the client sends a SYN request. The server responds with a SYN ACK, (Synchronise Acknowledge), which is a response sent by the server to the SYN, acknowledging the request and signaling readiness to establish the connection. Finally the client completes the handshake with an ACK (Acknowledge), which is a request sent by the client to confirm the connection is established, completing the three way handshake.
+
+\begin{figure}[H]
+    \centering
+    % Ensure this matches your new image filename
+    \includegraphics[width=0.75\textwidth]{Syn_flood_diagram.png}
+    \caption[Diagram of a SYN Flood]{Diagram of a SYN Flood where the attacker uses a spoofed IP to fill the target's connection table~\cite{odom_ccna_2020}.}
+    \label{fig:syn_flood}
+\end{figure}
+
+As shown in Figure \ref{fig:syn_flood}, the attacker sends a rapid succession
+of SYN packets to the target. The diagram also shows how the attacker pretends to be a trusted IP address on the network (IP Spoofing) rather than using their real IP, which is something that could be looked into for future work. 
+
+This method has an asymmetric nature, it requires a small amount of computational power for the attacker to send these fake requests, but it forces the victim server to use a lot of memory resources to track them~\cite{eddy_tcp_2007}. In a normal handshake, the server replies with a SYN ACK and allocates memory in a structure called the Transmission Control Block (TCB) to store the connection state. It then waits for a final ACK from the client~\cite{eddy_tcp_2007}.
+
+In a SYN flood with IP spoofing, because the attacker is pretending to be someone else, the server sends the response into the void and never receives the final ACK. This leaves the server with a ``half open'' connection. Since the server's backlog queue (the buffer for pending connections) has a finite size, the flood quickly fills all available slots. Once the backlog is full, as seen in the right of the diagram, the server drops all incoming requests, rendering it inaccessible to the legitimate user \cite{bogdanoski_analysis_2013}.
+
+
+\subsubsection{Volumetric Attacks}
+Volumetric attacks, often measured in bits per second (bps), are the most
+common form of DoS. Unlike application layer attacks that target
+server logic, the main objective of a volumetric attack is  for an attacker to disrupt user access to a service by sending traffic that reduces the available capacity for legitimate users~\cite{fu_fundamental_2019}. By generating massive congestion, legitimate traffic
+is prevented from using the network link, resulting in a denial of
+service.
+
+\begin{figure}[H]
+    \centering
+    % Ensure the image file is named correctly in your folder
+    \includegraphics[width=0.9\linewidth]{volumetric-attack.jpg}
+    \caption[Volumetric DDoS Attack Architecture]{Architecture of a Volumetric DDoS Attack using a Botnet \cite{noauthor_what_nodate}.}
+    \label{fig:volumetric_diagram}
+\end{figure}
+
+As shown in Figure \ref{fig:volumetric_diagram}, while the diagram shows
+a botnet based DDoS attack, a similar volumetric attack can also be launched
+from a single machine, which is the case in DoS attacks. In these attacks, it's
+not the content of the request that matters, but the sheer volume of traffic.
+The target server's network interface or the upstream router becomes
+overwhelmed, preventing the legitimate users, as shown in the diagram, from
+establishing a connection.
+\par
+At a low level, volumetric attacks typically operate on Layer 3 (Network) and
+Layer 4 (Transport) of the OSI model. Common attack methods include UDP floods, which is where random ports on a server are flooded with UDP packets, making the server repeatedly search for and respond to non existent applications at those ports. ICMP floods are also common, ICMP is Internet Control Message Protocol, a network layer diagnostic protocol used to report errors and check connectivity (like ``Ping''), differing from TCP/UDP as it is used for network management rather than data transport and does not use port numbers. ICMP floods are where the server is flooded with ICMP requests from multiple fake IP addresses. As the server processes and responds to these bogus requests, it becomes overloaded and unable to handle legitimate requests~\cite{chukwudi_volumetric_2016}. To increase the volume of traffic, attackers often use Reflection and Amplification techniques.
+
+
+\paragraph{Amplification}
+\par
+In an amplification attack, the attacker sends a small request to a third party
+server (such as a DNS resolver (a server or service that helps translate domain names) or NTP server (A server that provides accurate time information to other devices on a network.)) but spoofs the source IP address
+to match the victim's IP. The third party server then replies to the victim
+with a response payload that is significantly larger than the initial request.
+This allows an attacker with limited bandwidth to generate a massive volumetric
+flood against the target~\cite{anagnostopoulos_dns_2013, rudman_characterization_2015}.
+
+
+
+\subsection{FPGA Architecture}
+Field-Programmable Gate Arrays (FPGAs) are devices that can be electrically
+programmed in the field to become almost any kind of digital circuit or
+system~\cite{farooq_fpga_2012}. They consist of a matrix of Configurable Logic
+Blocks (CLBs) connected together via a programmable routing fabric, which can
+be wired to perform complex digital functions, as shown in
+Figure~\ref{fig:internal_FPGA}. Unlike a CPU, which executes
+instructions sequentially, the internal circuitry of an FPGA executes logic in
+parallel. The hardware reconfigurability of an FPGA is what distinguishes it from a standard processor, offering a balance between the flexibility of general purpose processors and the performance of Application Specific Integrated Circuits (ASICs)~\cite{compton_reconfigurable_2002}.
+
+\begin{figure}[H]
+      \centering
+      % Ensure the image file is named correctly in your folder
+      \includegraphics[width=0.9\linewidth]{Internal_FPGA.jpg}
+      \caption[Internal FPGA Architecture]{Diagram showing the internal architecture of an FPGA, showing CLBs connected via programmable interconnects~\cite{admin_fpga_2023}.}
+      \label{fig:internal_FPGA}
+\end{figure}
+
+FPGAs consist of several fundamental components~\cite{boutros_fpga_2021}:
+
+\begin{description}
+      \item[Programmable Logic:] The core computational fabric of the FPGA, traditionally
+            composed of Configurable Logic Blocks and Look-Up Tables (LUTs). This layer
+            implements the custom digital logic and sequential operations as defined by the
+            user~\cite{boutros_fpga_2021}.
+
+      \item[Programmable Routing:] This is a network of wires and programmable switches
+            (interconnects) that links logic blocks together. It acts as the device's
+            ``nervous system,'' routing signals between the programmable logic, DSPs, and
+            I/O (Input Output) pins~\cite{boutros_fpga_2021}.
+
+      \item[Programmable IO:] The input/output blocks (IOBs) that interface the internal
+            logic with physical device pins. These are configurable to support various
+            voltage standards and protocols (e.g DDR) for communicating with external
+            hardware~\cite{boutros_fpga_2021}.
+
+      \item[DSP Blocks:] Specialised arithmetic units embedded in the fabric. Unlike
+            general logic, these are optimised to perform high-speed mathematical
+            operations (like multiply accumulate) efficiently, which is critical for signal
+            processing tasks~\cite{boutros_fpga_2021}.
+
+      \item[System-Level Interconnect (Network-on-Chip):] The communication infrastructure used to manage data flow between subsystems~\cite{boutros_fpga_2021}. This can be implemented in two ways:
+    \begin{description}
+        \item \textbf{Hard NoC:} Dedicated, fixed-silicon routers embedded in the chip. As detailed by Abdelfattah and Betz~\cite{s_networks_chip_2014}, these hardened structures are up to $23\times$ more area-efficient and $6\times$ faster than programmable logic solutions.
+        \item \textbf{Soft NoC:} Interconnects constructed using the FPGAs general-purpose logic (LUTs) and routing fabric (e.g. the AXI Interconnect linking the MicroBlaze soft-processor to the detection logic).
+    \end{description}
+    While Hard NoCs offer superior performance, the Virtex-7 architecture used in the VC707 is reliant on Soft NoCs. As a result, a portion of the programmable logic must be allocated to implementing these data buses to ensure non blocking communication between the Packet Monitor and the MicroBlaze controller..
+
+      \item[Interposers:] A silicon integration layer found in 2.5D ICs (A type of semiconductor packaging technology that allows multiple chips to be integrated in a single package with a vertical stacking arrangement). It allows multiple
+            memory chips (like HBM (High Bandwidth Memory)) to be mounted side-by-side in a
+            single package, which allows massive logic scaling and higher bandwidth~\cite{boutros_fpga_2021}.
+\end{description}
+
+\subsubsection{Xilinx Overview}
+This project uses the Xilinx 7-Series FPGA architecture, specifically the
+Virtex-7 family. Unlike the Zynq architecture which
+integrates a hard core ARM processor, the Virtex-7 is a pure FPGA fabric
+optimised for massive logic
+capacity~\cite{noauthor_7_2020}.
+
+Because this architecture lacks a dedicated Processing System (PS), any
+necessary software tasks (such as logging or high-level policy management) are
+implemented using a MicroBlaze soft-processor instantiated within the
+programmable logic. Development is carried out using the Xilinx Vivado Design
+Suite, which serves as the main environment for synthesising Hardware
+Description Languages (HDL) into a bitstream that configures the physical
+logic gates~\cite{noauthor_tcl_nodate}.
+
+\subsubsection{VC707 Platform}
+The physical implementation of the project is deployed on the Xilinx VC707
+Evaluation Kit, as shown in Figure~\ref{fig:my_setup}. This high performance
+platform is built around the Virtex-7 XC7VX485T FPGA, a device optimised for
+high bandwidth connectivity and logic intensive applications. Unlike the
+Zynq-7000 series which integrates a hard wired ARM processor and PL~\cite{noauthor_zynq-7000_2018}, the VC707 relies
+entirely on reconfigurable logic~\cite{noauthor_vc707_2019}. This architecture was selected because it
+eliminates Operating System (OS) overhead, allowing for
+line-rate packet processing which is important when detecting
+attacks that occur in less than a second.
+
+% --- INSERT IMAGE HERE ---
+\begin{figure}[H]
+      \centering
+      % Make sure FPGA.jpg is in the same folder as your .tex file
+      \includegraphics[width=0.9\textwidth]{FPGA.jpg}
+      \caption[Experimental Hardware Setup (VC707)]{Experimental hardware setup featuring the Xilinx VC707 Evaluation Kit. Left: The 12V power supply. Right: The red Xilinx Platform Cable USB II (DLC10) programmer connected to the JTAG header for bitstream config and debugging.}
+      \label{fig:my_setup}
+\end{figure}
+
+Key features of the platform used in the project include:
+
+\begin{description}
+      \item[Virtex-7 FPGA Fabric:] The central device (visible under the cooling fan in Figure~\ref{fig:my_setup}) provides 485,760 logic cells and 2,800 DSP slices~\cite{noauthor_7_2020}. This high logic density is important for implementing parallel detection algorithms, for example simultaneous tracking of multiple network flows.
+
+      \item[SFP+ Networking Interfaces:] The board includes Quad SFP+ (Small Form factor Pluggable) cages (visible on the right side of the board). These interfaces allow the system to directly receive network traffic from optical or copper, bypassing the latency typically introduced by standard software stacks(a collection of software components or technologies that work together to provide a set of functionalities for a specific application). This makes sure that the detection logic processes data at full ``wire-speed'' (up to 10Gbps for SFP+, up to 1Gbps for SFP).
+
+      \item[DDR3 SODIMM Memory:] The board includes 1GB of DDR3 (Double Data Rate) memory connected directly to the FPGA logic. In this design, it is used as a high speed circular buffer to temporarily store packet headers while the detection logic calculates the flow statistics.
+
+      \item[JTAG Configuration Interface:] The system is programmed using the Xilinx Platform Cable USB II (DLC10), visible on the right side of Figure~\ref{fig:my_setup} (the red device). This interface enables bitstream uploading via Vivado and real-time hardware debugging.
+
+      \item[User I/O (Alert System):] The board features an LCD character display and status LEDs (visible near the top-left). In this project, these can serve as the physical output for the Detection System, providing visual confirmation when a specific threshold is breached and a DoS attack is detected.
+\end{description}
+
+One of the main advantages of using FPGA architecture in network security is
+their ability to run multiple operations at the same time. Unlike general-purpose processors that reuse a shared Arithmetic Logic Unit (ALU) to execute instructions sequentially, an FPGA can
+instantiate multiple independent logic circuits that operate concurrently.
+This allows the creation of pipelined data paths, where each stage of
+packet inspection (e.g.\ parsing, feature extraction, and counting) is mapped
+to dedicated hardware.
+
+In the context of this project, the hardware design enables line-rate
+processing in principle. Packet data can be analysed as it streams through
+the device, with header fields extracted and multiple detection counters
+updated within a single clock cycle.
+
+Because these operations are implemented as fixed RTL structures rather
+than software routines, the system exhibits deterministic latency,
+independent of traffic volume. However, in the current implementation,
+packet replay is performed from BRAM via the MicroBlaze processor, which
+introduces a software-controlled bottleneck and limits the achievable
+throughput.
+
+This is particularly important for Denial of Service detection, where sudden
+traffic surges can overwhelm software-based systems. By eliminating shared
+resource contention and interrupt overhead, the FPGA-based approach avoids
+packet loss and ensures consistent inspection coverage even under high load.
+
+
+\subsection{MicroBlaze Processor}
+The MicroBlaze processor is a 32 bit RISC (Reduced Instruction Set Computing, a CPU architecture that uses a small, highly optimised set of instructions) soft core processor developed by AMD, designed to be instantiated within the programmable logic fabric of an FPGA. Unlike hard-core processors such as the ARM cores in the Zynq family, the MicroBlaze is synthesised from IP blocks, which allows it to be tailored to specific requirements. This flexibility makes it suitable for embedded control tasks, packet inspection, and integration with custom hardware accelerators \cite{noauthor_introduction_nodate,noauthor_designing_nodate}. Architecturally, MicroBlaze follows a Harvard style, meaning that the program memory and data memory are separate, with separate instruction and data buses. It can be also configured with instruction and data caches, hardware multiplier and divider units, and a floating point unit if needed. Communication with memory and peripherals is achieved through Local Memory Bus (LMB) interfaces. This modularity makes sure that the processor can be optimised for performance. 
+\par
+In the context of this project, the MicroBlaze processor will provide a lightweight supervisory layer that works alongside the custom detection logic implemented in the hardware. While the FPGA fabric handles high-speed packet inspection and DoS attack detection, the MicroBlaze can be used to manage configuration registers, log detection events, and provide an interface for debugging and evaluation. This ensures that the detection pipeline remains optimised for speed, while the processor supports higher-level control and monitoring functions. We will go into further detail in Section~\ref{sec:Workplan}, where the integration of MicroBlaze into the overall system architecture is described. The setup process begins in the Vivado Design Suite, where the MicroBlaze core is instantiated using the IP Integrator. The configuration wizard allows the designer to select the implementation type and enable the necessary features. Once the processor is defined, peripherals such as memory controllers, UART interfaces, GPIO modules, and interrupt controllers are added to the design and connected via AXI interconnects. After synthesising the hardware description is then exported to the Vitis IDE. Within Vitis, application projects are created, and C/C++ programs are developed. These programs are then compiled and loaded onto the FPGA via JTAG, which you can see in Figure~\ref{fig:my_setup}. Debugging is supported directly within Vitis, allowing the designer to monitor memory usage, set breakpoints, and evaluate how efficiently the program is running/executed~\cite{noauthor_getting_nodate}. Compared to hard-core processors such as ARM Cortex-A9 or Cortex-A53, the MicroBlaze offers greater configurability but a lower raw output of performance. In this project, its role is to provide a flexible and programmable control environment that enhances the usability and evaluation of the intrusion detection system.
+
+
+
+
+
+
+
+\subsection{AXI Interconnects}
+AXI4-Stream is a high-speed communication protocol designed for transferring
+data as a continuous stream between hardware modules. Unlike memory-mapped
+interfaces, it does not use addresses, making it well suited to applications
+where data flows sequentially, such as packet processing.
+
+AXI4-Streams form the data path of the system, carrying raw packet data through
+the detection pipeline. Because it does not rely on address-based transactions,
+it minimises protocol overhead and allows continuous high-throughput data
+transfer.
+
+The interface operates using a VALID/READY handshake mechanism. In this
+project, the \texttt{TVALID} signal indicates that a 32-bit word is present on
+the bus, while \texttt{TLAST} marks the end of a packet. This allows the
+hardware parser to maintain packet boundaries and reset its internal state
+accordingly.
+
+The absence of a hardware backpressure signal in the GPIO-based implementation
+necessitates software-level timing control, which is achieved using short
+synchronisation delays during packet injection.
+
+\subsection{Hardware-Software Co-Design}
+A key design principle of this project is dividing functionality between the
+data plane and the control plane, forming a hardware-software co-design.
+
+The Data Plane, implemented in FPGA logic, is responsible for time-sensitive
+operations such as packet parsing, protocol classification, and real-time
+counter updates. These tasks are executed at the system clock frequency,
+allowing consistent throughput.
+
+The Control Plane, implemented on the MicroBlaze processor, manages system
+configuration, dataset replay, and result reporting. These tasks involve more
+complex control logic but are not latency-sensitive, making them well suited to
+software implementation.
+
+This partitioning allows the system to exploit the strengths of both domains,
+the parallel processing capability of hardware and the flexibility of software.
+As a result, the IDS achieves high-performance packet inspection while
+maintaining adaptability for testing and evaluation.
+
+\subsection{Scapy and Traffic Generation}
+Scapy is a Python based packet manipulation tool. It allows users to create, send, capture, and analyse network packets. Unlike traditional traffic generation tools, Scapy can provide access to packet headers, which allows the creation of custom traffic patterns for testing and research purposes \cite{noauthor_scapy_nodate}.
+
+The framework supports a wide range of protocols, including Ethernet, IP, TCP, User Datagram Protocol (UDP), and Internet Control Message Protocol (ICMP). By combining packet crafting with Python scripting, Scapy can be used to simulate testing scenarios such as flooding attacks.
+
+In the context of this project, Scapy will used to generate synthetic traffic that simulates Denial of Service attacks. For example, a TCP SYN flood can be scripted to repeatedly send packets with the SYN flag set. By running these scripts within a Jupyter Notebook, Scapy can integrate with the FPGA detection framework, allowing control over attack parameters and timestamps.
+

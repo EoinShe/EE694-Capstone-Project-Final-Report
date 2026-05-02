@@ -1,8 +1,86 @@
-uihysbadiuwean
-
 \subsection{Prisma}
+\begin{tikzpicture}[>=latex, font={\sf \small}]
+
+\tikzstyle{bluerect} = [rectangle, rounded corners, minimum width=1.5cm, minimum height=0.75cm, text centered, draw=black, fill=cyan!60!gray!45!white, rotate=90, font=\sffamily]
+
+\tikzstyle{roundedrect} = [rectangle, rounded corners, minimum width=12cm, minimum height=1cm, text centered, draw=black, font=\sffamily]
+
+\tikzstyle{textrect} = [rectangle, minimum width=5.25cm, text width=5.24cm, minimum height=1cm, draw=black, font={\sffamily \footnotesize}]
+
+\node (top1) at (0, 10.5cm) [draw, roundedrect, fill=yellow!80!red!70]
+  {Identification of studies via database and registers};
+
+\node (r1blue) at (-6.75cm, 8.0cm) [draw, bluerect, minimum width=3cm]{Identification};
+
+\node (r1left) at (-3.25cm, 8.0cm) [draw, textrect, minimum height=3cm]
+  {Records identified from:
+     \begin{itemize}
+     \item Databases ($n=$)
+     \item Registers ($n=$)
+     \end{itemize}   
+  };
+
+\node (r1right) at (3.25, 8.0cm) [draw, textrect, minimum height=3cm]
+  {Records removed before screening: 
+    \begin{itemize}
+    \item Duplicates ($n=$)
+    \item Ineligible ($n=$)
+    \item Other reasons ($n=$)
+    \end{itemize} 
+  };
+
+\node (r2blue) at (-6.75cm, 1.5cm) [draw, bluerect, minimum width=8.5cm]
+  {Screening};
+
+\node (r2left) at (-3.25cm, 5.0cm) [draw, textrect, minimum height=1.5cm]
+  {Records screened ($n=$)};
+
+\node (r2right) at (3.25, 5.0cm) [draw, textrect, minimum height=1.5cm]
+  {Records excluded ($n=$)};
+
+\node (r3left) at (-3.25cm, 2.5cm) [draw, textrect, minimum height=1.5cm]
+  {Reports sought for retrieval ($n=$)};
+
+\node (r3right) at (3.25, 2.5cm) [draw, textrect, minimum height=1.5cm]
+  {Not retrieved ($n=$)};
+
+
+\node (r4left) at (-3.25cm, 0cm) [draw, textrect, minimum height=1.5cm]
+  {Reports assessed for eligibility ($n=$)};
+
+\node (r4right) at (3.25, -1.0cm) [draw, textrect, minimum height=3.5cm]
+  {Reports Excluded: 
+    \begin{itemize}
+    \item Reason 1 ($n=$)
+    \item Reason 2 ($n=$)
+    \item Reason 3 ($n=$)
+    \item etc.
+    \end{itemize}     
+  };
+
+
+\node (r5blue) at (-6.75cm, -4.5cm) [draw, bluerect, minimum width=2cm]
+  {Included};
+
+\node (r5left) at (-3.25cm, -4.5cm) [draw, textrect, minimum height=2cm]
+  {Studies included in review \\ 
+   $n=$ \\ 
+   Reports of included studies \\ 
+   $n=$  };
+
+
+% Draw arrows between nodes:
+\draw[thick, ->] (r1left) -- (r1right);
+\draw[thick, ->] (r1left) -- (r2left);
+\draw[thick, ->] (r2left) -- (r2right);
+\draw[thick, ->] (r2left) -- (r3left);
+\draw[thick, ->] (r3left) -- (r3right);
+\draw[thick, ->] (r3left) -- (r4left);
+\draw[thick, ->] (r4left) -+ (0.5,0);
+\draw[thick, ->] (r4left) -- (r5left);
+
+\end{tikzpicture}
 
 
 
-
-\subsectio packet parsing -> https://www.xilinx.com/publications/about/ANCS_final.pdf
+$ packet parsing -> https://www.xilinx.com/publications/about/ANCS_final.pdf$

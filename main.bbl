@@ -23,8 +23,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Information related to the World Development Report 2016: Digital Dividends}
       \field{journaltitle}{World Bank}
@@ -49,8 +49,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{The Global Cybersecurity Outlook 2025 highlights key trends shaping economies and societies in 2025, along with insights into emerging threats and solutions.}
       \field{journaltitle}{World Economic Forum}
@@ -73,8 +73,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{ENISA: Every day we experience the Information Society. Interconnected networks touch our everyday lives, at home and at work. It is therefore vital that computers, mobile phones, banking, and the Internet function, to support Europe’s digital economy. That is why ENISA is working with Cybersecurity for the EU and the Member States.}
       \field{month}{11}
@@ -131,8 +131,8 @@
       \strng{authornamehash}{012a3c99c2b33c699a462c265c7a4b76}
       \strng{authorfullhash}{d3e35109379f13b41f933cb210f660dd}
       \strng{authorfullhashraw}{d3e35109379f13b41f933cb210f660dd}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The widespread adoption of software-defined networking (SDN) technology has brought revolutionary changes to network control and management. Compared to traditional networks, SDN enhances security by separating the control plane from the data plane and replacing the traditional network architecture with a more flexible one. However, due to its inherent architectural flaws, SDN still faces new security threats. This paper expounds on the architecture and security of SDN, analyzes the vulnerabilities of SDN architecture, and introduces common distributed denial of service (DDoS) attacks within the SDN architecture. This article also provides a review of the relevant literature on DDoS attack detection and mitigation in the current SDN environment based on the technologies used, including statistical analysis, machine learning, policy-based, and moving target defense techniques. The advantages and disadvantages of these technologies, in terms of deployment difficulty, accuracy, and other factors, are analyzed. Finally, this study summarizes the SDN experimental environment and DDoS attack traffic generators and datasets of the reviewed literature and the limitations of current defense methods and suggests potential future research directions.}
@@ -190,8 +190,8 @@
       \strng{authornamehash}{7f398586c8c024d9f3794631cba976dd}
       \strng{authorfullhash}{7f398586c8c024d9f3794631cba976dd}
       \strng{authorfullhashraw}{7f398586c8c024d9f3794631cba976dd}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed Denial-of-Service (DDoS) attacks have become a critical issue in cyber security. This can lead to a temporary or even prolonged loss of service for users. These attacks mainly target e-commerce platforms, online services, and financial institutions. DDoS attacks need to be detected since they cause serious problems. Supervised machine learning models are effective mechanisms for detecting DDoS attacks. In this paper, a PCA-based Enhanced Distributed DDoS Attack Detection (EDAD) framework has been proposed. Various Machine Learning (ML) algorithms and feature selection techniques have been used to detect DDoS attacks. Support Vector Machine (SVM), Logistic Regression (LR), Random Forest (RF), K-Nearest Neighbours (KNN), Decision Tree (DT) supervised models, and Principle Component Analysis (PCA) feature selection method are used to differentiate between attack and regular traffic. The CICIDS2018, CICIDS2017, and CICDDoS-2019 datasets are used to evaluate the performances of ML algorithms. Various performance metrics of these algorithms are studied and compared to find the best algorithm that yields the highest accuracy. It is found that RF yields the highest accuracy of 98.9\% on CICIDS2017. In the CICDDoS2019 dataset, RF and KNN yield a higher accuracy of 98.7. On the CICIDS2018 dataset, SVM gives the highest accuracy of 98.7\%.}
@@ -248,8 +248,8 @@
       \strng{authornamehash}{09540299dfd7e4c754ebc0a3e0c0bc23}
       \strng{authorfullhash}{b5eb62f9edea1f61f23f14dfe5e84f73}
       \strng{authorfullhashraw}{b5eb62f9edea1f61f23f14dfe5e84f73}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer Networks}
@@ -515,8 +515,8 @@
       \strng{authornamehash}{005a17d8a6e9fc26672ca2769033d391}
       \strng{authorfullhash}{9d96b6203ec9c7c44f3861c03e416939}
       \strng{authorfullhashraw}{9d96b6203ec9c7c44f3861c03e416939}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2542-6605}
@@ -882,9 +882,1140 @@
       \verb https://www.netscout.com/blog/why-firewalls-are-targets-ddos-attacks
       \endverb
     \endentry
-    \entry{noauthor_ieee_2022}{article}{}{}
+    \entry{bouchard_osi_nodate}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7fdc133b0d49ec3c08f132f0d2ab3290}{%
+           family={Bouchard},
+           familyi={B\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en-us}%
+      }
+      \strng{namehash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{fullhash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{fullhashraw}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{bibnamehash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{authorbibnamehash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{authornamehash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{authorfullhash}{7fdc133b0d49ec3c08f132f0d2ab3290}
+      \strng{authorfullhashraw}{7fdc133b0d49ec3c08f132f0d2ab3290}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Open System Interconnection (OSI) model defines a networking framework to implement protocols in seven layers. There is really nothing to the OSI model. In fact, it's not even tangible...}
+      \field{title}{{OSI} 7 {Layers} {Explained} the {Easy} {Way}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\U5F6QAT4\\osi-7-layers-explained-the-easy-way.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://insights.profitap.com/osi-7-layers-explained-the-easy-way
+      \endverb
+      \verb{url}
+      \verb https://insights.profitap.com/osi-7-layers-explained-the-easy-way
+      \endverb
+    \endentry
+    \entry{kurose_computer_2013}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=940597b1d3215b2b17b93101036fbb5e}{%
+           family={Kurose},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c2e119f22d4ef9df7cfb63c82975b459}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Keith\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{fullhash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{fullhashraw}{79b9c386af384b822481cee1fccbb76a}
+      \strng{bibnamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorbibnamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authornamehash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorfullhash}{79b9c386af384b822481cee1fccbb76a}
+      \strng{authorfullhashraw}{79b9c386af384b822481cee1fccbb76a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{6. ed}
+      \field{isbn}{978-0-13-285620-1 978-0-273-76896-8}
+      \field{series}{Always learning}
+      \field{shorttitle}{Computer networking}
+      \field{title}{Computer networking: a top-down approach}
+      \field{year}{2013}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\HXBZSDFU\\Kurose and Ross - 2013 - Computer networking a top-down approach.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{oroo_oyondi_felix_tcpip_2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=58824702183c86e7841378819d0e3458}{%
+           family={{Oroo Oyondi Felix}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{58824702183c86e7841378819d0e3458}
+      \strng{fullhash}{58824702183c86e7841378819d0e3458}
+      \strng{fullhashraw}{58824702183c86e7841378819d0e3458}
+      \strng{bibnamehash}{58824702183c86e7841378819d0e3458}
+      \strng{authorbibnamehash}{58824702183c86e7841378819d0e3458}
+      \strng{authornamehash}{58824702183c86e7841378819d0e3458}
+      \strng{authorfullhash}{58824702183c86e7841378819d0e3458}
+      \strng{authorfullhashraw}{58824702183c86e7841378819d0e3458}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transmission Control Protocol/ Internet Protocol (TCP/IP) is the backbone of Internet transmission. The Transport Layer of the TCP/IP stack, which includes TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) protocols, plays a crucial role in ensuring reliable communication between devices over a network. To come up with measures that make networks more secure, it is important to learn about the vulnerabilities that exist in the transport TCP/IP stack and then have an understanding of the typical attacks carried out in such layer. This paper explores how the TCP Protocol works, the TCP/IP 3 Way Handshake, TCP Header Structure, the typical vulnerabilities and the classical attacks of transport layer TCP/IP, tools, and solutions adopted to prevent and reduce the chances of some of these attacks. The findings indicated that the major TCP/ IP stack transport layer threats include Finger printing, SYN Flood, TCP reassembly and sequencing, IP Spoofing, TCP session hijacking, RST and FIN denial of service attack, Ping of Death, Low Rate/ Shrew Attacks. Their preventive measures and mechanisms are discussed.}
+      \field{issn}{25828266}
+      \field{journaltitle}{World Journal of Advanced Engineering Technology and Sciences}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{{TCP}/{IP} stack transport layer performance, privacy, and security issues}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{175\bibrangedash 200}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.30574/wjaets.2024.11.2.0098
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\FXSPBRWF\\Oroo Oyondi Felix - 2024 - TCPIP stack transport layer performance, privacy, and security issues.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://wjaets.com/content/tcpip-stack-transport-layer-performance-privacy-and-security-issues
+      \endverb
+      \verb{url}
+      \verb https://wjaets.com/content/tcpip-stack-transport-layer-performance-privacy-and-security-issues
+      \endverb
+    \endentry
+    \entry{prasad_exhausted_2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a47f98e4f9daff8efd6fbefd95e9598e}{%
+           family={Prasad},
+           familyi={P\bibinitperiod},
+           given={Alvin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{fullhash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{fullhashraw}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{bibnamehash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{authorbibnamehash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{authornamehash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{authorfullhash}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \strng{authorfullhashraw}{a47f98e4f9daff8efd6fbefd95e9598e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hyper Text Transfer Protocol (HTTP) Get attack is the most common type of Denial of Service attacks (DOS) found today. It is common because it is very easy to implement/setup. It disallows the services of an organization to be offered to users by 􀅮looding the server with legitimate request thus exhausting the server. This prevents the server from providing services to the legitimate users which leads to organizations and businesses losing millions of dollars. Several mitigation techniques are available but these techniques are still not suf􀅮icient to detect and combat the malicious requests. The objective of this review paper is to provide the readers with the information on DoS attacks and the attackers’ intention behind these illegal activities. The critical analysis of the current literature provides insights on how to mitigate and prevent these types of attacks. This article suggests limiting the response time for each request from the server, and in dealing with response, it can use a latest veri􀅮ication system. This research can help the organizations and the solution developers in mitigating and preventing the 􀅮looding attack thus, allowing organisations to 􀅮lourish as information is readily available to the users.}
+      \field{issn}{26042673}
+      \field{journaltitle}{Journal of ICT, design, engineering and technological science}
+      \field{number}{2}
+      \field{title}{Exhausted {Servers} {Deny} {Service} - {HTTP} {Get} {Attack}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.33150/JITDETS-3.2.3
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\TU93YEPV\\Prasad - 2019 - Exhausted Servers Deny Service - HTTP Get Attack.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://jitdets.com/ojs/index.php/jitdets/article/view/15
+      \endverb
+      \verb{url}
+      \verb https://jitdets.com/ojs/index.php/jitdets/article/view/15
+      \endverb
+    \endentry
+    \entry{praseed_ddos_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7f84f6073539b0d54567934b8ff6b74b}{%
+           family={Praseed},
+           familyi={P\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d7b7a49ebae899a5257bb9836bfe885d}{%
+           family={Thilagam},
+           familyi={T\bibinitperiod},
+           given={P.\bibnamedelimi Santhi},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{fullhash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{fullhashraw}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{bibnamehash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{authorbibnamehash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{authornamehash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{authorfullhash}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \strng{authorfullhashraw}{d82a84166d8f00cfc50d9f9b7a2ac92d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Distributed denial of service (DDoS) attacks are some of the most devastating attacks against Web applications. A large number of these attacks aim to exhaust the network bandwidth of the server, and are called network layer DDoS attacks. They are volumetric attacks and rely on a large volume of network layer packets to throttle the bandwidth. However, as time passed, network infrastructure became more robust and defenses against network layer attacks also became more advanced. Recently, DDoS attacks have started targeting the application layer. Unlike network layer attacks, these attacks can be carried out with a relatively low attack volume. They also utilize legitimate application layer requests, which makes it difficult for existing defense mechanisms to detect them. These attacks target a wide variety of resources at the application layer and can bring a server down much faster, and with much more stealth, than network layer DDoS attacks. Over the past decade, research on application layer DDoS attacks has focused on a few classes of these attacks. This paper attempts to explore the entire spectrum of application layer DDoS attacks using critical features that aid in understanding how these attacks can be executed. defense mechanisms against the different classes of attacks are also discussed with special emphasis on the features that aid in the detection of different classes of attacks. Such a discussion is expected to help researchers understand why a particular group of features are useful in detecting a particular class of attacks.}
+      \field{issn}{1553-877X}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{number}{1}
+      \field{shorttitle}{{DDoS} {Attacks} at the {Application} {Layer}}
+      \field{title}{{DDoS} {Attacks} at the {Application} {Layer}: {Challenges} and {Research} {Perspectives} for {Safeguarding} {Web} {Applications}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{21}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{661\bibrangedash 685}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1109/COMST.2018.2870658
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\9G95P7W7\\Praseed and Thilagam - 2019 - DDoS Attacks at the Application Layer Challenges and Research Perspectives for Safeguarding Web App.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8466561/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8466561/
+      \endverb
+      \keyw{Application layer,attacks,Bandwidth,Computer crime,DDoS,defenses,denial of service,detection,Feature extraction,Government,Protocols,Servers,taxonomy,Web applications}
+    \endentry
+    \entry{nedza_detecting_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=f2c01240cc3f6d756f93b64b23cd0dcc}{%
+           family={Nędza},
+           familyi={N\bibinitperiod},
+           given={Patrycja},
+           giveni={P\bibinitperiod}}}%
+        {{hash=12c8c09599db50107d9c52f94cb01236}{%
+           family={Domżał},
+           familyi={D\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2c01240cc3f6d756f93b64b23cd0dcc}{%
+           family={Nędza},
+           familyi={N\bibinitperiod},
+           given={Patrycja},
+           giveni={P\bibinitperiod}}}%
+        {{hash=12c8c09599db50107d9c52f94cb01236}{%
+           family={Domżał},
+           familyi={D\bibinitperiod},
+           given={Jerzy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {publisher}%
+      }
+      \strng{namehash}{e0580ddf362aeb62fd4e2f1763a21961}
+      \strng{fullhash}{0927cc2ac71a95eeac464db7292cc357}
+      \strng{fullhashraw}{0927cc2ac71a95eeac464db7292cc357}
+      \strng{bibnamehash}{0927cc2ac71a95eeac464db7292cc357}
+      \strng{authorbibnamehash}{0927cc2ac71a95eeac464db7292cc357}
+      \strng{authornamehash}{e0580ddf362aeb62fd4e2f1763a21961}
+      \strng{authorfullhash}{0927cc2ac71a95eeac464db7292cc357}
+      \strng{authorfullhashraw}{0927cc2ac71a95eeac464db7292cc357}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the escalation in the size and complexity of modern Denial of Service attacks, there is a need for research in the context of Machine Learning (M...}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{month}{6}
+      \field{note}{Company: Multidisciplinary Digital Publishing Institute Distributor: Multidisciplinary Digital Publishing Institute Institution: Multidisciplinary Digital Publishing Institute Label: Multidisciplinary Digital Publishing Institute}
+      \field{number}{12}
+      \field{title}{Detecting {DoS} {Attacks} through {Synthetic} {User} {Behavior} with {Long} {Short}-{Term} {Memory} {Network}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{24}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3390/s24123735
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\YU9U9TVW\\Nędza et al. - 2024 - Detecting DoS Attacks through Synthetic User Behavior with Long Short-Term Memory Network.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/24/12/3735
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/24/12/3735
+      \endverb
+      \keyw{behavioral telemetry,Denial of Service,Long Short-Term Memory,machine learning}
+    \endentry
+    \entry{noauthor_what_nodate-1}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An application-layer DDoS attack is a type of cyberattack that targets a specific application or service. This type of attack takes advantage of vulnerabilities in the application or service to gain access to sensitive data or to disrupt the normal functioning of the application or service.}
+      \field{journaltitle}{Akamai}
+      \field{title}{What {Is} an {Application}-{Layer} {DDoS} {Attack}?}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\GKEW63G9\\what-is-application-layer-ddos-attack.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.akamai.com/glossary/what-is-application-layer-ddos-attack
+      \endverb
+      \verb{url}
+      \verb https://www.akamai.com/glossary/what-is-application-layer-ddos-attack
+      \endverb
+    \endentry
+    \entry{singh_application_2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9465f8fe5d686bb873f8f30aec82b77b}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Karanpreet},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ab5ffce4246cf92fcf65bad7ea5e7948}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Paramvir},
+           giveni={P\bibinitperiod}}}%
+        {{hash=73b70bf3ae3a1184e0ee0af25904254d}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Krishan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{1742c78ee9b16f0da3e8950baad4b03b}
+      \strng{fullhash}{d805fb3898dd63a9920a38514a47601c}
+      \strng{fullhashraw}{d805fb3898dd63a9920a38514a47601c}
+      \strng{bibnamehash}{d805fb3898dd63a9920a38514a47601c}
+      \strng{authorbibnamehash}{d805fb3898dd63a9920a38514a47601c}
+      \strng{authornamehash}{1742c78ee9b16f0da3e8950baad4b03b}
+      \strng{authorfullhash}{d805fb3898dd63a9920a38514a47601c}
+      \strng{authorfullhashraw}{d805fb3898dd63a9920a38514a47601c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Application layer Distributed Denial of Service (DDoS) attacks have empowered conventional flooding based DDoS with more subtle attacking methods that pose an ever-increasing challenge to the availability of Internet based web services. These attacks hold the potential to cause similar damaging effects as their lower layer counterparts using relatively fewer attacking assets. Being the dominant part of the Internet, HTTP is the prime target of GET flooding attacks, a common practice followed among various application layer DDoS attacks. With the presence of new and improved attack programs, identifying these attacks always seems convoluted. A swift rise in the frequency of these attacks has led to a favorable shift in interest among researchers. Over the recent years, a significant research contribution has been dedicated toward devising new techniques for countering HTTP-GET flood DDoS attacks. In this paper, we conduct a survey of such research contributions following a well-defined systematic process. A total of 63 primary studies published before August 2015 were selected from six different electronic databases following a careful scrutinizing process. We formulated four research questions that capture various aspects of the identified primary studies. These aspects include detection attributes, datasets, software tools, attack strategies, and underlying modeling methods. The field background required to understand the evolution of HTTP-GET flood DDoS attacks is also presented. The aim of this systematic survey is to gain insights into the current research on the detection of these attacks by comprehensively analyzing the selected primary studies to answer a predefined set of research questions. This survey also discusses various challenges that need to be addressed, and acquaints readers with recommendations for possible future research directions.}
+      \field{issn}{0167-4048}
+      \field{journaltitle}{Computers \& Security}
+      \field{month}{3}
+      \field{shorttitle}{Application layer {HTTP}-{GET} flood {DDoS} attacks}
+      \field{title}{Application layer {HTTP}-{GET} flood {DDoS} attacks: {Research} landscape and challenges}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{65}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{344\bibrangedash 372}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/j.cose.2016.10.005
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\XZISGUG8\\Singh et al. - 2017 - Application layer HTTP-GET flood DDoS attacks Research landscape and challenges.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\9I2N5953\\S0167404816301365.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404816301365
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404816301365
+      \endverb
+      \keyw{Application layer DDoS attacks,Denial of service,HTTP-GET flood,Sophisticated attacks,Systematic survey}
+    \endentry
+    \entry{sreeram_http_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=535de2d7a5c2efdbf8358e4b5660973f}{%
+           family={Sreeram},
+           familyi={S\bibinitperiod},
+           given={Indraneel},
+           giveni={I\bibinitperiod}}}%
+        {{hash=21040e14addeb856f1fb70d9f7bb2b90}{%
+           family={Vuppala},
+           familyi={V\bibinitperiod},
+           given={Venkata\bibnamedelimb Praveen\bibnamedelima Kumar},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{fullhash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{fullhashraw}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{bibnamehash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{authorbibnamehash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{authornamehash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{authorfullhash}{db3973cf74f616896b1090b2e26c33c3}
+      \strng{authorfullhashraw}{db3973cf74f616896b1090b2e26c33c3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The internet network is mostly victimized to the Distributed Denial of Service (DDOS) attack, which is one that intentionally occupies the computing resources and bandwidth in order to deny that services to potential users. The attack scenario is to flood the packets immensely. If the attack source is single, then the attack is referred as denial of service (DOS) and if attack is sourced from divergent servers, then it is referred as DDOS. Over a decade many of the researchers considered the detection and prevention of DDOS attack as research objective and succeeded to deliver few significant DDOS detection and prevention strategies. How fast and early detection of DDOS attack is done in streaming network transactions is still a significant research objective in present level of internet usage. Unfortunately the current benchmarking DDOS attack detection strategies are failing to justify the objective called “fast and early detection of DDOS attack”. In order to this, in this paper we devised a Bio-Inspired Anomaly based application layer DDoS attack (App-DDOS Attack) detection that is in the aim of achieving fast and early detection. The proposed model is a bio-inspired bat algorithm that used to achieve the fast and early detection of the App-DDOS by HTTP flood. The experiments were carried out on bench marking CAIDA dataset and the results delivered are boosting the significance of the proposed model to achieve the objective of the paper.}
+      \field{issn}{2210-8327}
+      \field{journaltitle}{Applied Computing and Informatics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{{HTTP} flood attack detection in application layer using machine learning metrics and bio inspired bat algorithm}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{59\bibrangedash 66}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.aci.2017.10.003
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\9JIVFXNX\\Sreeram and Vuppala - 2019 - HTTP flood attack detection in application layer using machine learning metrics and bio inspired bat.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\KESU8QMK\\S2210832717301655.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210832717301655
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210832717301655
+      \endverb
+      \keyw{Application Layer DDoS (APP-DDoS),Bio inspired approaches,Denial of Service (DoS) attacks,Distributed DoS (DDoS) attacks}
+    \endentry
+    \entry{hirsi_comprehensive_2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=143a30a905002be0f29b805745d219c9}{%
+           family={Hirsi},
+           familyi={H\bibinitperiod},
+           given={Abdinasir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a7ba18ccc4f50435914a6da63bc99048}{%
+           family={Alhartomi},
+           familyi={A\bibinitperiod},
+           given={Mohammed\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c78556e8322e94891f83ae3d163b6993}{%
+           family={Audah},
+           familyi={A\bibinitperiod},
+           given={Lukman},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9f3c8b0cc3d4b42f0de00d05b891970f}{%
+           family={Salh},
+           familyi={S\bibinitperiod},
+           given={Adeb},
+           giveni={A\bibinitperiod}}}%
+        {{hash=55c06d1305b4b49ddbe0d0b2e193749b}{%
+           family={Sahar},
+           familyi={S\bibinitperiod},
+           given={Nan\bibnamedelima Mad},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3132e35c1d9fb8e6c977b3606c9b7b81}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Salman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c00ada7c9c07bc075b4ced0704c47d09}{%
+           family={Ansa},
+           familyi={A\bibinitperiod},
+           given={Godwin\bibnamedelima Okon},
+           giveni={G\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=cfeaf6e95c59deb1e793fd495331fa41}{%
+           family={Farah},
+           familyi={F\bibinitperiod},
+           given={Abdullahi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f7e7bffdb6a765e1d1aaea018f00dc9}
+      \strng{fullhash}{2f228debc8fa9a0f851fd4c5def3b1af}
+      \strng{fullhashraw}{2f228debc8fa9a0f851fd4c5def3b1af}
+      \strng{bibnamehash}{5f7e7bffdb6a765e1d1aaea018f00dc9}
+      \strng{authorbibnamehash}{5f7e7bffdb6a765e1d1aaea018f00dc9}
+      \strng{authornamehash}{5f7e7bffdb6a765e1d1aaea018f00dc9}
+      \strng{authorfullhash}{2f228debc8fa9a0f851fd4c5def3b1af}
+      \strng{authorfullhashraw}{2f228debc8fa9a0f851fd4c5def3b1af}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Software-Defined Networking (SDN) offers significant advantages for modern networks, including flexibility, centralized control, and reduced dependency on vendor-specific hardware. However, these benefits introduce security vulnerabilities, particularly from Distributed Denial-of-Service (DDoS) attacks, which represent some of the most disruptive threats to SDN environments. A review of the literature shows that while various techniques have been proposed to counteract DDoS threats, many studies have focused on single detection methods, with only a few utilizing multiple approaches. This fragmented focus limits a comprehensive approach to addressing DDoS threats across the SDN layers. To bridge this gap, this paper presents the first comprehensive review of DDoS anomaly detection in SDN, examining over 165 primary research articles published between 2020 and 2024. A novel taxonomy of DDoS attacks is introduced, categorizing them by distinct characteristics, and mapping each attack type to relevant detection methods within specific SDN layers. The survey provides a layer-by-layer analysis of DDoS detection techniques, covering the application, control, and infrastructure layers, and offers a structured overview that clarifies the applicability and effectiveness of each method. The paper concludes by synthesizing key findings, identifying unresolved challenges, and outlining future research directions to advance DDoS detection mechanisms in SDN. This roadmap is designed to guide researchers in addressing security vulnerabilities and enhancing SDN resilience against evolving DDoS threats.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Comprehensive {Analysis} of {DDoS} {Anomaly} {Detection} in {Software}-{Defined} {Networks}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{23013\bibrangedash 23071}
+      \range{pages}{59}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2025.3535943
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\KB4R33QG\\Hirsi et al. - 2025 - Comprehensive Analysis of DDoS Anomaly Detection in Software-Defined Networks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/10857272
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/10857272
+      \endverb
+      \keyw{Amplification attacks,anomaly detection,Anomaly detection,botnet attacks,Computer crime,DDoS detection,Denial-of-service attack,flooding attacks,Floods,Hardware,protocol attacks,reflection attacks,Reviews,SDN security,Security,Software defined networking,software-defined networking (SDN),Surveys,Taxonomy,taxonomy of DDoS attacks}
+    \endentry
+    \entry{odom_ccna_2020}{incollection}{}{}
+      \name{author}{1}{}{%
+        {{hash=fe59039fb7e80d17303c49d3ce0ba8b2}{%
+           family={Odom},
+           familyi={O\bibinitperiod},
+           given={Wendell},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Hoboken, New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {Cisco Press}%
+      }
+      \strng{namehash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{fullhash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{fullhashraw}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{bibnamehash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{authorbibnamehash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{authornamehash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{authorfullhash}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \strng{authorfullhashraw}{fe59039fb7e80d17303c49d3ce0ba8b2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-58714-713-5}
+      \field{note}{Num Pages: 570}
+      \field{title}{{CCNA} 200-301. volume 2}
+      \field{year}{2020}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\L95FJ8WL\\Odom - 2020 - CCNA 200-301. volume 2.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{eddy_tcp_2007}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=eff1d6e4dc522328e3ceeed671666aad}{%
+           family={Eddy},
+           familyi={E\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{fullhash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{fullhashraw}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{bibnamehash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{authorbibnamehash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{authornamehash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{authorfullhash}{eff1d6e4dc522328e3ceeed671666aad}
+      \strng{authorfullhashraw}{eff1d6e4dc522328e3ceeed671666aad}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document describes TCP SYN flooding attacks, which have been well-known to the community for several years. Various countermeasures against these attacks, and the trade-offs of each, are described. This document archives explanations of the attack and common defense techniques for the benefit of TCP implementers and administrators of TCP servers or networks, but does not make any standards-level recommendations. This memo provides information for the Internet community.}
+      \field{month}{8}
+      \field{note}{Num Pages: 19}
+      \field{number}{RFC 4987}
+      \field{title}{{TCP} {SYN} {Flooding} {Attacks} and {Common} {Mitigations}}
+      \field{type}{Request for {Comments}}
+      \field{urlday}{22}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC4987
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\75VZNQXX\\Eddy - 2007 - TCP SYN Flooding Attacks and Common Mitigations.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://datatracker.ietf.org/doc/rfc4987
+      \endverb
+      \verb{url}
+      \verb https://datatracker.ietf.org/doc/rfc4987
+      \endverb
+    \endentry
+    \entry{bogdanoski_analysis_2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=4291f71e2165c43619d218d58be84838}{%
+           family={Bogdanoski},
+           familyi={B\bibinitperiod},
+           given={Mitko},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b96a85636f893bb7d7dfb67175c94360}{%
+           family={Shuminoski},
+           familyi={S\bibinitperiod},
+           given={Tomislav},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e5dc89df24cf7511d1d2ee6c8562f884}{%
+           family={Risteski},
+           familyi={R\bibinitperiod},
+           given={Aleksandar},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b13846cfcc2d11dc42d0c10c4e412a30}
+      \strng{fullhash}{4df2cfaa4f337a0a69ae89617a95139d}
+      \strng{fullhashraw}{4df2cfaa4f337a0a69ae89617a95139d}
+      \strng{bibnamehash}{4df2cfaa4f337a0a69ae89617a95139d}
+      \strng{authorbibnamehash}{4df2cfaa4f337a0a69ae89617a95139d}
+      \strng{authornamehash}{b13846cfcc2d11dc42d0c10c4e412a30}
+      \strng{authorfullhash}{4df2cfaa4f337a0a69ae89617a95139d}
+      \strng{authorfullhashraw}{4df2cfaa4f337a0a69ae89617a95139d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper analyzes systems vulnerability targeted by TCP (Transmission Control Protocol) segments when SYN flag is ON, which gives space for a DoS (Denial of Service) attack called SYN flooding attack or more often referred as a SYN flood attack. The effects of this type of attack are analyzed and presented in OPNET simulation environment. Furthermore, the paper presents two anomaly detection algorithms as an effective mechanism against this type of attack. Finally, practical approaches against SYN flood attack for Linux and Windows environment which are followed by are shown.}
+      \field{issn}{20749090, 20749104}
+      \field{journaltitle}{International Journal of Computer Network and Information Security}
+      \field{month}{6}
+      \field{number}{8}
+      \field{title}{Analysis of the {SYN} {Flood} {DoS} {Attack}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 11}
+      \range{pages}{-3}
+      \verb{doi}
+      \verb 10.5815/ijcnis.2013.08.01
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\VW93WJAF\\Bogdanoski et al. - 2013 - Analysis of the SYN Flood DoS Attack.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.mecs-press.org/ijcnis/ijcnis-v5-n8/v5n8-1.html
+      \endverb
+      \verb{url}
+      \verb http://www.mecs-press.org/ijcnis/ijcnis-v5-n8/v5n8-1.html
+      \endverb
+    \endentry
+    \entry{fu_fundamental_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1196543cf2c4ca5f873351303d03d5fe}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Xinzhe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=49353c700bada22fe887ad63758946b1}{%
+           family={Modiano},
+           familyi={M\bibinitperiod},
+           given={Eytan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{fullhash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{fullhashraw}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{bibnamehash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{authorbibnamehash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{authornamehash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{authorfullhash}{2a086520adbce6db09fac6e2fcf34c53}
+      \strng{authorfullhashraw}{2a086520adbce6db09fac6e2fcf34c53}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Volume-based network denial-of-service (DoS) attacks refer to a class of cyber attacks where an adversary seeks to block user traffic from service by sending adversarial traffic that reduces the available user capacity. In this paper, we explore the fundamental limits of volume-based network DoS attacks by studying the minimum required rate of adversarial traffic and investigating optimal attack strategies. We start our analysis with single-hop networks where user traffic is routed to servers following the Join-the-Shortest-Queue (JSQ) rule. Given the service rates of servers and arrival rates of user traffic, we first characterize the feasibility region of the attack and show that the attack is feasible if and only if the rate of the adversarial traffic lies in the region. We then design an attack strategy that is (i).optimal: it guarantees the success of the attack whenever the adversarial traffic rate lies in the feasibility region and (ii).oblivious: it does not rely on knowledge of service rates or user traffic rates. Finally, we extend our results on the feasibility region of the attack and the optimal attack strategy to multi-hop networks that employ Back-pressure (Max-Weight) routing. At a higher level, this paper addresses a class of dual problems of stochastic network stability, i.e., how to optimally de-stabilize a network.}
+      \field{issn}{2476-1249}
+      \field{journaltitle}{Proceedings of the ACM on Measurement and Analysis of Computing Systems}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{Fundamental {Limits} of {Volume}-based {Network} {DoS} {Attacks}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1145/3366698
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\RSZTGJDP\\Fu and Modiano - 2019 - Fundamental Limits of Volume-based Network DoS Attacks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3366698
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3366698
+      \endverb
+    \endentry
+    \entry{noauthor_what_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Learn about the devastating impact of volumetric attacks, how they work, and how to protect your online assets.}
+      \field{journaltitle}{Akamai}
+      \field{shorttitle}{What {Is} a {Volumetric} {Attack}?}
+      \field{title}{What {Is} a {Volumetric} {Attack}? {|} {How} {Volumetric} {DDoS} {Attacks} {Work}}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\8NDBHAKN\\what-is-a-volumetric-attack.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.akamai.com/glossary/what-is-a-volumetric-attack
+      \endverb
+      \verb{url}
+      \verb https://www.akamai.com/glossary/what-is-a-volumetric-attack
+      \endverb
+    \endentry
+    \entry{chukwudi_volumetric_2016}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9b96d786d12f3975b3240e166a703819}{%
+           family={Chukwudi},
+           familyi={C\bibinitperiod},
+           given={Amadi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b96d786d12f3975b3240e166a703819}
+      \strng{fullhash}{9b96d786d12f3975b3240e166a703819}
+      \strng{fullhashraw}{9b96d786d12f3975b3240e166a703819}
+      \strng{bibnamehash}{9b96d786d12f3975b3240e166a703819}
+      \strng{authorbibnamehash}{9b96d786d12f3975b3240e166a703819}
+      \strng{authornamehash}{9b96d786d12f3975b3240e166a703819}
+      \strng{authorfullhash}{9b96d786d12f3975b3240e166a703819}
+      \strng{authorfullhashraw}{9b96d786d12f3975b3240e166a703819}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed Denial of Service (DDoS) flooding attacks are one of the biggest concerns for security professionals. DDoS flooding attacks are typically explicit attempts to disrupt legitimate users' access to services. Developing a comprehensive defense mechanism against identified and anticipated DDoS flooding attacks is a desired goal of the intrusion detection and prevention research community. However, the development of such a mechanism requires a comprehensive understanding of the problem and the techniques that have been used thus far in preventing, detecting, and responding to various DDoS flooding attacks. This paper presents different types of DDOS attack at the volumetric, protocol and applications layer and their possible resolutions available in the internet world.}
+      \field{journaltitle}{International Journal of Research}
+      \field{month}{7}
+      \field{title}{Volumetric, {Protocol} and {Application} {Layer} {Ddos} {Attack} {Types} on {Web} {Servers}}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{pages}{1014}
+      \range{pages}{1}
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\2XBJZ3YN\\Chukwudi - 2016 - Volumetric, Protocol and Application Layer Ddos Attack Types on Web Servers.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{anagnostopoulos_dns_2013}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=7c86f3b15d6d96c848ec1d2517d618b6}{%
+           family={Anagnostopoulos},
+           familyi={A\bibinitperiod},
+           given={Marios},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3de7aa7e992bb6cafda7bff2d7390c76}{%
+           family={Kambourakis},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5aba05e717431aaba8dad2a8ace4eccb}{%
+           family={Kopanos},
+           familyi={K\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=062d0a95ef810d0c08a5215a2a84e310}{%
+           family={Louloudakis},
+           familyi={L\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+        {{hash=47540ae2d02cd791312926fa15602cc8}{%
+           family={Gritzalis},
+           familyi={G\bibinitperiod},
+           given={Stefanos},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{878182276b959c62042f1db4faff8f12}
+      \strng{fullhash}{bf664397aadaa70c046ab831c04b4263}
+      \strng{fullhashraw}{bf664397aadaa70c046ab831c04b4263}
+      \strng{bibnamehash}{bf664397aadaa70c046ab831c04b4263}
+      \strng{authorbibnamehash}{bf664397aadaa70c046ab831c04b4263}
+      \strng{authornamehash}{878182276b959c62042f1db4faff8f12}
+      \strng{authorfullhash}{bf664397aadaa70c046ab831c04b4263}
+      \strng{authorfullhashraw}{bf664397aadaa70c046ab831c04b4263}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is without doubt that the Domain Name System (DNS) is one of the most decisive elements of the Internet infrastructure; even a slight disruption to the normal operation of a DNS server could cause serious impairment to network services and thus hinder access to network resources. Hence, it is straightforward that DNS nameservers are constantly under the threat of Denial of Service (DoS) attacks. This paper presents a new, stealthy from the attacker's viewpoint, flavor of DNSSEC-powered amplification attack that takes advantage of the vast number of DNS forwarders out there. Specifically, for augmenting the amplification factor, the attacker utilizes only those forwarders that support DNSSEC-related resource records and advertize a large DNS size packet. The main benefits of the presented attack scenario as compared to that of the typical amplification attack are: (a) The revocation of the need of the aggressor to control a botnet, and (b) the elimination of virtually all traces that may be used toward disclosing the attacker's actions, true identity and geographical location. The conducted experiments taking into consideration three countries, namely Greece, Ireland and Portugal demonstrate that with a proper but simple planning and a reasonable amount of resources, a determined perpetrator is able to create a large torrent of bulky DNS packets towards its target. In the context of the present study this is translated to a maximum amplification factor of 44.}
+      \field{issn}{0167-4048}
+      \field{journaltitle}{Computers \& Security}
+      \field{month}{11}
+      \field{title}{{DNS} amplification attack revisited}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{39}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{475\bibrangedash 485}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.cose.2013.10.001
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\IG3IPF7B\\Anagnostopoulos et al. - 2013 - DNS amplification attack revisited.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\GQYHXN3L\\S0167404813001405.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404813001405
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404813001405
+      \endverb
+      \keyw{Amplification attack,Cybersecurity,DNS,DNSSEC,DoS,Reflection attack}
+    \endentry
+    \entry{rudman_characterization_2015}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=59ebe515ad0452b1962af854d50c6941}{%
+           family={Rudman},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2989349db265a627157eba9fa3165558}{%
+           family={Irwin},
+           familyi={I\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{fullhash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{fullhashraw}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{bibnamehash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{authorbibnamehash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{authornamehash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{authorfullhash}{9bdf90a70d7643d29d3a65af83efd60b}
+      \strng{authorfullhashraw}{9bdf90a70d7643d29d3a65af83efd60b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Network Time Protocol based DDoS attacks saw a lot of popularity throughout 2014. This paper shows the characterization and analysis of two large datasets containing packets from NTP based DDoS attacks captured in South Africa. Using a series of Python based tools, the dataset is analysed according to specific parts of the packet headers. These include the source IP address and Time-to-live (TTL) values. The analysis found the top source addresses and looked at the TTL values observed for each address. These TTL values can be used to calculate the probable operating system or DDoS attack tool used by an attacker. We found that each TTL value seen for an address can indicate the number of hosts attacking the address or indicate minor routing changes. The Time-to-Live values, as a whole, are then analysed to find the total number used throughout each attack. The most frequent TTL values are then found and show that the migratory of them indicate the attackers are using an initial TTL of 255. This value can indicate the use of a certain DDoS tool that creates packets with that exact initial TTL. The TTL values are then put into groups that can show the number of IP addresses a group of hosts are targeting.}
+      \field{booktitle}{2015 {Information} {Security} for {South} {Africa} ({ISSA})}
+      \field{month}{8}
+      \field{title}{Characterization and analysis of {NTP} amplification based {DDoS} attacks}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ISSA.2015.7335069
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\SVE3VT4N\\Rudman and Irwin - 2015 - Characterization and analysis of NTP amplification based DDoS attacks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7335069/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7335069/
+      \endverb
+      \keyw{Computer crime,Computer science,denial of service,IP networks,network security,network time protocol,Ports (Computers),Protocols,Routing,Servers}
+    \endentry
+    \entry{compton_reconfigurable_2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=104fe9d3d966be3221ba7bbee994f3d7}{%
+           family={Compton},
+           familyi={C\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1247f39c4e6360db9cce48b335b6cd8d}{%
+           family={Hauck},
+           familyi={H\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{fullhash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{fullhashraw}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{bibnamehash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{authorbibnamehash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{authornamehash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{authorfullhash}{40c5deae45641c462c4e5dc96f45bd68}
+      \strng{authorfullhashraw}{40c5deae45641c462c4e5dc96f45bd68}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Due to its potential to greatly accelerate a wide variety of applications, reconfigurable computing has become a subject of a great deal of research. Its key feature is the ability to perform computations in hardware to increase performance, while retaining much of the flexibility of a software solution. In this survey, we explore the hardware aspects of reconfigurable computing machines, from single chip architectures to multi-chip systems, including internal structures and external coupling. We also focus on the software that targets these machines, such as compilation tools that map high-level algorithms directly to the reconfigurable substrate. Finally, we consider the issues involved in run-time reconfigurable systems, which reuse the configurable hardware during program execution.}
+      \field{issn}{0360-0300, 1557-7341}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shorttitle}{Reconfigurable computing}
+      \field{title}{Reconfigurable computing: a survey of systems and software}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{34}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{171\bibrangedash 210}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1145/508352.508353
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\6PT5F6X6\\Compton and Hauck - 2002 - Reconfigurable computing a survey of systems and software.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/508352.508353
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/508352.508353
+      \endverb
+    \endentry
+    \entry{boutros_fpga_2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8b5079d5ebf378d0f9262924d2be36bc}{%
+           family={Boutros},
+           familyi={B\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=530b3538b2a3f0dece69e656e93cb352}{%
+           family={Betz},
+           familyi={B\bibinitperiod},
+           given={Vaughn},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{fullhash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{fullhashraw}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{bibnamehash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{authorbibnamehash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{authornamehash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{authorfullhash}{dda1beb64009034b9b32fe0cc48a9d71}
+      \strng{authorfullhashraw}{dda1beb64009034b9b32fe0cc48a9d71}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Since their inception more than thirty years ago, field-programmable gate arrays (FPGAs) have been widely used to implement a myriad of applications from different domains. As a result of their low-level hardware reconfigurability, FPGAs have much faster design cycles and lower development costs compared to custom-designed chips. The design of an FPGA architecture involves many different design choices starting from the high-level architectural parameters down to the transistor-level implementation details, with the goal of making a highly programmable device while minimizing the area and performance cost of reconfigurability. As the needs of applications and the capabilities of process technology are constantly evolving, FPGA architecture must also adapt. In this article, we review the evolution of the different key components of modern commercial FPGA architectures and shed the light on their main design principles and implementation challenges.}
+      \field{issn}{1558-0830}
+      \field{journaltitle}{IEEE Circuits and Systems Magazine}
+      \field{number}{2}
+      \field{shorttitle}{{FPGA} {Architecture}}
+      \field{title}{{FPGA} {Architecture}: {Principles} and {Progression}}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{4\bibrangedash 29}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1109/MCAS.2021.3071607
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\GUGRLDUK\\Boutros and Betz - 2021 - FPGA Architecture Principles and Progression.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/9439568
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/9439568
+      \endverb
+      \keyw{Circuits and systems,Field programmable gate arrays,Hardware,Performance evaluation}
+    \endentry
+    \entry{noauthor_7_2020}{article}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{7 {Series} {FPGAs} {Data} {Sheet}: {Overview} ({DS180})}
+      \field{year}{2020}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\YPTXBJIT\\2020 - 7 Series FPGAs Data Sheet Overview (DS180).pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{noauthor_tcl_nodate}{misc}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{Tcl {API} {Supports} {Scripting} • {Vivado} {Design} {Suite} {User} {Guide}: {Implementation} ({UG904}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Tcl API Supports Scripting • Vivado Design Suite User Guide\: Implementation (UG904) • Reader • AMD Technical Information Portal:C\:\\Users\\Eoin\\Zotero\\storage\\VWC3PS85\\Tcl-API-Supports-Scripting.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.amd.com/r/en-US/ug904-vivado-implementation/Tcl-API-Supports-Scripting
+      \endverb
+      \verb{url}
+      \verb https://docs.amd.com/r/en-US/ug904-vivado-implementation/Tcl-API-Supports-Scripting
+      \endverb
+    \endentry
+    \entry{noauthor_zynq-7000_2018}{article}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{Zynq-7000 {SoC} {Data} {Sheet}: {Overview} ({DS190})}
+      \field{year}{2018}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\94JI258L\\2018 - Zynq-7000 SoC Data Sheet Overview (DS190).pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{noauthor_vc707_2019}{article}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{{VC707} {Evaluation} {Board} for the {Virtex}-7 {FPGA} {User} {Guide}}
+      \field{year}{2019}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\JUDBIA54\\2019 - VC707 Evaluation Board for the Virtex-7 FPGA User Guide.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{noauthor_introduction_nodate}{misc}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction • {MicroBlaze} {Processor} {Reference} {Guide} ({UG984}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Introduction • MicroBlaze Processor Reference Guide (UG984) • Reader • AMD Technical Information Portal:C\:\\Users\\Eoin\\Zotero\\storage\\I3I3NGFI\\ug984-vivado-microblaze-ref.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.amd.com/r/en-US/ug984-vivado-microblaze-ref?tocId=xC12f4tzJxGf~6TjS~Dz1g
+      \endverb
+      \verb{url}
+      \verb https://docs.amd.com/r/en-US/ug984-vivado-microblaze-ref?tocId=xC12f4tzJxGf~6TjS~Dz1g
+      \endverb
+    \endentry
+    \entry{noauthor_designing_nodate}{misc}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{Designing with the {MicroBlaze} {Processor} • {MicroBlaze} {Processor} {Embedded} {Design} {User} {Guide} ({UG1579}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Designing with the MicroBlaze Processor • MicroBlaze Processor Embedded Design User Guide (UG1579) • Reader • AMD Technical Information Portal:C\:\\Users\\Eoin\\Zotero\\storage\\VDX7V83X\\Designing-with-the-MicroBlaze-Processor.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.amd.com/r/en-US/ug1579-microblaze-embedded-design/Designing-with-the-MicroBlaze-Processor
+      \endverb
+      \verb{url}
+      \verb https://docs.amd.com/r/en-US/ug1579-microblaze-embedded-design/Designing-with-the-MicroBlaze-Processor
+      \endverb
+    \endentry
+    \entry{noauthor_getting_nodate}{misc}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{Getting {Started} with {Vitis} • {Vitis} {Unified} {Software} {Platform} {Documentation}: {Embedded} {Software} {Development} ({UG1400}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Getting Started with Vitis • Vitis Unified Software Platform Documentation\: Embedded Software Development (UG1400) • Reader • AMD Technical Information Portal:C\:\\Users\\Eoin\\Zotero\\storage\\UDY5V2MV\\Getting-Started-with-Vitis.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.amd.com/r/en-US/ug1400-vitis-embedded/Getting-Started-with-Vitis
+      \endverb
+      \verb{url}
+      \verb https://docs.amd.com/r/en-US/ug1400-vitis-embedded/Getting-Started-with-Vitis
+      \endverb
+    \endentry
+    \entry{noauthor_scapy_nodate}{misc}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{Scapy}
+      \field{urlday}{17}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Scapy:C\:\\Users\\Eoin\\Zotero\\storage\\N3TST5XP\\scapy.net.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://scapy.net/
+      \endverb
+      \verb{url}
+      \verb https://scapy.net/
+      \endverb
+    \endentry
+    \entry{noauthor_ieee_2022}{article}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{abstract}{Ethernet local area network operation is specified for selected speeds of operation from 1 Mb/s to 400 Gb/s using a common media access control (MAC) specification and management information base (MIB). The Carrier Sense Multiple Access with Collision Detection (CSMA/CD) MAC protocol specifies shared medium (half duplex) operation, as well as full duplex operation. Speed specific Media Independent Interfaces (MIIs) allow use of selected Physical Layer devices (PHYs) for operation over coaxial, twisted pair or fiber optic cables, or electrical backplanes. System considerations for multi-segment shared access networks describe the use of Repeaters that are defined for operational speeds up to 1000 Mb/s. Local Area Network (LAN) operation is supported at all speeds. Other specified capabilities include: various PHY types for access networks, PHYs suitable for metropolitan area network applications, and the provision of power over selected twisted pair PHY types. NOTE: Additional downloads are available at: https://standards.ieee.org/wp-content/uploads/2024/02/802.3-2022\_errata.pdf and https://standards.ieee.org/wp-content/uploads/2022/07/802.3-2022\_downloads.zip. A corrigendum is also available at https://ieeexplore.ieee.org/document/10841976}
       \field{journaltitle}{IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}
@@ -938,8 +2069,8 @@
       \strng{authornamehash}{5b9ff65f4eee4ad37122030ce29c398c}
       \strng{authorfullhash}{5b9ff65f4eee4ad37122030ce29c398c}
       \strng{authorfullhashraw}{5b9ff65f4eee4ad37122030ce29c398c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Packet parsing is necessary at all points in the modern networking infrastructure, to support packet classification and security functions, as well as for protocol implementation. Increasingly high line rates call for advanced hardware packet processing solutions, while increasing rates of change call for high-level programmability of these solutions. This paper presents an approach for harnessing modern Field Programmable Gate Array (FPGA) devices, which are a natural technology for implementing the necessary high-speed programmable packet processing. The paper introduces PP: a simple high-level language for describing packet parsing algorithms in an implementation-independent manner. It demonstrates that this language can be compiled to give high-speed FPGA-based packet parsers that can be integrated alongside other packet processing components to build network nodes. Compilation involves generating virtual processing architectures tailored to specific packet parsing requirements. Scalability of these architectures allows parsing at line rates from 1 to 400 Gb/s as required in different network contexts. Run-time programmability of these architectures allows dynamic updating of parsing algorithms during operation in the field. Implementation results show that programmable packet parsing of 600 million small packets per second can be supported on a single Xilinx Virtex-7 FPGA device handling a 400 Gb/s line rate.}
@@ -967,20 +2098,10 @@
       \verb http://ieeexplore.ieee.org/document/6062708/
       \endverb
     \endentry
-    \entry{noauthor_7_2020}{article}{}{}
-      \list{language}{1}{%
-        {en}%
-      }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{title}{7 {Series} {FPGAs} {Data} {Sheet}: {Overview} ({DS180})}
-      \field{year}{2020}
-      \verb{file}
-      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\YPTXBJIT\\2020 - 7 Series FPGAs Data Sheet Overview (DS180).pdf:application/pdf
-      \endverb
-    \endentry
   \enddatalist
+  \missing{admin_fpga_2023}
+  \missing{farooq_fpga_2012}
+  \missing{s_networks_chip_2014}
 \endrefsection
 \endinput
 

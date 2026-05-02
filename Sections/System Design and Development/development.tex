@@ -2,11 +2,10 @@ This section describes the design and development of the FPGA-based intrusion
 detection system, including the key architectural decisions, hardware
 implementation, and software integration required for real-time DoS detection.
 
-The system is structured as a packet processing pipeline, with stages for
+The system is designed as a packet processing pipeline, with stages for
 packet replay, parsing, feature extraction, and sliding window-based detection.
 
-To improve clarity, this section is divided into subsections corresponding to
-the main components of the system:
+For better clarity, this section is organized into subsections, each corresponding to a main component of the system.
 \begin{itemize}[noitemsep, topsep=0pt]
     \item High-Level System Overview~(\ref{sec:high_level})
     \item Packet Replay and Data Source~(\ref{sec:Packet_Replay})
@@ -15,7 +14,7 @@ the main components of the system:
     \item GUI~(\ref{sec:GUI})
 \end{itemize}
 
-A high-level overview is presented first, providing context for the detailed
+A high-level overview is presented first, providing context for the
 descriptions that follow.
 
 \subsection{High Level System Overview} \label{sec:high_level}
@@ -79,10 +78,12 @@ which implements a sliding window-based approach to analyse traffic patterns
 over fixed time intervals.
 
 Within each detection window, packet counts and protocol-specific activity are
-aggregated and compared against thresholds to identify malicious behaviour.
-When an attack condition is met, the system flags the detected behaviour in
-hardware and outputs status signals with the detected attack type, which are
-then read by the MicroBlaze processor for aggregation and reporting.
+accumulated in hardware and compared against predefined thresholds to detect
+potential attacks. When a threshold is exceeded, the hardware raises the
+corresponding detection flags and makes them available through status registers.
+
+These status signals are then read by the MicroBlaze processor, which identifies
+the target and formats the results for reporting.
 
 The output from the hardware detection logic is communicated to a MicroBlaze
 processor, which performs higher-level aggregation and reporting. Detected
@@ -97,8 +98,7 @@ UART interface.
     \label{fig:system_hw_sw}
 \end{figure}
 
-As shown in Fig.~\ref{fig:system_hw_sw}, the system is implemented as a
-hardware-software co-design.
+As shown in Fig.~\ref{fig:system_hw_sw}, the system combines both hardware and software components.
 
 The software layer, implemented on a MicroBlaze processor, is responsible for
 managing packet datasets, transmitting packet data to the hardware, and
@@ -111,7 +111,7 @@ to process packets with low latency and high throughput.
 
 \newpage
 \subsubsection{Communication Interfaces and Interconnects}
-To facilitate the hardware--software co-design, a standardised communication
+To facilitate the hardware-software design, a standardised communication
 interface was established between the MicroBlaze processor and the IDS hardware
 module. This interface allows high-speed packet injection while enabling runtime
 configuration and monitoring.
@@ -147,7 +147,7 @@ continuous stream without requiring full buffering.
 AXI-Lite interfaces are used for configuration and status monitoring. The
 MicroBlaze writes detection thresholds to hardware registers and reads back
 detection results and traffic statistics via memory-mapped interfaces.
-The main subsystems in Fig.~\ref{fig:vivado_block} are as follows:
+The main subsystems, shown in Fig.~\ref{fig:vivado_block} are as follows:
 \begin{itemize}
     \item[\textbf{(1)}] \textbf{Clock and Reset System (orange):}
           Provides a stable clock signal and synchronised reset for all components,
@@ -190,7 +190,7 @@ The main subsystems in Fig.~\ref{fig:vivado_block} are as follows:
     \begin{figure}[H]
         \centering
         \includegraphics[height=0.8\textwidth]{verilog_RTL_block_diagram_circled_numbered.png}
-        \caption{Annotated Vivado block diagram of the FPGA-based IDS system}
+        \caption{Annotated Vivado block diagram}
         \label{fig:vivado_block}
     \end{figure}
 \end{landscape}
@@ -223,7 +223,7 @@ memory-mapped AXI GPIO interfaces.
 
 Packet data is represented as a sequence of 32-bit words, arranged in a fixed
 layout that matches the expectations of the hardware parser. As shown in
-Fig.~\ref{fig:packet_memory_map}, each packet is structured such that specific
+Fig.~\ref{fig:mem_addr}, each packet is structured such that specific
 protocol fields appear at known word indices.
 
 Each packet begins with a 32-bit \texttt{len\_words} field, which defines the
@@ -233,26 +233,23 @@ EtherType field is located in Word~3 (bits [31:16]) for IPv4 identification,
 while the TCP flags are located in the lower byte of Word~11 and are used for
 detecting attack patterns.
 
-As illustrated in Fig.~\ref{fig:mem_addr}, these fixed offsets allow
+As shown in Fig.~\ref{fig:mem_addr}, these fixed offsets allow
 the hardware to extract relevant fields directly as each word arrives, without
 requiring a search across the packet. This keeps the parsing logic simple and
 allows fields to be captured in a single clock cycle during streaming.
-
 
 Listing~\ref{lst:packet_record} shows the packet representation used in the
 software-defined datasets. Each packet contains a length field and an array of
 32-bit words, allowing packets of different sizes to be replayed through the
 same transmission function.
 
-Control signals, including \texttt{TVALID} and \texttt{TLAST}, are asserted
-during this transfer to indicate valid data and the final word of a packet,
-respectively. This enables the hardware modules to correctly interpret packet
+Control signals, including \texttt{TVALID} and \texttt{TLAST}, are set during this transfer to indicate valid data and the final word of a packet, respectively. This allows the hardware modules to correctly interpret packet
 boundaries and process incoming data in a structured manner.
 
 In real-world network interfaces, such as Ethernet Media Access Control (MAC)
 layers, packet boundaries are defined by frame structures within the hardware
 layer~\cite{noauthor_ieee_2022}. The use of control signals in this system
-therefore emulates real-world packet streaming behaviour within the controlled
+therefore simulates real-world packet streaming behaviour within the
 test environment.
 
 Packet transmission is managed by the MicroBlaze processor, which reads packet

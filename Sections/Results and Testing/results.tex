@@ -720,7 +720,7 @@ usage.
 Another limitation arises from the software-based aggregation stage. The final
 ``Attacks Detected'' summary depends on consistent and reliable extraction of
 destination IP addresses from the hardware. As observed in the NULL and XMAS
-scan experiments, unstable or inconsistent metadata readback can prevent
+scan experiments, unstable or inconsistent parsed data readback can prevent
 packets from being correctly grouped, resulting in missing per-target summaries
 despite correct detection at the window level. This indicates that the
 communication interface between hardware and software is a critical component
@@ -732,41 +732,12 @@ UDP floods, and TCP flag-based scans. While effective for these cases, this
 approach may not generalise well to more complex or subtle attack patterns.
 For example, attacks such as ACK floods or low-rate distributed attacks may not
 be detected if they do not exceed the configured thresholds within a given
-window. Similarly, the system does not perform deep packet inspection or
-stateful flow analysis, limiting its ability to detect application-layer or
-evasion-based attacks.
+window. Similarly, the system does not perform full deep packet inspection or
+stateful flow analysis, as it operates primarily on packet header fields.
+This limits its ability to detect application-layer or evasion-based attacks.
 
 Finally, the use of fixed detection windows introduces sensitivity to packet
 timing. As demonstrated in earlier experiments, the same traffic can produce
 different detection outcomes depending on how packets are distributed across
 windows. This can lead to borderline cases where attacks are inconsistently
 detected, particularly when traffic rates are close to threshold values.
-
-Overall, these limitations highlight the challenges of implementing an IDS on
-resource-constrained hardware. While the system achieves efficient real-time
-detection for a range of common attack types, further improvements in memory
-management, metadata handling, and detection algorithms would be required to
-support more complex and scalable network monitoring scenarios.
-
-
-
-
-\subsection{Comparison with Software-Based IDS}
-
-\begin{table}[H]
-\centering
-\caption{Comparison between FPGA-based IDS and software IDS}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Feature} & \textbf{Software IDS (e.g. Snort)} & \textbf{FPGA IDS (This Work)} \\
-\hline
-Latency & High (ms) & Low (hardware-level) \\
-\hline
-Power Consumption & High & Low \\
-\hline
-Parallel Processing & Limited & Highly parallel \\
-\hline
-Flexibility & High & Moderate \\
-\hline
-\end{tabular}
-\end{table}
