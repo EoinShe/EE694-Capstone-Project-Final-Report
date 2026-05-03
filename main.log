@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.2)  2 MAY 2026 18:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.2)  3 MAY 2026 02:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,6 +698,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (c:/texlive/2025/texmf-dist/tex/latex/fundus-calligra/calligra.sty
 Package: calligra 2012/04/10 v1.9 LaTeX package calligra
+) (c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 ) (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
@@ -1106,24 +1108,24 @@ LaTeX Warning: Label `tab:signal_interface' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1184,7 +1186,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count539
-Package hyperref Info: Link coloring OFF on input line 132.
+Package hyperref Info: Link coloring OFF on input line 135.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1224,27 +1226,32 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 132.
-Package biblatex Info: Reference segment=0 on input line 132.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
+Package biblatex Info: Reference section=0 on input line 135.
+Package biblatex Info: Reference segment=0 on input line 135.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 139.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 139.
  (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/logo.png, id=312, 361.35pt x 153.57375pt>
+<images/logo.png, id=380, 361.35pt x 153.57375pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 140.
+Package pdftex.def Info: images/logo.png  used on input line 143.
 (pdftex.def)             Requested size: 216.81168pt x 92.14494pt.
  [1
 
-{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/logo.png>] (./Sections/Declaration/declaration.tex
+{c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Images/logo.png>] (./Sections/Declaration/declaration.tex
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 (Font)              scaled to size 14.40002pt on input line 40.
-) [1] (./Sections/Acknowledgements/acknowledgements.tex) [2] (./Sections/Abstract/abstract.tex) [3] (./main.toc [4])
+) [1] (./Sections/Acknowledgements/acknowledgements.tex) [2] (./Sections/Abstract/abstract.tex
+Overfull \hbox (1.62741pt too wide) in paragraph at lines 2--4
+[][] 
+ []
+
+) [3] (./main.toc [4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1253,7 +1260,7 @@ LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 \openout7 = `main.lof'.
 
  [6] (./Sections/Introduction/introduction.tex
-<Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png, id=491, 204.765pt x 212.2329pt>
+<Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png, id=582, 204.765pt x 212.2329pt>
 File: Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png Graphic file (type png)
 <use Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png>
 Package pdftex.def Info: Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png  used on input line 22.
@@ -1264,31 +1271,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.30 
       [1 <./Images/A-diagram-of-a-DDoS-attack-performed-with-a-botnet.png>]
-<Images/Sudden-spike-in-traffic-during-DDoS-attack.png, id=509, 639.89063pt x 378.66469pt>
+<Images/Sudden-spike-in-traffic-during-DDoS-attack.png, id=600, 639.89063pt x 378.66469pt>
 File: Images/Sudden-spike-in-traffic-during-DDoS-attack.png Graphic file (type png)
 <use Images/Sudden-spike-in-traffic-during-DDoS-attack.png>
 Package pdftex.def Info: Images/Sudden-spike-in-traffic-during-DDoS-attack.png  used on input line 33.
 (pdftex.def)             Requested size: 314.39998pt x 186.04999pt.
  [2 <./Images/Sudden-spike-in-traffic-during-DDoS-attack.png>]) [3] (./Sections/Technical Background/technical.tex
-<Images/The 7 Layers of OSI.jpg, id=548, 562.1pt x 517.935pt>
+<Images/The 7 Layers of OSI.jpg, id=639, 562.1pt x 517.935pt>
 File: Images/The 7 Layers of OSI.jpg Graphic file (type jpg)
 <use Images/The 7 Layers of OSI.jpg>
 Package pdftex.def Info: Images/The 7 Layers of OSI.jpg  used on input line 5.
 (pdftex.def)             Requested size: 435.32419pt x 401.11885pt.
  [4 <./Images/The 7 Layers of OSI.jpg>]
-<images/application-layer-DOS.jpg, id=564, 1927.2pt x 962.59625pt>
+<images/application-layer-DOS.jpg, id=655, 1927.2pt x 962.59625pt>
 File: images/application-layer-DOS.jpg Graphic file (type jpg)
 <use images/application-layer-DOS.jpg>
 Package pdftex.def Info: images/application-layer-DOS.jpg  used on input line 55.
 (pdftex.def)             Requested size: 435.32419pt x 217.42671pt.
  [5 <./Images/application-layer-DOS.jpg>]
-<Images/Syn_flood_diagram.png, id=587, 500.87125pt x 461.725pt>
+<Images/Syn_flood_diagram.png, id=680, 500.87125pt x 461.725pt>
 File: Images/Syn_flood_diagram.png Graphic file (type png)
 <use Images/Syn_flood_diagram.png>
 Package pdftex.def Info: Images/Syn_flood_diagram.png  used on input line 94.
 (pdftex.def)             Requested size: 362.77263pt x 334.43558pt.
  [6 <./Images/Syn_flood_diagram.png (PNG copy)>]
-<Images/volumetric-attack.jpg, id=604, 1927.2pt x 943.525pt>
+<Images/volumetric-attack.jpg, id=697, 1927.2pt x 943.525pt>
 File: Images/volumetric-attack.jpg Graphic file (type jpg)
 <use Images/volumetric-attack.jpg>
 Package pdftex.def Info: Images/volumetric-attack.jpg  used on input line 117.
@@ -1297,7 +1304,7 @@ Package pdftex.def Info: Images/volumetric-attack.jpg  used on input line 117.
 
 LaTeX Warning: Citation 'farooq_fpga_2012' on page 7 undefined on input line 148.
 
-<Images/Internal_FPGA.jpg, id=613, 1927.2pt x 1316.92pt>
+<Images/Internal_FPGA.jpg, id=706, 1927.2pt x 1316.92pt>
 File: Images/Internal_FPGA.jpg Graphic file (type jpg)
 <use Images/Internal_FPGA.jpg>
 Package pdftex.def Info: Images/Internal_FPGA.jpg  used on input line 158.
@@ -1313,33 +1320,35 @@ LaTeX Warning: Citation 'admin_fpga_2023' on page 7 undefined on input line 159.
 LaTeX Warning: Citation 's_networks_chip_2014' on page 8 undefined on input line 188.
 
 [8 <./Images/Internal_FPGA.jpg>]
-<Images/FPGA.jpg, id=643, 4095.3pt x 3083.52pt>
+<Images/FPGA.jpg, id=736, 4095.3pt x 3083.52pt>
 File: Images/FPGA.jpg Graphic file (type jpg)
 <use Images/FPGA.jpg>
 Package pdftex.def Info: Images/FPGA.jpg  used on input line 228.
 (pdftex.def)             Requested size: 435.32419pt x 327.75494pt.
  [9 <./Images/FPGA.jpg>]
-Overfull \hbox (5.81464pt too wide) in paragraph at lines 242--243
-[]\OT1/cmr/m/n/10 The sys-tem is pro-grammed us-ing the Xil-inx Plat-form Ca-ble USB II (DLC10),
+Overfull \hbox (5.69656pt too wide) in paragraph at lines 242--243
+[]\T1/cmr/m/n/10 The sys-tem is pro-grammed us-ing the Xil-inx Plat-form Ca-ble USB II (DLC10),
  []
 
+[10]) [11] (./Sections/Literature Review/Lit.tex [12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [13] [14]
+Overfull \hbox (13.13092pt too wide) in paragraph at lines 146--147
+[]\T1/cmr/m/n/10 In ad-di-tion to per-for-mance im-prove-ments, FP-GAs also of-fer flex-i-bil-ity through re-con-fig-ura-bil-ity. Un-like application-
+ []
 
-LaTeX Warning: Reference `sec:Workplan' on page 10 undefined on input line 275.
-
-[10]) [11] (./Sections/Literature Review/Lit.tex) [12{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./Sections/System Design and Development/development.tex
-<Images/System_Architecture.png, id=690, 221.82875pt x 767.86874pt>
+[15]) [16] (./Sections/System Design and Development/development.tex
+<Images/System_Architecture.png, id=871, 221.82875pt x 767.86874pt>
 File: Images/System_Architecture.png Graphic file (type png)
 <use Images/System_Architecture.png>
 Package pdftex.def Info: Images/System_Architecture.png  used on input line 33.
 (pdftex.def)             Requested size: 95.05954pt x 329.05388pt.
- [13 <./Images/System_Architecture.png>]
-<Images/Hardware-software-architecture.drawio.png, id=699, 683.55376pt x 904.37875pt>
+ [17 <./Images/System_Architecture.png>]
+<Images/Hardware-software-architecture.drawio.png, id=879, 683.55376pt x 904.37875pt>
 File: Images/Hardware-software-architecture.drawio.png Graphic file (type png)
 <use Images/Hardware-software-architecture.drawio.png>
 Package pdftex.def Info: Images/Hardware-software-architecture.drawio.png  used on input line 96.
 (pdftex.def)             Requested size: 248.70757pt x 329.05388pt.
- [14] [15 <./Images/Hardware-software-architecture.drawio.png>] [16]
-<Images/verilog_RTL_block_diagram_circled_numbered.png, id=718, 1406.25375pt x 688.07062pt>
+ [18] [19 <./Images/Hardware-software-architecture.drawio.png>] [20]
+<Images/verilog_RTL_block_diagram_circled_numbered.png, id=899, 1406.25375pt x 688.07062pt>
 File: Images/verilog_RTL_block_diagram_circled_numbered.png Graphic file (type png)
 <use Images/verilog_RTL_block_diagram_circled_numbered.png>
 Package pdftex.def Info: Images/verilog_RTL_block_diagram_circled_numbered.png  used on input line 192.
@@ -1349,153 +1358,138 @@ Overfull \hbox (59.6083pt too wide) in paragraph at lines 192--193
  [][] 
  []
 
-[17
+[21
 
  <./Images/verilog_RTL_block_diagram_circled_numbered.png>]
-<Images/memory_address.drawio.png, id=725, 873.2625pt x 1124.2pt>
+<Images/memory_address.drawio.png, id=906, 873.2625pt x 1124.2pt>
 File: Images/memory_address.drawio.png Graphic file (type png)
 <use Images/memory_address.drawio.png>
 Package pdftex.def Info: Images/memory_address.drawio.png  used on input line 218.
 (pdftex.def)             Requested size: 397.60155pt x 511.86284pt.
- [18
+ [22
 
  <./Images/memory_address.drawio.png>] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 291.
- [19] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 290.
+ [23] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2025/11/14 1.11b listings language file
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 401.
- [20] [21] [22]
-<Images/structure_field.drawio.png, id=796, 472.76625pt x 181.67876pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 400.
+ [24] [25] [26]
+<Images/structure_field.drawio.png, id=976, 472.76625pt x 181.67876pt>
 File: Images/structure_field.drawio.png Graphic file (type png)
 <use Images/structure_field.drawio.png>
-Package pdftex.def Info: Images/structure_field.drawio.png  used on input line 627.
+Package pdftex.def Info: Images/structure_field.drawio.png  used on input line 626.
 (pdftex.def)             Requested size: 217.6621pt x 83.64531pt.
- [23 <./Images/structure_field.drawio.png>]
-<Images/proof_multiple_packets.png, id=802, 438.8897pt x 526.21594pt>
+ [27 <./Images/structure_field.drawio.png>]
+<Images/proof_multiple_packets.png, id=982, 438.8897pt x 526.21594pt>
 File: Images/proof_multiple_packets.png Graphic file (type png)
 <use Images/proof_multiple_packets.png>
-Package pdftex.def Info: Images/proof_multiple_packets.png  used on input line 667.
+Package pdftex.def Info: Images/proof_multiple_packets.png  used on input line 666.
 (pdftex.def)             Requested size: 217.6621pt x 260.9715pt.
-
-
-LaTeX Warning: Reference `fig:software_flow' on page 24 undefined on input line 682.
-
-<Images/flowchart_system.drawio.png, id=804, 500.87125pt x 1013.7875pt>
+<Images/flowchart_system.drawio.png, id=985, 500.87125pt x 1013.7875pt>
 File: Images/flowchart_system.drawio.png Graphic file (type png)
 <use Images/flowchart_system.drawio.png>
-Package pdftex.def Info: Images/flowchart_system.drawio.png  used on input line 690.
+Package pdftex.def Info: Images/flowchart_system.drawio.png  used on input line 689.
 (pdftex.def)             Requested size: 212.82779pt x 430.76892pt.
-[24 <./Images/proof_multiple_packets.png>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 704.
- (c:/texlive/2025/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 704.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 704.
- (c:/texlive/2025/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 704.
- [25 <./Images/flowchart_system.drawio.png>]
-
-LaTeX Warning: Reference `fig:gui' on page 26 undefined on input line 761.
-
-<Images/mixed_packets_scenario.png, id=823, 975.645pt x 624.08156pt>
+ [28 <./Images/proof_multiple_packets.png>] [29 <./Images/flowchart_system.drawio.png>]
+<Images/mixed_packets_scenario.png, id=1004, 975.645pt x 624.08156pt>
 File: Images/mixed_packets_scenario.png Graphic file (type png)
 <use Images/mixed_packets_scenario.png>
-Package pdftex.def Info: Images/mixed_packets_scenario.png  used on input line 766.
+Package pdftex.def Info: Images/mixed_packets_scenario.png  used on input line 765.
 (pdftex.def)             Requested size: 338.5863pt x 216.57489pt.
-[26 <./Images/mixed_packets_scenario.png>] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+ [30 <./Images/mixed_packets_scenario.png>] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <7> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 800.
-) [27] (./Sections/Results and Testing/results.tex
-<Images/pcap_original_format.png, id=865, 702.37407pt x 424.58624pt>
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <7> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 799.
+) [31] [32] (./Sections/Results and Testing/results.tex
+<Images/pcap_original_format.png, id=1051, 702.37407pt x 424.58624pt>
 File: Images/pcap_original_format.png Graphic file (type png)
 <use Images/pcap_original_format.png>
 Package pdftex.def Info: Images/pcap_original_format.png  used on input line 50.
 (pdftex.def)             Requested size: 232.17241pt x 140.34712pt.
-<Images/TCP_Header.png, id=867, 332.74312pt x 121.95563pt>
+<Images/TCP_Header.png, id=1053, 332.74312pt x 121.95563pt>
 File: Images/TCP_Header.png Graphic file (type png)
 <use Images/TCP_Header.png>
 Package pdftex.def Info: Images/TCP_Header.png  used on input line 89.
 (pdftex.def)             Requested size: 290.22105pt x 106.37779pt.
- [28 <./Images/pcap_original_format.png>]
-<Images/HeaderProtocolSRC_DST-Packet-1.jpg, id=888, 688.07062pt x 627.84563pt>
+ [33 <./Images/pcap_original_format.png>]
+<Images/HeaderProtocolSRC_DST-Packet-1.jpg, id=1073, 688.07062pt x 627.84563pt>
 File: Images/HeaderProtocolSRC_DST-Packet-1.jpg Graphic file (type jpg)
 <use Images/HeaderProtocolSRC_DST-Packet-1.jpg>
 Package pdftex.def Info: Images/HeaderProtocolSRC_DST-Packet-1.jpg  used on input line 145.
 (pdftex.def)             Requested size: 217.6621pt x 198.60588pt.
-<Images/SYN-Packet.jpg, id=889, 676.02562pt x 633.11531pt>
+<Images/SYN-Packet.jpg, id=1074, 676.02562pt x 633.11531pt>
 File: Images/SYN-Packet.jpg Graphic file (type jpg)
 <use Images/SYN-Packet.jpg>
 Package pdftex.def Info: Images/SYN-Packet.jpg  used on input line 147.
 (pdftex.def)             Requested size: 217.6621pt x 203.84724pt.
- [29 <./Images/TCP_Header.png>] [30 <./Images/HeaderProtocolSRC_DST-Packet-1.jpg> <./Images/SYN-Packet.jpg>]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 250.
- [31]
-<Images/SYN_32_targets_proof_dynamic_memory.png, id=910, 801.74532pt x 156.585pt>
+ [34 <./Images/TCP_Header.png>] [35 <./Images/HeaderProtocolSRC_DST-Packet-1.jpg> <./Images/SYN-Packet.jpg>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 250.
+ [36]
+<Images/SYN_32_targets_proof_dynamic_memory.png, id=1095, 801.74532pt x 156.585pt>
 File: Images/SYN_32_targets_proof_dynamic_memory.png Graphic file (type png)
 <use Images/SYN_32_targets_proof_dynamic_memory.png>
 Package pdftex.def Info: Images/SYN_32_targets_proof_dynamic_memory.png  used on input line 379.
 (pdftex.def)             Requested size: 386.95894pt x 75.57567pt.
- [32 <./Images/SYN_32_targets_proof_dynamic_memory.png>]
+ [37 <./Images/SYN_32_targets_proof_dynamic_memory.png>]
 File: Images/mixed_packets_scenario.png Graphic file (type png)
 <use Images/mixed_packets_scenario.png>
 Package pdftex.def Info: Images/mixed_packets_scenario.png  used on input line 394.
 (pdftex.def)             Requested size: 386.95894pt x 247.52368pt.
-<images/proof_multiple_packets.png, id=919, 438.8897pt x 526.21594pt>
+<images/proof_multiple_packets.png, id=1104, 438.8897pt x 526.21594pt>
 File: images/proof_multiple_packets.png Graphic file (type png)
 <use images/proof_multiple_packets.png>
 Package pdftex.def Info: images/proof_multiple_packets.png  used on input line 428.
 (pdftex.def)             Requested size: 423.23473pt x 507.45798pt.
- [33] [34 <./Images/proof_multiple_packets.png>]
-Overfull \hbox (8.35957pt too wide) in paragraph at lines 499--503
-[]\OT1/cmr/m/n/10 The fi-nal at-tack sum-mary showed that all traf-fic was di-rected to-wards a sin-gle tar-get, VMware-VM1 (192.168.10.3),
+ [38] [39 <./Images/proof_multiple_packets.png>]
+Overfull \hbox (8.23859pt too wide) in paragraph at lines 499--503
+[]\T1/cmr/m/n/10 The fi-nal at-tack sum-mary showed that all traf-fic was di-rected to-wards a sin-gle tar-get, VMware-VM1 (192.168.10.3),
  []
 
-[35] [36] [37]) [38] [39] [40]
-<Sections/Appendix/RA_Form.pdf, id=964, 597.55246pt x 845.07718pt>
+[40] [41] [42]) [43] (./Sections/Ethical Considerations/ethics.tex) [44] [45] [46] [47] [48]
+Overfull \hbox (12.02145pt too wide) in paragraph at lines 227--227
+[]\T1/cmr/m/n/10 Eoin, \T1/cmr/m/it/10 EoinShe/EE695-Capstone-Project-FPGA-IDS-System\T1/cmr/m/n/10 , original-date: 2026-04-13T15:08:37Z, Apr. 2026.
+ []
+
+[49] [50] [51]
+<Sections/Appendix/RA_Form.pdf, id=1348, 597.55246pt x 845.07718pt>
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf  used on input line 221.
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf  used on input line 244.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<Sections/Appendix/RA_Form.pdf, id=966, page=2, 597.55246pt x 845.07718pt>
+<Sections/Appendix/RA_Form.pdf, id=1350, page=2, 597.55246pt x 845.07718pt>
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 221.
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 244.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 221.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 244.
+(pdftex.def)             Requested size: 567.67162pt x 802.81877pt.
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 221.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 244.
+(pdftex.def)             Requested size: 567.67162pt x 802.81877pt.
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 221.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 244.
+(pdftex.def)             Requested size: 567.67162pt x 802.81877pt.
 File: Sections/Appendix/RA_Form.pdf Graphic file (type pdf)
 <use Sections/Appendix/RA_Form.pdf, page 2>
-Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 221.
-(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [41
+Package pdftex.def Info: Sections/Appendix/RA_Form.pdf , page2 used on input line 244.
+(pdftex.def)             Requested size: 567.67162pt x 802.81877pt.
+ [52
 
  <./Sections/Appendix/RA_Form.pdf>] (./main.aux)
  ***********
@@ -1504,183 +1498,27 @@ L3 programming layer <2025-11-14>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 957C0A53D15D9F95D15DF2126EC104A7;11764.
+(rerunfilecheck)             Checksum: 3946FCF8CB310C7F97716FCB918DC0A4;15423.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44276 strings out of 467538
- 917417 string characters out of 5423725
- 1948600 words of memory out of 5000000
- 72153 multiletter control sequences out of 15000+600000
- 639109 words of font info for 83 fonts, out of 8000000 for 9000
+ 44782 strings out of 467538
+ 931528 string characters out of 5423725
+ 2009132 words of memory out of 5000000
+ 72593 multiletter control sequences out of 15000+600000
+ 650061 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,17n,121p,2128b,2050s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{cite.0@attig_400_2011} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_ieee_2022} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_scapy_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_getting_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_designing_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_introduction_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_vc707_2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_zynq-7000_2018} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_tcl_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_7_2020} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@boutros_fpga_2021} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@compton_reconfigurable_2002} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@rudman_characterization_2015} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@anagnostopoulos_dns_2013} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@chukwudi_volumetric_2016} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_what_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@fu_fundamental_2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@bogdanoski_analysis_2013} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@eddy_tcp_2007} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@odom_ccna_2020} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@hirsi_comprehensive_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@sreeram_http_2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@singh_application_2017} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_what_nodate-1} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@nedza_detecting_2024} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@praseed_ddos_2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@prasad_exhausted_2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@oroo_oyondi_felix_tcpip_2024} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@kurose_computer_2013} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_why_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@mogul_eliminating_1997} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_can_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@orosz_real-time_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_defending_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@rajaboevich_comparative_2020} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@wong_effectiveness_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@garcia-teodoro_anomaly-based_2009} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@arash_evolving_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_active_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_what_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@panicker_botnets_2008} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@a_mims_botnet_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@bergamini_de_neira_distributed_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@abiramasundari_distributed_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@su_comprehensive_2024} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_enisa_2025} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_global_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_world_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@bouchard_osi_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@noauthor_fig_nodate} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@kimachia_ddos_2022} has been referenced but does not exist, replaced by a fixed one
-
-<c:/texlive/2025/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (48 pages, 3778950 bytes).
+ 117i,18n,121p,2258b,2050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (59 pages, 4041789 bytes).
 PDF statistics:
- 1140 PDF objects out of 1200 (max. 8388607)
- 965 compressed objects within 10 object streams
- 283 named destinations out of 1000 (max. 500000)
- 823 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1557 PDF objects out of 1728 (max. 8388607)
+ 1355 compressed objects within 14 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 959 words of extra memory for PDF output out of 10000 (max. 10000000)
 

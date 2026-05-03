@@ -23,8 +23,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Information related to the World Development Report 2016: Digital Dividends}
       \field{journaltitle}{World Bank}
@@ -49,8 +49,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{The Global Cybersecurity Outlook 2025 highlights key trends shaping economies and societies in 2025, along with insights into emerging threats and solutions.}
       \field{journaltitle}{World Economic Forum}
@@ -73,8 +73,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{abstract}{ENISA: Every day we experience the Information Society. Interconnected networks touch our everyday lives, at home and at work. It is therefore vital that computers, mobile phones, banking, and the Internet function, to support Europe’s digital economy. That is why ENISA is working with Cybersecurity for the EU and the Member States.}
       \field{month}{11}
@@ -131,8 +131,8 @@
       \strng{authornamehash}{012a3c99c2b33c699a462c265c7a4b76}
       \strng{authorfullhash}{d3e35109379f13b41f933cb210f660dd}
       \strng{authorfullhashraw}{d3e35109379f13b41f933cb210f660dd}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The widespread adoption of software-defined networking (SDN) technology has brought revolutionary changes to network control and management. Compared to traditional networks, SDN enhances security by separating the control plane from the data plane and replacing the traditional network architecture with a more flexible one. However, due to its inherent architectural flaws, SDN still faces new security threats. This paper expounds on the architecture and security of SDN, analyzes the vulnerabilities of SDN architecture, and introduces common distributed denial of service (DDoS) attacks within the SDN architecture. This article also provides a review of the relevant literature on DDoS attack detection and mitigation in the current SDN environment based on the technologies used, including statistical analysis, machine learning, policy-based, and moving target defense techniques. The advantages and disadvantages of these technologies, in terms of deployment difficulty, accuracy, and other factors, are analyzed. Finally, this study summarizes the SDN experimental environment and DDoS attack traffic generators and datasets of the reviewed literature and the limitations of current defense methods and suggests potential future research directions.}
@@ -190,8 +190,8 @@
       \strng{authornamehash}{7f398586c8c024d9f3794631cba976dd}
       \strng{authorfullhash}{7f398586c8c024d9f3794631cba976dd}
       \strng{authorfullhashraw}{7f398586c8c024d9f3794631cba976dd}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed Denial-of-Service (DDoS) attacks have become a critical issue in cyber security. This can lead to a temporary or even prolonged loss of service for users. These attacks mainly target e-commerce platforms, online services, and financial institutions. DDoS attacks need to be detected since they cause serious problems. Supervised machine learning models are effective mechanisms for detecting DDoS attacks. In this paper, a PCA-based Enhanced Distributed DDoS Attack Detection (EDAD) framework has been proposed. Various Machine Learning (ML) algorithms and feature selection techniques have been used to detect DDoS attacks. Support Vector Machine (SVM), Logistic Regression (LR), Random Forest (RF), K-Nearest Neighbours (KNN), Decision Tree (DT) supervised models, and Principle Component Analysis (PCA) feature selection method are used to differentiate between attack and regular traffic. The CICIDS2018, CICIDS2017, and CICDDoS-2019 datasets are used to evaluate the performances of ML algorithms. Various performance metrics of these algorithms are studied and compared to find the best algorithm that yields the highest accuracy. It is found that RF yields the highest accuracy of 98.9\% on CICIDS2017. In the CICDDoS2019 dataset, RF and KNN yield a higher accuracy of 98.7. On the CICIDS2018 dataset, SVM gives the highest accuracy of 98.7\%.}
@@ -248,8 +248,8 @@
       \strng{authornamehash}{09540299dfd7e4c754ebc0a3e0c0bc23}
       \strng{authorfullhash}{b5eb62f9edea1f61f23f14dfe5e84f73}
       \strng{authorfullhashraw}{b5eb62f9edea1f61f23f14dfe5e84f73}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computer Networks}
@@ -757,7 +757,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The recent worldwide turbulence of events from the pandemic lockdown through increased industrial digitization to geopolitical unease shifted towards new primary targets for the latest generation of DDoS threats. Although certain characteristics of current DDoS attack patterns existed before the pandemic or the cloud platform boom, they have now gained prominence and reached their current level of sophistication. In addition to employing innovative methods and tools, the frequency, scale, and complexity of these attacks have also experienced a significant surge. The amalgamation of diverse attack vectors has paved the way for multi-vector attacks, incorporating a distinctive combination of L3–L7 attacking profiles. The integration of the hit-and-run strategy with the multi-vector approach has notably bolstered the success rate. This paper centers around two main aspects. Firstly, it explores the characteristics of the most recent DDoS attacks identified within actual data center infrastructures. To underscore the changes in attack profiles, we reference samples collected recently from diverse data center networks. Secondly, it offers an extensive overview of the cutting-edge methods and techniques for detecting and mitigating recent attacks. The paper places particular emphasis on the precision and speed of these detection and mitigation approaches, predominantly those related to networking. Additionally, we establish criteria, both quantitative and qualitative, to aid in the development of detection methods capable of addressing the latest threat profiles.}
+      \field{abstract}{The recent worldwide turbulence of events from the pandemic lockdown through increased industrial digitization to geopolitical unease shifted towards new primary targets for the latest generation of DDoS threats. Although certain characteristics of current DDoS attack patterns existed before the pandemic or the cloud platform boom, they have now gained prominence and reached their current level of sophistication. In addition to employing innovative methods and tools, the frequency, scale, and complexity of these attacks have also experienced a significant surge. The amalgamation of diverse attack vectors has paved the way for multi-vector attacks, incorporating a distinctive combination of L3-L7 attacking profiles. The integration of the hit-and-run strategy with the multi-vector approach has notably bolstered the success rate. This paper centers around two main aspects. Firstly, it explores the characteristics of the most recent DDoS attacks identified within actual data center infrastructures. To underscore the changes in attack profiles, we reference samples collected recently from diverse data center networks. Secondly, it offers an extensive overview of the cutting-edge methods and techniques for detecting and mitigating recent attacks. The paper places particular emphasis on the precision and speed of these detection and mitigation approaches, predominantly those related to networking. Additionally, we establish criteria, both quantitative and qualitative, to aid in the development of detection methods capable of addressing the latest threat profiles.}
       \field{issn}{1999-5903}
       \field{journaltitle}{Future Internet}
       \field{month}{9}
@@ -901,8 +901,8 @@
       \strng{authornamehash}{7fdc133b0d49ec3c08f132f0d2ab3290}
       \strng{authorfullhash}{7fdc133b0d49ec3c08f132f0d2ab3290}
       \strng{authorfullhashraw}{7fdc133b0d49ec3c08f132f0d2ab3290}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Open System Interconnection (OSI) model defines a networking framework to implement protocols in seven layers. There is really nothing to the OSI model. In fact, it's not even tangible...}
@@ -1284,8 +1284,8 @@
       \strng{authornamehash}{db3973cf74f616896b1090b2e26c33c3}
       \strng{authorfullhash}{db3973cf74f616896b1090b2e26c33c3}
       \strng{authorfullhashraw}{db3973cf74f616896b1090b2e26c33c3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The internet network is mostly victimized to the Distributed Denial of Service (DDOS) attack, which is one that intentionally occupies the computing resources and bandwidth in order to deny that services to potential users. The attack scenario is to flood the packets immensely. If the attack source is single, then the attack is referred as denial of service (DOS) and if attack is sourced from divergent servers, then it is referred as DDOS. Over a decade many of the researchers considered the detection and prevention of DDOS attack as research objective and succeeded to deliver few significant DDOS detection and prevention strategies. How fast and early detection of DDOS attack is done in streaming network transactions is still a significant research objective in present level of internet usage. Unfortunately the current benchmarking DDOS attack detection strategies are failing to justify the objective called “fast and early detection of DDOS attack”. In order to this, in this paper we devised a Bio-Inspired Anomaly based application layer DDoS attack (App-DDOS Attack) detection that is in the aim of achieving fast and early detection. The proposed model is a bio-inspired bat algorithm that used to achieve the fast and early detection of the App-DDOS by HTTP flood. The experiments were carried out on bench marking CAIDA dataset and the results delivered are boosting the significance of the proposed model to achieve the objective of the paper.}
@@ -1938,8 +1938,8 @@
       \endverb
     \endentry
     \entry{noauthor_introduction_nodate}{misc}{}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Introduction • {MicroBlaze} {Processor} {Reference} {Guide} ({UG984}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
       \field{urlday}{17}
@@ -1957,8 +1957,8 @@
       \endverb
     \endentry
     \entry{noauthor_designing_nodate}{misc}{}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{title}{Designing with the {MicroBlaze} {Processor} • {MicroBlaze} {Processor} {Embedded} {Design} {User} {Guide} ({UG1579}) • {Reader} • {AMD} {Technical} {Information} {Portal}}
       \field{urlday}{17}
@@ -2013,31 +2013,800 @@
       \verb https://scapy.net/
       \endverb
     \endentry
-    \entry{noauthor_ieee_2022}{article}{}{}
+    \entry{noauthor_prisma_nodate}{misc}{}{}
+      \list{language}{1}{%
+        {en-US}%
+      }
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
-      \field{abstract}{Ethernet local area network operation is specified for selected speeds of operation from 1 Mb/s to 400 Gb/s using a common media access control (MAC) specification and management information base (MIB). The Carrier Sense Multiple Access with Collision Detection (CSMA/CD) MAC protocol specifies shared medium (half duplex) operation, as well as full duplex operation. Speed specific Media Independent Interfaces (MIIs) allow use of selected Physical Layer devices (PHYs) for operation over coaxial, twisted pair or fiber optic cables, or electrical backplanes. System considerations for multi-segment shared access networks describe the use of Repeaters that are defined for operational speeds up to 1000 Mb/s. Local Area Network (LAN) operation is supported at all speeds. Other specified capabilities include: various PHY types for access networks, PHYs suitable for metropolitan area network applications, and the provision of power over selected twisted pair PHY types. NOTE: Additional downloads are available at: https://standards.ieee.org/wp-content/uploads/2024/02/802.3-2022\_errata.pdf and https://standards.ieee.org/wp-content/uploads/2022/07/802.3-2022\_downloads.zip. A corrigendum is also available at https://ieeexplore.ieee.org/document/10841976}
-      \field{journaltitle}{IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}
-      \field{month}{7}
-      \field{title}{{IEEE} {Standard} for {Ethernet}}
-      \field{urlday}{27}
-      \field{urlmonth}{4}
+      \field{journaltitle}{PRISMA statement}
+      \field{title}{{PRISMA} statement}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
       \field{urlyear}{2026}
-      \field{year}{2022}
       \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 7025}
-      \range{pages}{7025}
-      \verb{doi}
-      \verb 10.1109/IEEESTD.2022.9844436
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\RFCV25VV\\www.prisma-statement.org.html:text/html
       \endverb
       \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/9844436
+      \verb https://www.prisma-statement.org
       \endverb
       \verb{url}
-      \verb https://ieeexplore.ieee.org/document/9844436
+      \verb https://www.prisma-statement.org
       \endverb
-      \keyw{10 Gigabit Ethernet,100 Gigabit Ethernet,2.5 Gigabit Ethernet,200 Gigabit Ethernet,25 Gigabit Ethernet,40 Gigabit Ethernet,400 Gigabit Ethernet,5 Gigabit Ethernet,50 Gigabit Ethernet,AN,attachment unit interface,AUI,Auto-Negotiation,Backplane Ethernet,balanced cable,data processing,DTE Power via the MDI,EEE,Energy-Efficient Ethernet,EPoC,EPON,EPON protocol over coax,Ethernet,Ethernet in the first mile,Ethernet Passive Optical Network,express traffic,Fast Ethernet,FEC,forward error correction,Gigabit Ethernet,IEEE 802.3,IEEE 802.3 Standard,IEEE Standards,information exchange,isolation,LAN,local area network,management,MCRS,MDI,media independent interface,medium dependent interface,MIB,MII,MMF,MPCP,Multi-Channel Reconciliation Sublayer,multimode fiber,multipoint control protocol,Optical fiber cables,Optical fiber LAN,P2MP,PCS,PD,PHY,physical coding sublayer,Physical layer,Physical Layer,Physical Layer Collision Avoidance,Physical Layer device,physical medium attachment,physical medium dependent,PLCA,PMA,PMD,PoDL,PoE,point to multipoint,Power over Data Lines,Power over Ethernet,Power Sourcing Equipment,Powered Device,PSE,reconciliation sublayer,repeater,RS,single-mode fiber,SMF,Standards,type field}
+    \endentry
+    \entry{biermann_comparison_2001}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a3da98e1a1e9189fd04ef4917f360d69}{%
+           family={Biermann},
+           familyi={B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e1a58a167ef98b7016a411016bfb22c8}{%
+           family={Cloete},
+           familyi={C\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=091cd01e52b5895819391e26c6e4a48f}{%
+           family={Venter},
+           familyi={V\bibinitperiod},
+           given={L.\bibnamedelimi M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{deada30ba252a4a1435c8d4ffc2be34a}
+      \strng{fullhash}{65c833ba969dc565f934a3510b53d727}
+      \strng{fullhashraw}{65c833ba969dc565f934a3510b53d727}
+      \strng{bibnamehash}{65c833ba969dc565f934a3510b53d727}
+      \strng{authorbibnamehash}{65c833ba969dc565f934a3510b53d727}
+      \strng{authornamehash}{deada30ba252a4a1435c8d4ffc2be34a}
+      \strng{authorfullhash}{65c833ba969dc565f934a3510b53d727}
+      \strng{authorfullhashraw}{65c833ba969dc565f934a3510b53d727}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A computer system intrusion is seen as any set of actions that attempt to compromise the integrity, confidentiality or availability of a resource.1 The introduction of networks and the Internet caused great concern about the protection of sensitive information and have resulted in many computer security research efforts during the past few years. Although preventative techniques such as access control and authentication attempt to prevent intruders, these can fail, and as a second line of defence, intrusion detection has been introduced. Intrusion detection systems (IDS) are implemented to detect an intrusion as it occurs, and to execute countermeasures when detected. Usually, a security administrator has difficulty in selecting an IDS approach for his unique set-up. In this Report, different approaches to intrusion detection systems are compared, to supply a norm for the best-fit system. The results would assist in the selection of a single appropriate intrusion detection system or combine approaches that best fit any unique computer system.}
+      \field{issn}{0167-4048}
+      \field{journaltitle}{Computers \& Security}
+      \field{month}{12}
+      \field{number}{8}
+      \field{title}{A comparison of {Intrusion} {Detection} systems}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{676\bibrangedash 683}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/S0167-4048(01)00806-9
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\E4X7354S\\Biermann et al. - 2001 - A comparison of Intrusion Detection systems.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\LS6GGI2E\\S0167404801008069.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404801008069
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404801008069
+      \endverb
+      \keyw{anomaly detection,Intrusion detection systems,misuse detection,security,security models}
+    \endentry
+    \entry{noauthor_special_nodate}{article}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{Special {Publication} 800-31}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\F39QPDGZ\\Special Publication 800-31.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{butun_survey_2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7e727a17418eed0fd396637c348651f8}{%
+           family={Butun},
+           familyi={B\bibinitperiod},
+           given={Ismail},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f1013e69d6f11dbe973bfb140b3eb2f6}{%
+           family={Morgera},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5a5e95565f692bef067e5a8d8531c7fb}{%
+           family={Sankar},
+           familyi={S\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f560926ed24b8b4b4427f39445602f6}
+      \strng{fullhash}{5f6fc359aa47ca303fbf6556a434a61d}
+      \strng{fullhashraw}{5f6fc359aa47ca303fbf6556a434a61d}
+      \strng{bibnamehash}{5f6fc359aa47ca303fbf6556a434a61d}
+      \strng{authorbibnamehash}{5f6fc359aa47ca303fbf6556a434a61d}
+      \strng{authornamehash}{7f560926ed24b8b4b4427f39445602f6}
+      \strng{authorfullhash}{5f6fc359aa47ca303fbf6556a434a61d}
+      \strng{authorfullhashraw}{5f6fc359aa47ca303fbf6556a434a61d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Wireless Sensor Networking is one of the most promising technologies that have applications ranging from health care to tactical military. Although Wireless Sensor Networks (WSNs) have appealing features (e.g., low installation cost, unattended network operation), due to the lack of a physical line of defense (i.e., there are no gateways or switches to monitor the information flow), the security of such networks is a big concern, especially for the applications where confidentiality has prime importance. Therefore, in order to operate WSNs in a secure way, any kind of intrusions should be detected before attackers can harm the network (i.e., sensor nodes) and/or information destination (i.e., data sink or base station). In this article, a survey of the state-of-the-art in Intrusion Detection Systems (IDSs) that are proposed for WSNs is presented. Firstly, detailed information about IDSs is provided. Secondly, a brief survey of IDSs proposed for Mobile Ad-Hoc Networks (MANETs) is presented and applicability of those systems to WSNs are discussed. Thirdly, IDSs proposed for WSNs are presented. This is followed by the analysis and comparison of each scheme along with their advantages and disadvantages. Finally, guidelines on IDSs that are potentially applicable to WSNs are provided. Our survey is concluded by highlighting open research issues in the field.}
+      \field{issn}{1553-877X}
+      \field{journaltitle}{IEEE Communications Surveys \& Tutorials}
+      \field{number}{1}
+      \field{title}{A {Survey} of {Intrusion} {Detection} {Systems} in {Wireless} {Sensor} {Networks}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{16}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{266\bibrangedash 282}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/SURV.2013.050113.00191
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\V8ZPMTWZ\\6517052.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/6517052
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/6517052
+      \endverb
+      \keyw{Ad hoc networks,IDS,intrusion detection,Intrusion detection,MANET,mobile ad hoc network,Mobile agents,Monitoring,security,Unified modeling language,wireless sensor network,Wireless sensor networks,WSN}
+    \endentry
+    \entry{liao_intrusion_2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=f8405f2653a0c8d9f9d76701184c9815}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Hung-Jen},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=e95e2da70cf5ff686532955cfa48cd1a}{%
+           family={Richard\bibnamedelima Lin},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Chun-Hung},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=477555d172f3582fb5c19d400e0192ef}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Ying-Chih},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=6c84d67007d89d04952ef806d4fac852}{%
+           family={Tung},
+           familyi={T\bibinitperiod},
+           given={Kuang-Yuan},
+           giveni={K\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a978bec826fc85cb9ab7b8bf824d8a6d}
+      \strng{fullhash}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \strng{fullhashraw}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \strng{bibnamehash}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \strng{authorbibnamehash}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \strng{authornamehash}{a978bec826fc85cb9ab7b8bf824d8a6d}
+      \strng{authorfullhash}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \strng{authorfullhashraw}{878ca16c86ee0b396e0ac61c85a5e0f3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{With the increasing amount of network throughput and security threat, the study of intrusion detection systems (IDSs) has received a lot of attention throughout the computer science field. Current IDSs pose challenges on not only capricious intrusion categories, but also huge computational power. Though there is a number of existing literatures to IDS issues, we attempt to give a more elaborate image for a comprehensive review. Through the extensive survey and sophisticated organization, we propose the taxonomy to outline modern IDSs. In addition, tables and figures we summarized in the content contribute to easily grasp the overall picture of IDSs.}
+      \field{issn}{1084-8045}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Intrusion detection system}
+      \field{title}{Intrusion detection system: {A} comprehensive review}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{36}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{16\bibrangedash 24}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.jnca.2012.09.004
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\MSPD43IB\\Liao et al. - 2013 - Intrusion detection system A comprehensive review.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\75CSBIHR\\S1084804512001944.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804512001944
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804512001944
+      \endverb
+      \keyw{Anomaly,Intrusion detection,Misuse}
+    \endentry
+    \entry{gupta_systematic_2022}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=da52b20fdd59c6a4954733107fa27414}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Chaitanya},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8722a59a342b0458b49208c51ce7d039}{%
+           family={Johri},
+           familyi={J\bibinitperiod},
+           given={Ishita},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f829b7d9d08af8523793fbb864c470d3}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Kathiravan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d5381788d7a9f318720bb38f670dfb4f}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yuh-Chung},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=9e79c11e540a6741bf8632c1e7c7f238}{%
+           family={Qaisar},
+           familyi={Q\bibinitperiod},
+           given={Saeed\bibnamedelima Mian},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9c9afb11547a7070448561e99380b0dc}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kuo-Yi},
+           giveni={K\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{8a9cf0b214413c1f76babc8cc9f009d4}
+      \strng{fullhash}{44f2286d175cf4f209c5ec65c47454e0}
+      \strng{fullhashraw}{44f2286d175cf4f209c5ec65c47454e0}
+      \strng{bibnamehash}{44f2286d175cf4f209c5ec65c47454e0}
+      \strng{authorbibnamehash}{44f2286d175cf4f209c5ec65c47454e0}
+      \strng{authornamehash}{8a9cf0b214413c1f76babc8cc9f009d4}
+      \strng{authorfullhash}{44f2286d175cf4f209c5ec65c47454e0}
+      \strng{authorfullhashraw}{44f2286d175cf4f209c5ec65c47454e0}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Today’s advancements in wireless communication technologies have resulted in a tremendous volume of data being generated. Most of our information is part of a widespread network that connects various devices across the globe. The capabilities of electronic devices are also increasing day by day, which leads to more generation and sharing of information. Similarly, as mobile network topologies become more diverse and complicated, the incidence of security breaches has increased. It has hampered the uptake of smart mobile apps and services, which has been accentuated by the large variety of platforms that provide data, storage, computation, and application services to end-users. It becomes necessary in such scenarios to protect data and check its use and misuse. According to the research, an artificial intelligence-based security model should assure the secrecy, integrity, and authenticity of the system, its equipment, and the protocols that control the network, independent of its generation, in order to deal with such a complicated network. The open difficulties that mobile networks still face, such as unauthorised network scanning, fraud links, and so on, have been thoroughly examined. Numerous ML and DL techniques that can be utilised to create a secure environment, as well as various cyber security threats, are discussed. We address the necessity to develop new approaches to provide high security of electronic data in mobile networks because the possibilities for increasing mobile network security are inexhaustible.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{month}{1}
+      \field{number}{5}
+      \field{title}{A {Systematic} {Review} on {Machine} {Learning} and {Deep} {Learning} {Models} for {Electronic} {Information} {Security} in {Mobile} {Networks}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{2017}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22052017
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\HQGEM3UU\\Gupta et al. - 2022 - A Systematic Review on Machine Learning and Deep Learning Models for Electronic Information Security.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/5/2017
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/5/2017
+      \endverb
+      \keyw{artificial intelligence,cyber security,cyber-attacks,deep learning,information security,machine learning,network,threats,vulnerabilities}
+    \endentry
+    \entry{khraisat_survey_2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5012a40dab75eeae07cbbd6d80c178e1}{%
+           family={Khraisat},
+           familyi={K\bibinitperiod},
+           given={Ansam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e3a027f3576d3bd051b3fc7b70d397a}{%
+           family={Gondal},
+           familyi={G\bibinitperiod},
+           given={Iqbal},
+           giveni={I\bibinitperiod}}}%
+        {{hash=cfe292959018600afae3f889c34a5f10}{%
+           family={Vamplew},
+           familyi={V\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e8788e7cc91b16373fb4002321deffee}{%
+           family={Kamruzzaman},
+           familyi={K\bibinitperiod},
+           given={Joarder},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{92d3ab44af6488585069c3feb533caac}
+      \strng{fullhash}{850e47207157d916a61981ee87bae53d}
+      \strng{fullhashraw}{850e47207157d916a61981ee87bae53d}
+      \strng{bibnamehash}{850e47207157d916a61981ee87bae53d}
+      \strng{authorbibnamehash}{850e47207157d916a61981ee87bae53d}
+      \strng{authornamehash}{92d3ab44af6488585069c3feb533caac}
+      \strng{authorfullhash}{850e47207157d916a61981ee87bae53d}
+      \strng{authorfullhashraw}{850e47207157d916a61981ee87bae53d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Cyber-attacks are becoming more sophisticated and thereby presenting increasing challenges in accurately detecting intrusions. Failure to prevent the intrusions could degrade the credibility of security services, e.g. data confidentiality, integrity, and availability. Numerous intrusion detection methods have been proposed in the literature to tackle computer security threats, which can be broadly classified into Signature-based Intrusion Detection Systems (SIDS) and Anomaly-based Intrusion Detection Systems (AIDS). This survey paper presents a taxonomy of contemporary IDS, a comprehensive review of notable recent works, and an overview of the datasets commonly used for evaluation purposes. It also presents evasion techniques used by attackers to avoid detection and discusses future research challenges to counter such techniques so as to make computer systems more secure.}
+      \field{issn}{2523-3246}
+      \field{journaltitle}{Cybersecurity}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shorttitle}{Survey of intrusion detection systems}
+      \field{title}{Survey of intrusion detection systems: techniques, datasets and challenges}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{2}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{20}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s42400-019-0038-7
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\YF42Z8YV\\Khraisat et al. - 2019 - Survey of intrusion detection systems techniques, datasets and challenges.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s42400-019-0038-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s42400-019-0038-7
+      \endverb
+      \keyw{Anomaly detection,Intrusion detection system,Machine learning,Malware,NSL\_KDD}
+    \endentry
+    \entry{bawany_ddos_2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2445d73f32d6561ab1a8248d405f1b77}{%
+           family={Bawany},
+           familyi={B\bibinitperiod},
+           given={Narmeen\bibnamedelima Zakaria},
+           giveni={N\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=9663cf58440d9df0598056336d18c84c}{%
+           family={Shamsi},
+           familyi={S\bibinitperiod},
+           given={Jawwad\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=507152ddd5fb1fb6bc999623839cb73c}{%
+           family={Salah},
+           familyi={S\bibinitperiod},
+           given={Khaled},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{8d331a9baacc3554f963036db8ba1b47}
+      \strng{fullhash}{ed211f74dfb86724a4f004e019fdc96b}
+      \strng{fullhashraw}{ed211f74dfb86724a4f004e019fdc96b}
+      \strng{bibnamehash}{ed211f74dfb86724a4f004e019fdc96b}
+      \strng{authorbibnamehash}{ed211f74dfb86724a4f004e019fdc96b}
+      \strng{authornamehash}{8d331a9baacc3554f963036db8ba1b47}
+      \strng{authorfullhash}{ed211f74dfb86724a4f004e019fdc96b}
+      \strng{authorfullhashraw}{ed211f74dfb86724a4f004e019fdc96b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Distributed denial-of-service (DDoS) attacks have become a weapon of choice for hackers, cyber extortionists, and cyber terrorists. These attacks can swiftly incapacitate a victim, causing huge revenue losses. Despite the large number of traditional mitigation solutions that exists today, DDoS attacks continue to grow in frequency, volume, and severity. This calls for a new network paradigm to address the requirements of today’s challenging security threats. Software-defined networking (SDN) is an emerging network paradigm which has gained significant traction by many researchers to address the requirement of today’s data centers. Inspired by the capabilities of SDN, we present a comprehensive survey of existing SDN-based DDoS attack detection and mitigation solutions. We classify solutions based on DDoS attack detection techniques and identify requirements of an effective solution. Based on our findings, we propose a novel framework for detection and mitigation of DDoS attacks in a large-scale network which comprises a smart city built on SDN infrastructure. Our proposed framework is capable of meeting application-specific DDoS attack detection and mitigation requirements. The primary contribution of this paper is twofold. First, we provide an in-depth survey and discussion of SDN-based DDoS attack detection and mitigation mechanisms, and we classify them with respect to the detection techniques. Second, leveraging the characteristics of SDN for network security, we propose and present an SDN-based proactive DDoS Defense Framework (ProDefense). We show how this framework can be utilized to secure applications built for smart cities. Moreover, the paper highlights open research challenges, future research directions, and recommendations related to SDN-based DDoS detection and mitigation.}
+      \field{issn}{2191-4281}
+      \field{journaltitle}{Arabian Journal for Science and Engineering}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shorttitle}{{DDoS} {Attack} {Detection} and {Mitigation} {Using} {SDN}}
+      \field{title}{{DDoS} {Attack} {Detection} and {Mitigation} {Using} {SDN}: {Methods}, {Practices}, and {Solutions}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{42}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{425\bibrangedash 441}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s13369-017-2414-5
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\HFST9492\\Bawany et al. - 2017 - DDoS Attack Detection and Mitigation Using SDN Methods, Practices, and Solutions.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s13369-017-2414-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s13369-017-2414-5
+      \endverb
+      \keyw{DDoS attacks,DDoS mitigation,OpenFlow,SDN,Software-defined networking}
+    \endentry
+    \entry{feinstein_statistical_2003}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=884db6d6d5b23eb655296e3932be1325}{%
+           family={Feinstein},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cd0d81b56edbaef3e8f61c363d8cdb56}{%
+           family={Schnackenberg},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=23f6a385a1ef290599f16dfdd74fd440}{%
+           family={Balupari},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0417a97ad5628f438d571fa78dba5d84}{%
+           family={Kindred},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd8fefeb1f3b23c6ba4c6506ca85d110}
+      \strng{fullhash}{be987c40c7583468ce5230b889780947}
+      \strng{fullhashraw}{be987c40c7583468ce5230b889780947}
+      \strng{bibnamehash}{be987c40c7583468ce5230b889780947}
+      \strng{authorbibnamehash}{be987c40c7583468ce5230b889780947}
+      \strng{authornamehash}{fd8fefeb1f3b23c6ba4c6506ca85d110}
+      \strng{authorfullhash}{be987c40c7583468ce5230b889780947}
+      \strng{authorfullhashraw}{be987c40c7583468ce5230b889780947}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The nature of the threats posed by distributed denial of service (DDoS) attacks on large networks, such as the Internet, demands effective detection and response methods. These methods must be deployed not only at the edge but also at the core of the network This paper presents methods to identify DDoS attacks by computing entropy and frequency-sorted distributions of selected packet attributes. The DDoS attacks show anomalies in the characteristics of the selected packet attributes. The detection accuracy and performance are analyzed using live traffic traces from a variety of network environments ranging from points in the core of the Internet to those inside an edge network The results indicate that these methods can be effective against current attacks and suggest directions for improving detection of more stealthy attacks. We also describe our detection-response prototype and how the detectors can be extended to make effective response decisions.}
+      \field{booktitle}{Proceedings {DARPA} {Information} {Survivability} {Conference} and {Exposition}}
+      \field{month}{4}
+      \field{title}{Statistical approaches to {DDoS} attack detection and response}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{1}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \field{pages}{303\bibrangedash 314 vol.1}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/DISCEX.2003.1194894
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\NG9EDABV\\Feinstein et al. - 2003 - Statistical approaches to DDoS attack detection and response.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1194894/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1194894/
+      \endverb
+      \keyw{Computer crime,Computer networks,Distributed computing,Entropy,Frequency,IP networks,Performance analysis,Prototypes,Telecommunication traffic,Web and internet services}
+    \endentry
+    \entry{noauthor_usenix_nodate}{misc}{}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{title}{{USENIX} 2006 {Annual} {Technical} {Conference} {Refereed} {Paper}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb USENIX 2006 Annual Technical Conference Refereed Paper:C\:\\Users\\Eoin\\Zotero\\storage\\DX54Q5AF\\sekar_html.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.usenix.org/legacy/event/usenix06/tech/full_papers/sekar/sekar_html/
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/legacy/event/usenix06/tech/full_papers/sekar/sekar_html/
+      \endverb
+    \endentry
+    \entry{shiaeles_real_2012}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4cf14aafb1dca0f4ec905d44f2aa79d9}{%
+           family={Shiaeles},
+           familyi={S\bibinitperiod},
+           given={Stavros\bibnamedelima N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7ad619bb74402336b1974fe9ae61b7d4}{%
+           family={Katos},
+           familyi={K\bibinitperiod},
+           given={Vasilios},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8c867e2a0258ac448875c991e74ca07f}{%
+           family={Karakos},
+           familyi={K\bibinitperiod},
+           given={Alexandros\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b8c54c415f41f8a49dc2f0397c042a58}{%
+           family={Papadopoulos},
+           familyi={P\bibinitperiod},
+           given={Basil\bibnamedelima K.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b097a35b8d63f8656b5e2a9b8020cab}
+      \strng{fullhash}{82b37ac6d509b1af783f1f8c41a978d8}
+      \strng{fullhashraw}{82b37ac6d509b1af783f1f8c41a978d8}
+      \strng{bibnamehash}{82b37ac6d509b1af783f1f8c41a978d8}
+      \strng{authorbibnamehash}{82b37ac6d509b1af783f1f8c41a978d8}
+      \strng{authornamehash}{4b097a35b8d63f8656b5e2a9b8020cab}
+      \strng{authorfullhash}{82b37ac6d509b1af783f1f8c41a978d8}
+      \strng{authorfullhashraw}{82b37ac6d509b1af783f1f8c41a978d8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a method for DDoS detection by constructing a fuzzy estimator on the mean packet inter arrival times. We divided the problem into two challenges, the first being the actual detection of the DDoS event taking place and the second being the identification of the offending IP addresses. We have imposed strict real time constraints for the first challenge and more relaxed constraints for the identification of addresses. Through empirical evaluation we confirmed that the detection can be completed within improved real time limits and that by using fuzzy estimators instead of crisp statistical descriptors we can avoid the shortcomings posed by assumptions on the model distribution of the traffic. In addition we managed to obtain results under a 3 sec detection window.}
+      \field{issn}{0167-4048}
+      \field{journaltitle}{Computers \& Security}
+      \field{month}{9}
+      \field{number}{6}
+      \field{title}{Real time {DDoS} detection using fuzzy estimators}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{31}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{782\bibrangedash 790}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.cose.2012.06.002
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\Y2XKMI5F\\Shiaeles et al. - 2012 - Real time DDoS detection using fuzzy estimators.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\N5BQD9YB\\S0167404812000922.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404812000922
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0167404812000922
+      \endverb
+      \keyw{Anomaly based intrusion detection,Distributed denial-of-service attacks,Fuzzy estimators,Poisson arrival,α-cuts}
+    \endentry
+    \entry{hoque_real-time_2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=744f31e7f4a944a433660108192f32f8}{%
+           family={Hoque},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=56ffad92f9fccc9b1e037dd99a300847}{%
+           family={Kashyap},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=39f877830149b15a8d93052aacd5ad47}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d061c652e0609081b5f1e823c8666145}
+      \strng{fullhash}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \strng{fullhashraw}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \strng{bibnamehash}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \strng{authorbibnamehash}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \strng{authornamehash}{d061c652e0609081b5f1e823c8666145}
+      \strng{authorfullhash}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \strng{authorfullhashraw}{d2ae1ec448cf50d5c2bdb01c2e25bc4f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A real-time DDoS attack detection method should identify attacks with low computational overhead. Although a large number of statistical methods have been designed for DDoS attack detection, real-time statistical solution to detect DDoS attacks in hardware is only a few. In this paper, a real-time DDoS detection method is proposed that uses a novel correlation measure to identify DDoS attacks. Effectiveness of the method is evaluated with three network datasets, viz., CAIDA DDoS 2007, MIT DARPA, and TUIDS. Further, the proposed method is implemented on an FPGA to analyze its performance. The method yields high detection accuracy and the FPGA implementation requires less than one microsecond to identify an attack.}
+      \field{issn}{0140-3664}
+      \field{journaltitle}{Computer Communications}
+      \field{month}{9}
+      \field{title}{Real-time {DDoS} attack detection using {FPGA}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{110}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{48\bibrangedash 58}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.comcom.2017.05.015
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\Q4HZE9ZR\\Hoque et al. - 2017 - Real-time DDoS attack detection using FPGA.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\RWCSXHYG\\S0140366416306442.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140366416306442
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0140366416306442
+      \endverb
+      \keyw{Correlation measure,DDoS attack detection,FPGA}
+    \endentry
+    \entry{noauthor_pdf_nodate}{inproceedings}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PDF {|} With the various and increasingly malicious attacks on networks and wireless systems, traditional security tools such as anti-virus programs and... {|} Find, read and cite all the research you need on ResearchGate}
+      \field{booktitle}{{ResearchGate}}
+      \field{title}{({PDF}) {Network} {Intrusion} {Detection} {Systems} in {High}-{Speed} {Traffic} in {Computer} {Networks}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1109/ICEBE.2013.26
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\3HGIEYXK\\261420391_Network_Intrusion_Detection_Systems_in_High-Speed_Traffic_in_Computer_Networks.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/261420391_Network_Intrusion_Detection_Systems_in_High-Speed_Traffic_in_Computer_Networks
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/261420391_Network_Intrusion_Detection_Systems_in_High-Speed_Traffic_in_Computer_Networks
+      \endverb
+    \endentry
+    \entry{kumar_survey_nodate}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d0ccd8480df65d096efc13f47bca2b18}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sailesh},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{fullhash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{fullhashraw}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{bibnamehash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{authorbibnamehash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{authornamehash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{authorfullhash}{d0ccd8480df65d096efc13f47bca2b18}
+      \strng{authorfullhashraw}{d0ccd8480df65d096efc13f47bca2b18}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The importance of network security has grown tremendously and a number of devices have been introduced to improve the security of a network. Network intrusion detection systems (NIDS) are among the most widely deployed such system. Popular NIDS use a collection of signatures of known security threats and viruses, which are used to scan each packet's payload. Signature based designs have low false positive rates, and they are effective and accurate in combating against the known security threats. However, they remain completely ineffective against those attacks that are yet unknown; these can be combated only after they are detected manually and a signature is created for them.}
+      \field{title}{Survey of {Current} {Network} {Intrusion} {Detection} {Techniques}}
+      \verb{file}
+      \verb PDF:C\:\\Users\\Eoin\\Zotero\\storage\\82STXN96\\Kumar - Survey of Current Network Intrusion Detection Techniques.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{abdulganiyu_systematic_2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ef034e1710d8fcbeaddbcae7698b6ee0}{%
+           family={Abdulganiyu},
+           familyi={A\bibinitperiod},
+           given={Oluwadamilare\bibnamedelima Harazeem},
+           giveni={O\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=09daea3475c0fb7d6e63cf4ad92402b1}{%
+           family={Ait\bibnamedelima Tchakoucht},
+           familyi={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod}}}%
+        {{hash=166affe840995ca1e3a5f95f3b4d3f56}{%
+           family={Saheed},
+           familyi={S\bibinitperiod},
+           given={Yakub\bibnamedelima Kayode},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3c79618394d7ab50c4f055eb931931e5}
+      \strng{fullhash}{893a51766d9f3032f6ac8cd7090f3c75}
+      \strng{fullhashraw}{893a51766d9f3032f6ac8cd7090f3c75}
+      \strng{bibnamehash}{893a51766d9f3032f6ac8cd7090f3c75}
+      \strng{authorbibnamehash}{893a51766d9f3032f6ac8cd7090f3c75}
+      \strng{authornamehash}{3c79618394d7ab50c4f055eb931931e5}
+      \strng{authorfullhash}{893a51766d9f3032f6ac8cd7090f3c75}
+      \strng{authorfullhashraw}{893a51766d9f3032f6ac8cd7090f3c75}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the recent increase in internet usage, the number of important, sensitive, confidential individual and corporate data passing through internet has increasingly grown. With gaps in the security systems, attackers have attempted to intrude the network, thereby gaining access to essential and confidential information, which may cause harm to the operation of the systems, and also affect the confidentiality of the data. To counter these possible attacks, intrusion detection systems (IDSs), which is an essential branch of cybersecurity, were employed to monitor and analyze network traffic thereby detects and reports malicious activities. A large number of review papers have covered different approaches for intrusion detection in networks, most of which follow a non-systematic approach, merely made a comparison of the existing techniques without reflecting an in-depth analytical synthesis of the methodologies and performances of the approaches to give a complete understanding of the state of IDS. Nonetheless, many of these reviews investigated more about the anomaly-based IDS with more emphasis on deep-learning models, while signature, hybrid-based (signature + anomaly-based) have received minimal focus. Hence, by adhering to the principles of Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA), this work reviewed existing contributions on anomaly-, signature-, and hybrid-based approaches to provide a comprehensive overview of network IDS's state of the art. The articles were retrieved from seven databases (ScienceDirect, SpringerNature, IEEE, MDPI, Hindawi, PeerJ, and Taylor \& Francis) which cut across various reputable journals and conference Proceedings. Among the 776 pieces of the literature identified, 71 were selected for analysis and synthesis to answer the research questions. Based on the research findings, we identified unexplored study areas and unresolved research challenges. In order to create a better IDS model, we conclude by presenting promising, high-impact future research areas.}
+      \field{issn}{1615-5270}
+      \field{journaltitle}{International Journal of Information Security}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{A systematic literature review for network intrusion detection system ({IDS})}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{1125\bibrangedash 1162}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1007/s10207-023-00682-2
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\EXAQEJ6M\\Abdulganiyu et al. - 2023 - A systematic literature review for network intrusion detection system (IDS).pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10207-023-00682-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10207-023-00682-2
+      \endverb
+      \keyw{Anomaly-based,Artificial intelligence,Network intrusion detection system,Pattern matching,Rule-based,Signature-based}
+    \endentry
+    \entry{park_performance_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7a349f4a10e1749350432d73fe6ac6e5}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Wonhyung},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e126e9d240a53285d5ed1056e407b665}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Seongjin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{fullhash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{fullhashraw}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{bibnamehash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{authorbibnamehash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{authornamehash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{authorfullhash}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \strng{authorfullhashraw}{a4115fcc2c4ecc855ebfa26a586f2c3b}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, crimes are cause in the internet by hacking to target one’s and the companies financial. Due to the massive crimes that are caused by digital convergence and ubiquitous IT system, it is clear that the amount of network packet which need to be processed are rising. The digital convergence and ubiquitous IT system caused the IDS (Intrusion Detection System) to process packets more than the past. Snort (version 2.x) is a leading open source IDS which has a long history but since it was built a long time ago, it has several limitations which are not fit for today’s requirements. Such as, it’s processing unit is in single threading. On the other hand, Suricara was built to cover Snorts these disadvantages. To cover massive amount of packets which are caused by digital convergence and ubiquitous IT system Suricata’s have the availability to process packets in multi-threading environment. In this paper we have analyzed and compared Snort and Suricata’s processing and detection rate to decide which is better in single threading or multi-threading environment.}
+      \field{issn}{1572-834X}
+      \field{journaltitle}{Wireless Personal Communications}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Performance {Comparison} and {Detection} {Analysis} in {Snort} and {Suricata} {Environment}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{94}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 252}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s11277-016-3209-9
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\XUBWRATZ\\Park and Ahn - 2017 - Performance Comparison and Detection Analysis in Snort and Suricata Environment.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11277-016-3209-9
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11277-016-3209-9
+      \endverb
+      \keyw{Detection system,Network security,Snort,Suricata}
     \endentry
     \entry{attig_400_2011}{inproceedings}{}{}
       \name{author}{2}{}{%
@@ -2069,8 +2838,8 @@
       \strng{authornamehash}{5b9ff65f4eee4ad37122030ce29c398c}
       \strng{authorfullhash}{5b9ff65f4eee4ad37122030ce29c398c}
       \strng{authorfullhashraw}{5b9ff65f4eee4ad37122030ce29c398c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Packet parsing is necessary at all points in the modern networking infrastructure, to support packet classification and security functions, as well as for protocol implementation. Increasingly high line rates call for advanced hardware packet processing solutions, while increasing rates of change call for high-level programmability of these solutions. This paper presents an approach for harnessing modern Field Programmable Gate Array (FPGA) devices, which are a natural technology for implementing the necessary high-speed programmable packet processing. The paper introduces PP: a simple high-level language for describing packet parsing algorithms in an implementation-independent manner. It demonstrates that this language can be compiled to give high-speed FPGA-based packet parsers that can be integrated alongside other packet processing components to build network nodes. Compilation involves generating virtual processing architectures tailored to specific packet parsing requirements. Scalability of these architectures allows parsing at line rates from 1 to 400 Gb/s as required in different network contexts. Run-time programmability of these architectures allows dynamic updating of parsing algorithms during operation in the field. Implementation results show that programmable packet parsing of 600 million small packets per second can be supported on a single Xilinx Virtex-7 FPGA device handling a 400 Gb/s line rate.}
@@ -2096,6 +2865,435 @@
       \endverb
       \verb{url}
       \verb http://ieeexplore.ieee.org/document/6062708/
+      \endverb
+    \endentry
+    \entry{shanmugam_denial_2019}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=e1a68eaa2268a5bb28ca2dc57279a7d3}{%
+           family={Shanmugam},
+           familyi={S\bibinitperiod},
+           given={Dillibabu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=05434d721e0eb5861454bcd7e08b04ba}{%
+           family={Annadurai},
+           familyi={A\bibinitperiod},
+           given={Suganya},
+           giveni={S\bibinitperiod}}}%
+        {{hash=28bf9a090eb6e65e65e379198ea78920}{%
+           family={Rajagopalan},
+           familyi={R\bibinitperiod},
+           given={Vijayasarathy},
+           giveni={V\bibinitperiod}}}%
+        {{hash=08e134ea02f2c773ded3e55e1841e7cd}{%
+           family={Venkatesh\bibnamedelima Prasad},
+           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b989b220bd6a6539502a97a501fae32c}
+      \strng{fullhash}{812892364a04cb7df1f08713f713af85}
+      \strng{fullhashraw}{812892364a04cb7df1f08713f713af85}
+      \strng{bibnamehash}{812892364a04cb7df1f08713f713af85}
+      \strng{authorbibnamehash}{812892364a04cb7df1f08713f713af85}
+      \strng{authornamehash}{b989b220bd6a6539502a97a501fae32c}
+      \strng{authorfullhash}{812892364a04cb7df1f08713f713af85}
+      \strng{authorfullhashraw}{812892364a04cb7df1f08713f713af85}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As the concept of network evolves and diverge for ease of end-to-end communication in a real-time scenario, the unknown problems also rooted with that as a challenge for users. For instance, an advance method of attacking a network system to make it unusable for the legitimate user is called DDoS attack. DDoS attacks are an annoyance at a minimum, and if they are against a Critical Information Infrastructure(CII) networks or system, they can cause severe damage to network resources, say, service slowdown, communication failure between network users, financial loss and spoil good reputation. In order to protect CII, we developed detection mechanism for DoS and DDoS attacks using machine learning techniques. In this paper, we share our implementation methodology on different platforms (FPGA [1], x86 and PowerPC [2]). In addition, we compare the performance on different platforms using standard dataset(DARPA) and limited number of real time dataset.}
+      \field{booktitle}{2019 {International} {Carnahan} {Conference} on {Security} {Technology} ({ICCST})}
+      \field{issn}{2153-0742}
+      \field{month}{10}
+      \field{title}{Denial of {Service} {Detection} {System} on various platforms}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/CCST.2019.8888402
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\UMT7HFEZ\\Shanmugam et al. - 2019 - Denial of Service Detection System on various platforms.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8888402/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8888402/
+      \endverb
+      \keyw{Computer crime,Denial-of-Service,Detection,Field programmable gate arrays,FPGA,Hardware,Machine Learning,Microsoft Windows,Protocols}
+    \endentry
+    \entry{nagy_detecting_2018}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=ee0804e45870c9c44a63d649b3085e95}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Balázs},
+           giveni={B\bibinitperiod}}}%
+        {{hash=aa323bf2d64b9ce1d45e7ee366b0c5f8}{%
+           family={Orosz},
+           familyi={O\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4d1abd98dbb85450c8c687df511f9d4d}{%
+           family={Tóthfalusi},
+           familyi={T\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=81dd57af1806bee8c6da6633b49b4b63}{%
+           family={Kovács},
+           familyi={K\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+        {{hash=be81a52afae33ac5060b07b04e10b831}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pál},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{169644b30720bc28961e70458b40687b}
+      \strng{fullhash}{768efbed478fe5a03d4d1b41cab304ef}
+      \strng{fullhashraw}{768efbed478fe5a03d4d1b41cab304ef}
+      \strng{bibnamehash}{768efbed478fe5a03d4d1b41cab304ef}
+      \strng{authorbibnamehash}{768efbed478fe5a03d4d1b41cab304ef}
+      \strng{authornamehash}{169644b30720bc28961e70458b40687b}
+      \strng{authorfullhash}{768efbed478fe5a03d4d1b41cab304ef}
+      \strng{authorfullhashraw}{768efbed478fe5a03d4d1b41cab304ef}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Timely detection and mitigation of Distributed Denial of Service (DDoS) attacks are still challenging for current datacenter and Internet packet exchange operators. Detecting volumetric attacks are in the range of seconds, whereas their mitigation is often in the range of minutes. Besides the fact that the attacks are effective until their mitigation is successful, there are further attacks that remain unnoticed by current equipment. These are hit-and-run attacks that last for a fraction of a second or a few seconds only, pushing the network or the targeted service towards an unstable state and evaporate. This paper presents an FPGA-based DDoS detector and its application. The detector is capable of detecting the top-9 DDoS attack types, the 96.67\% of all DDoS attacks, and the so called hit-and-run attacks within milliseconds. The concept is validated through real-life use cases on attacks of a medium-sized datacenter network.}
+      \field{booktitle}{{NOMS} 2018 - 2018 {IEEE}/{IFIP} {Network} {Operations} and {Management} {Symposium}}
+      \field{issn}{2374-9709}
+      \field{month}{4}
+      \field{note}{ISSN: 2374-9709}
+      \field{title}{Detecting {DDoS} attacks within milliseconds by using {FPGA}-based hardware acceleration}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/NOMS.2018.8406299
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\AJ4GD996\\Nagy et al. - 2018 - Detecting DDoS attacks within milliseconds by using FPGA-based hardware acceleration.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8406299/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8406299/
+      \endverb
+      \keyw{Computer crime,Data Center Networks,DDoS,Detectors,Engines,Field programmable gate arrays,FPGA,Internet,intrusion detection,IP networks,Monitoring}
+    \endentry
+    \entry{nagy_low-reaction_2018}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ee0804e45870c9c44a63d649b3085e95}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={Balázs},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c7ad1ec81df0e1d194ac4fe5ab7c1e3d}{%
+           family={Orosz},
+           familyi={O\bibinitperiod},
+           given={Pèter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f585522b0aff5aef5da8ee51adfe8fd1}{%
+           family={Varga},
+           familyi={V\bibinitperiod},
+           given={Pal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{169644b30720bc28961e70458b40687b}
+      \strng{fullhash}{1bed23aab8d601f5c08482ff55eac639}
+      \strng{fullhashraw}{1bed23aab8d601f5c08482ff55eac639}
+      \strng{bibnamehash}{1bed23aab8d601f5c08482ff55eac639}
+      \strng{authorbibnamehash}{1bed23aab8d601f5c08482ff55eac639}
+      \strng{authornamehash}{169644b30720bc28961e70458b40687b}
+      \strng{authorfullhash}{1bed23aab8d601f5c08482ff55eac639}
+      \strng{authorfullhashraw}{1bed23aab8d601f5c08482ff55eac639}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{While Distributed Denial of Service (DDoS) attacks are among the most investigated and documented cyber threats, their mitigation is still not solved. The latest generation of DDoS threats requires a different protection scheme. Current widespread Intrusion Prevention Systems (IPS) have a reaction time in the range of seconds and minutes. However, hit-and- run type of attacks, that last only a few tens or hundreds of milliseconds, are therefore often invisible for these security systems. We have developed a set of DDoS detection methods to identify the Top-9 Akamai threat types that cover more than 96\% of DDoS attacks globally. As proof-of-concept (PoC), we designed and implemented a detection engine incorporating these methods in a 100 Gbps packet processing FPGA platform. The PoC system identifies the specified attacks within milliseconds. The short detection time also enables preventing hit-and-run attacks, which deliver high intensity malicious traffic over a short period of time. We have validated our system with real-life as well as synthesized DDoS attacks. The real DDoS traces were captured in a medium-sized datacenter network. In this demonstration, we are going to showcase the effectiveness of the detector engine in various security scenarios.}
+      \field{booktitle}{{NOMS} 2018 - 2018 {IEEE}/{IFIP} {Network} {Operations} and {Management} {Symposium}}
+      \field{issn}{2374-9709}
+      \field{month}{4}
+      \field{title}{Low-reaction time {FPGA}-based {DDoS} detector}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 2}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/NOMS.2018.8406124
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\68EPBCRW\\Nagy et al. - 2018 - Low-reaction time FPGA-based DDoS detector.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8406124/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8406124/
+      \endverb
+      \keyw{Computer crime,Detectors,Engines,Field programmable gate arrays,IP networks,Monitoring}
+    \endentry
+    \entry{nguyen_real-time_2005}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=c2bc7ade9876e73c444412c36adcd847}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=25018cfff3c44a05386a391af3cb3119}{%
+           family={Memik},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8ef0df4e997ca25f56e7e30239a0d5aa}{%
+           family={Memik},
+           familyi={M\bibinitperiod},
+           given={S.O.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1b5b9b6a9e10b7b5ec1e837c2fd35238}{%
+           family={Choudhary},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{01cce96575f74f69d71702a746748d39}
+      \strng{fullhash}{5354e0460204c34e961fcf5415ff76e1}
+      \strng{fullhashraw}{5354e0460204c34e961fcf5415ff76e1}
+      \strng{bibnamehash}{5354e0460204c34e961fcf5415ff76e1}
+      \strng{authorbibnamehash}{5354e0460204c34e961fcf5415ff76e1}
+      \strng{authornamehash}{01cce96575f74f69d71702a746748d39}
+      \strng{authorfullhash}{5354e0460204c34e961fcf5415ff76e1}
+      \strng{authorfullhashraw}{5354e0460204c34e961fcf5415ff76e1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the onset of Gigabit networks, current generation networking components will soon be insufficient for numerous reasons: most notably because existing methods cannot support high performance demands. Feature extraction (or flow monitoring), an essential component in anomaly detection, summarizes network behavior from a packet stream. This information is fed into intrusion detection methods such as association rule mining, outlier analysis, and classification algorithms in order to characterize network behavior. However, current feature extraction methods based on per-flow analysis are expensive, not scalable, and thus prohibitive for large-scale networks. In this paper, we propose an accurate and scalable feature extraction module (FEM) based on sketches. We present the details of the FEM design on an FPGA and show that using FPGAs we can achieve significantly better performance compared to existing software and ASIC implementations. Specifically, the optimal FEM configuration achieves 21.25 Gbps throughput and 97.61\% accuracy.}
+      \field{booktitle}{International {Conference} on {Field} {Programmable} {Logic} and {Applications}, 2005.}
+      \field{issn}{1946-1488}
+      \field{month}{8}
+      \field{note}{ISSN: 1946-1488}
+      \field{title}{Real-time feature extraction for high speed networks}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{438\bibrangedash 443}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/FPL.2005.1515761
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\FYG552ZV\\Nguyen et al. - 2005 - Real-time feature extraction for high speed networks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1515761/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1515761/
+      \endverb
+      \keyw{Algorithm design and analysis,Association rules,Classification algorithms,Data mining,Feature extraction,Field programmable gate arrays,High-speed networks,Information analysis,Intrusion detection,Monitoring}
+    \endentry
+    \entry{bulajoul_network_2013}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=5ebe97679cf09431800fbeb96667c147}{%
+           family={Bulajoul},
+           familyi={B\bibinitperiod},
+           given={Waleed},
+           giveni={W\bibinitperiod}}}%
+        {{hash=57efd952d2c63125069ffb43f24a3bde}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d3ea51df13e79536ec5cc7ea0c4b5c8f}{%
+           family={Pannu},
+           familyi={P\bibinitperiod},
+           given={Mandeep},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a38e3f9c6f750e6dc9dc2f3550d93032}
+      \strng{fullhash}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \strng{fullhashraw}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \strng{bibnamehash}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \strng{authorbibnamehash}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \strng{authornamehash}{a38e3f9c6f750e6dc9dc2f3550d93032}
+      \strng{authorfullhash}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \strng{authorfullhashraw}{7f1f87983f4c3c630ff7ab5a10f1aa8e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the various and increasingly malicious attacks on networks and wireless systems, traditional security tools such as anti-virus programs and firewalls are not sufficient to provide free, integrated, reliable and secure networks. Intrusion detection systems (IDSs) are one of the most tested and reliable technologies to monitor incoming and outgoing network traffic to identify unauthorized usage and mishandling of computer system networks. It is critical to implement network intrusion detection systems (NIDSs) in computer networks that have high traffic and high-speed connectivity. Due to the fact that software NIDSs are still unable to detect all the growing threats to high-speed environments, such as flood attacks (UDP, TCP, ICMP and HTTP) or Denial and Distributed Denial of Service Attacks (DoS/DDoS), because the main function of these kinds of attacks is simply to send more traffic in high speed to systems to stop or slow down the performance of systems. Here we have designed a suitable real network to present experiments that use Snort NIDSs to demonstrate the weaknesses of NIDSs, such as its inability to process multiple packets at high speeds and its propensity to drop packets without analysing them. This paper outlines Snort NIDSs' failures in high-speed and heavy traffic and its propensity to drop more packets as the speed and volume of traffic increase. We ran some consecutive tests to analyse the Snort performance using the number of packets received, the number of packets analysed, the number of packets filtered and the number of packets dropped. We suggest a parallel NIDS technology to reduce dropping packets as a solution.}
+      \field{booktitle}{2013 {IEEE} 10th {International} {Conference} on e-{Business} {Engineering}}
+      \field{month}{9}
+      \field{title}{Network {Intrusion} {Detection} {Systems} in {High}-{Speed} {Traffic} in {Computer} {Networks}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{168\bibrangedash 175}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICEBE.2013.26
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\ZA2ZE4Q5\\Bulajoul et al. - 2013 - Network Intrusion Detection Systems in High-Speed Traffic in Computer Networks.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/6686259/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/6686259/
+      \endverb
+      \keyw{Computers,IDS,Intrusion detection,Monitoring,network security,open source,Protocols,Software,Telecommunication traffic}
+    \endentry
+    \entry{yazdinejad_high-performance_2020}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=7fdc56441a30f851c90b6950718aee09}{%
+           family={Yazdinejad},
+           familyi={Y\bibinitperiod},
+           given={Abbas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8ee13bda3a9aa624880f1ab33f75c60a}{%
+           family={Parizi},
+           familyi={P\bibinitperiod},
+           given={Reza\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8587f2847502e9527d795939955f4861}{%
+           family={Bohlooli},
+           familyi={B\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=013202c34f21e205bb277e697e5ffd5b}{%
+           family={Dehghantanha},
+           familyi={D\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b93f2a310bb2c20e877f1ec4a985c4bd}{%
+           family={Choo},
+           familyi={C\bibinitperiod},
+           given={Kim-Kwang\bibnamedelima Raymond},
+           giveni={K\bibinithyphendelim K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cba6100a4f784b2841af3acb4bf71572}
+      \strng{fullhash}{4f005b815d402780c36963136c94e9c5}
+      \strng{fullhashraw}{4f005b815d402780c36963136c94e9c5}
+      \strng{bibnamehash}{4f005b815d402780c36963136c94e9c5}
+      \strng{authorbibnamehash}{4f005b815d402780c36963136c94e9c5}
+      \strng{authornamehash}{cba6100a4f784b2841af3acb4bf71572}
+      \strng{authorfullhash}{4f005b815d402780c36963136c94e9c5}
+      \strng{authorfullhashraw}{4f005b815d402780c36963136c94e9c5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The emergence of new network technologies and users' ever-increasing demand necessitates the introduction of highly programmable hardware with high flexibility and performance at the network data plane. The switches at the data plane need to be flexible enough to support protocols and test new ideas for increasing the abstraction of network programming. In most studies, Field Programmable Gate Arrays (FPGA) are applied in making switches flexible and reprogrammable; however, applying FPGAs alone does not meet the required flexibility. Next to applying FPGAs, it is necessary to provide an architecture that would allow developers to forego FPGA implementation hardware details and the complexity of hardware description language (HDL). In this paper, a new architecture of a programmable packet processor with high flexibility and programmability at the network data plane is presented, which supports all three operations required in switches: parsing, classification, and processing of packet data. To implement this architecture, the high-level P4 language is applied to allow the description of its register-transfer level (RTL) on the FPGA. In order to increase the processing speed, a pipeline approach within the proposed architecture is designed at the SDN data plane through pre-processing in the parse graph, identifying the traffic flow, and applying the hybrid control flow model in the data processing. The results show that our architecture operates at 320 MHz clock speed, which in comparison with NetFPGA-10G, NetFPGA-SUME, and ML605 peer architectures runs 2, 1.28, and 2.9 times faster in terms of processing speed, attesting to its efficiency. In addition, the evaluation on the Virtex-7 FPGA VC709 platform shows that our architecture consumes approximately 4.3\% of lookup tables, 1.9\% of flip-flops, and 1.3\% of memory blocks, which are less than the hardware resource consumption of peer architectures.}
+      \field{issn}{1084-8045}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{month}{4}
+      \field{title}{A high-performance framework for a network programmable packet processor using {P4} and {FPGA}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{156}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{102564}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jnca.2020.102564
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:C\:\\Users\\Eoin\\Zotero\\storage\\WF4CJGD4\\Yazdinejad et al. - 2020 - A high-performance framework for a network programmable packet processor using P4 and FPGA.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Eoin\\Zotero\\storage\\FH5GBDTJ\\S1084804520300382.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804520300382
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1084804520300382
+      \endverb
+      \keyw{FPGA,High-level synthesis,P4,Packet processor,Software-defining network (SDN)}
+    \endentry
+    \entry{noauthor_ieee_2022}{article}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ethernet local area network operation is specified for selected speeds of operation from 1 Mb/s to 400 Gb/s using a common media access control (MAC) specification and management information base (MIB). The Carrier Sense Multiple Access with Collision Detection (CSMA/CD) MAC protocol specifies shared medium (half duplex) operation, as well as full duplex operation. Speed specific Media Independent Interfaces (MIIs) allow use of selected Physical Layer devices (PHYs) for operation over coaxial, twisted pair or fiber optic cables, or electrical backplanes. System considerations for multi-segment shared access networks describe the use of Repeaters that are defined for operational speeds up to 1000 Mb/s. Local Area Network (LAN) operation is supported at all speeds. Other specified capabilities include: various PHY types for access networks, PHYs suitable for metropolitan area network applications, and the provision of power over selected twisted pair PHY types. NOTE: Additional downloads are available at: https://standards.ieee.org/wp-content/uploads/2024/02/802.3-2022\_errata.pdf and https://standards.ieee.org/wp-content/uploads/2022/07/802.3-2022\_downloads.zip. A corrigendum is also available at https://ieeexplore.ieee.org/document/10841976}
+      \field{journaltitle}{IEEE Std 802.3-2022 (Revision of IEEE Std 802.3-2018)}
+      \field{month}{7}
+      \field{title}{{IEEE} {Standard} for {Ethernet}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 7025}
+      \range{pages}{7025}
+      \verb{doi}
+      \verb 10.1109/IEEESTD.2022.9844436
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9844436
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9844436
+      \endverb
+      \keyw{10 Gigabit Ethernet,100 Gigabit Ethernet,2.5 Gigabit Ethernet,200 Gigabit Ethernet,25 Gigabit Ethernet,40 Gigabit Ethernet,400 Gigabit Ethernet,5 Gigabit Ethernet,50 Gigabit Ethernet,AN,attachment unit interface,AUI,Auto-Negotiation,Backplane Ethernet,balanced cable,data processing,DTE Power via the MDI,EEE,Energy-Efficient Ethernet,EPoC,EPON,EPON protocol over coax,Ethernet,Ethernet in the first mile,Ethernet Passive Optical Network,express traffic,Fast Ethernet,FEC,forward error correction,Gigabit Ethernet,IEEE 802.3,IEEE 802.3 Standard,IEEE Standards,information exchange,isolation,LAN,local area network,management,MCRS,MDI,media independent interface,medium dependent interface,MIB,MII,MMF,MPCP,Multi-Channel Reconciliation Sublayer,multimode fiber,multipoint control protocol,Optical fiber cables,Optical fiber LAN,P2MP,PCS,PD,PHY,physical coding sublayer,Physical layer,Physical Layer,Physical Layer Collision Avoidance,Physical Layer device,physical medium attachment,physical medium dependent,PLCA,PMA,PMD,PoDL,PoE,point to multipoint,Power over Data Lines,Power over Ethernet,Power Sourcing Equipment,Powered Device,PSE,reconciliation sublayer,repeater,RS,single-mode fiber,SMF,Standards,type field}
+    \endentry
+    \entry{eoin_eoinsheee695-capstone-project-fpga-ids-system_2026}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=03be94dd5db27eb56d4b250aa8c9d95e}{%
+           family={Eoin},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{fullhash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{fullhashraw}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{bibnamehash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{authorbibnamehash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{authornamehash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{authorfullhash}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \strng{authorfullhashraw}{03be94dd5db27eb56d4b250aa8c9d95e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{original-date: 2026-04-13T15:08:37Z}
+      \field{title}{{EoinShe}/{EE695}-{Capstone}-{Project}-{FPGA}-{IDS}-{System}}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/EoinShe/EE695-Capstone-Project-FPGA-IDS-System
+      \endverb
+      \verb{url}
+      \verb https://github.com/EoinShe/EE695-Capstone-Project-FPGA-IDS-System
       \endverb
     \endentry
   \enddatalist

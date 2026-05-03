@@ -220,7 +220,6 @@ memory-mapped AXI GPIO interfaces.
     \label{fig:mem_addr}
 \end{figure}
 
-
 Packet data is represented as a sequence of 32-bit words, arranged in a fixed
 layout that matches the expectations of the hardware parser. As shown in
 Fig.~\ref{fig:mem_addr}, each packet is structured such that specific
@@ -676,10 +675,10 @@ detected attack types, demonstrating that the system is able to process packet
 streams and report results in real time.
 
 
-\subsubsection{Software Operational Logic and Temporal Synchronisation}
+\subsubsection{Software Operational Logic and Synchronisation}
 
 The execution flow of the MicroBlaze control logic, shown in
-Fig.~\ref{fig:software_flow}, is designed to maintain consistent
+Fig.~\ref{fig:targetsoftware_flow_stats}, is designed to maintain consistent
 synchronisation between the software layer and the high-speed hardware
 detection pipeline. The system follows a structured processing loop to
 ensure that all packets are analysed while maintaining alignment with
@@ -758,7 +757,7 @@ A graphical user interface (GUI) was developed to support the generation of
 test traffic scenarios for evaluating the IDS. Rather than manually constructing
 packet datasets in C, the GUI provides a structured interface for defining
 network traffic patterns, including source and destination nodes, attack types,
-and packet volumes. An example of the GUI is shown in Fig.~\ref{fig:gui}.
+and packet volumes. An example of the GUI is shown in Fig.~\ref{fig:GUI}.
 
 
 \begin{figure}[H]
@@ -829,7 +828,7 @@ logic. This guarantees that features are extracted reliably during
 hardware inspection and prevents misalignment errors during testing.
 
 
-\subsection{Design considerations and challenges}
+\subsection{Design Considerations and Challenges}
 A main challenge during development was keeping the word index aligned with the
 incoming packet data. When using ROM-based packet storage, the one-cycle delay
 in reading data meant that the parser was effectively looking at the wrong word.
@@ -852,7 +851,7 @@ MicroBlaze reads values much more slowly. To avoid missing these events,
 counting and aggregation were moved into hardware, allowing the processor to
 read stable results.
 
-\paragraph{Output of the parser}
+\subsubsection{Output of the parser}
 The output of the parsing module consists of protocol indicators and packet
 classification signals, including identification of TCP, UDP, and ICMP traffic,
 as well as specific TCP flag patterns. These signals are passed to the next

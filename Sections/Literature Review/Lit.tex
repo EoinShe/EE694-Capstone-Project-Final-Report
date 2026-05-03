@@ -1,86 +1,169 @@
-\subsection{Prisma}
-\begin{tikzpicture}[>=latex, font={\sf \small}]
+\subsection{Systematic Review Methodology}
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[>=latex, font={\sf \small}]
 
-\tikzstyle{bluerect} = [rectangle, rounded corners, minimum width=1.5cm, minimum height=0.75cm, text centered, draw=black, fill=cyan!60!gray!45!white, rotate=90, font=\sffamily]
+    \tikzstyle{bluerect} = [rectangle, rounded corners, minimum width=1.5cm, minimum height=0.75cm, text centered, draw=black, fill=cyan!60!gray!45!white, rotate=90, font=\sffamily]
 
-\tikzstyle{roundedrect} = [rectangle, rounded corners, minimum width=12cm, minimum height=1cm, text centered, draw=black, font=\sffamily]
+    \tikzstyle{roundedrect} = [rectangle, rounded corners, minimum width=12cm, minimum height=1cm, text centered, draw=black, font=\sffamily]
 
-\tikzstyle{textrect} = [rectangle, minimum width=5.25cm, text width=5.24cm, minimum height=1cm, draw=black, font={\sffamily \footnotesize}]
+    \tikzstyle{textrect} = [rectangle, minimum width=5.25cm, text width=5.24cm, minimum height=1cm, draw=black, font={\sffamily \footnotesize}]
 
-\node (top1) at (0, 10.5cm) [draw, roundedrect, fill=yellow!80!red!70]
-  {Identification of studies via database and registers};
+    \node (top1) at (0, 10.5cm) [draw, roundedrect, fill=yellow!80!red!70]
+    {Identification of studies via database and registers};
 
-\node (r1blue) at (-6.75cm, 8.0cm) [draw, bluerect, minimum width=3cm]{Identification};
+    \node (r1blue) at (-6.75cm, 8.0cm) [draw, bluerect, minimum width=3cm]{Identification};
 
-\node (r1left) at (-3.25cm, 8.0cm) [draw, textrect, minimum height=3cm]
-  {Records identified from:
-     \begin{itemize}
-     \item Databases ($n=$)
-     \item Registers ($n=$)
-     \end{itemize}   
-  };
+    \node (r1left) at (-3.25cm, 8.0cm) [draw, textrect, minimum height=3cm]
+    {Records identified from:
+      \begin{itemize}
+        \item Databases ($n=90$)
+        \item Registers ($n=0$)
+      \end{itemize}
+    };
 
-\node (r1right) at (3.25, 8.0cm) [draw, textrect, minimum height=3cm]
-  {Records removed before screening: 
-    \begin{itemize}
-    \item Duplicates ($n=$)
-    \item Ineligible ($n=$)
-    \item Other reasons ($n=$)
-    \end{itemize} 
-  };
+    \node (r1right) at (3.25, 8.0cm) [draw, textrect, minimum height=3cm]
+    {Records removed before screening:
+      \begin{itemize}
+        \item Duplicates ($n=27$)
+        \item Ineligible ($n=5$)
+        \item Other reasons ($n=0$)
+      \end{itemize}
+    };
 
-\node (r2blue) at (-6.75cm, 1.5cm) [draw, bluerect, minimum width=8.5cm]
-  {Screening};
+    \node (r2blue) at (-6.75cm, 1.5cm) [draw, bluerect, minimum width=8.5cm]
+    {Screening};
 
-\node (r2left) at (-3.25cm, 5.0cm) [draw, textrect, minimum height=1.5cm]
-  {Records screened ($n=$)};
+    \node (r2left) at (-3.25cm, 5.0cm) [draw, textrect, minimum height=1.5cm]
+    {Records screened ($n=58$)};
 
-\node (r2right) at (3.25, 5.0cm) [draw, textrect, minimum height=1.5cm]
-  {Records excluded ($n=$)};
+    \node (r2right) at (3.25, 5.0cm) [draw, textrect, minimum height=1.5cm]
+    {Records excluded ($n=18$)};
 
-\node (r3left) at (-3.25cm, 2.5cm) [draw, textrect, minimum height=1.5cm]
-  {Reports sought for retrieval ($n=$)};
+    \node (r3left) at (-3.25cm, 2.5cm) [draw, textrect, minimum height=1.5cm]
+    {Reports sought for retrieval ($n=40$)};
 
-\node (r3right) at (3.25, 2.5cm) [draw, textrect, minimum height=1.5cm]
-  {Not retrieved ($n=$)};
-
-
-\node (r4left) at (-3.25cm, 0cm) [draw, textrect, minimum height=1.5cm]
-  {Reports assessed for eligibility ($n=$)};
-
-\node (r4right) at (3.25, -1.0cm) [draw, textrect, minimum height=3.5cm]
-  {Reports Excluded: 
-    \begin{itemize}
-    \item Reason 1 ($n=$)
-    \item Reason 2 ($n=$)
-    \item Reason 3 ($n=$)
-    \item etc.
-    \end{itemize}     
-  };
+    \node (r3right) at (3.25, 2.5cm) [draw, textrect, minimum height=1.5cm]
+    {Not retrieved ($n=1$)};
 
 
-\node (r5blue) at (-6.75cm, -4.5cm) [draw, bluerect, minimum width=2cm]
-  {Included};
+    \node (r4left) at (-3.25cm, 0cm) [draw, textrect, minimum height=1.5cm]
+    {Reports assessed for eligibility ($n=39$)};
 
-\node (r5left) at (-3.25cm, -4.5cm) [draw, textrect, minimum height=2cm]
-  {Studies included in review \\ 
-   $n=$ \\ 
-   Reports of included studies \\ 
-   $n=$  };
+    \node (r4right) at (3.25, -1.0cm) [draw, textrect, text width=6cm, align=left, minimum height=3.5cm]
+    {Reports Excluded ($n=8$):
+      \begin{itemize}
+        \item Reason 1: Non-peer reviewed sources ($n=3$)
+        \item Reason 2: No hardware-level focus ($n=3$)
+        \item Reason 3: Obsolete hardware platform ($n=2$)
+      \end{itemize}
+    };
 
+    \node (r5blue) at (-6.75cm, -4.5cm) [draw, bluerect, minimum width=2cm]
+    {Included};
 
-% Draw arrows between nodes:
-\draw[thick, ->] (r1left) -- (r1right);
-\draw[thick, ->] (r1left) -- (r2left);
-\draw[thick, ->] (r2left) -- (r2right);
-\draw[thick, ->] (r2left) -- (r3left);
-\draw[thick, ->] (r3left) -- (r3right);
-\draw[thick, ->] (r3left) -- (r4left);
-\draw[thick, ->] (r4left) -+ (0.5,0);
-\draw[thick, ->] (r4left) -- (r5left);
-
-\end{tikzpicture}
-
+    \node (r5left) at (-3.25cm, -4.5cm) [draw, textrect, minimum height=2cm]
+    {Studies included in review \\
+      $n=31$ \\
+      Reports of included studies \\
+      $n=31$  };
 
 
-$ packet parsing -> https://www.xilinx.com/publications/about/ANCS_final.pdf$
+    % Draw arrows between nodes:
+    \draw[thick, ->] (r1left) -- (r1right);
+    \draw[thick, ->] (r1left) -- (r2left);
+    \draw[thick, ->] (r2left) -- (r2right);
+    \draw[thick, ->] (r2left) -- (r3left);
+    \draw[thick, ->] (r3left) -- (r3right);
+    \draw[thick, ->] (r3left) -- (r4left);
+    \draw[thick, ->] (r4left) -+ (0.2,0);
+    \draw[thick, ->] (r4left) -- (r5left);
+  \end{tikzpicture}
+  \caption{PRISMA Diagram~\cite{noauthor_prisma_nodate}}
+  \label{fig:PRISMA}
+\end{figure}
+
+To ensure a rigorous, transparent, and reproducible selection of research papers, this project follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 guidelines~\cite{noauthor_prisma_nodate}. The use of the PRISMA framework (shown in Figure~\ref{fig:PRISMA}) ensures that the technical foundations of this project are based on a high-quality subset of existing academic literature.
+
+\subsubsection{Search Strategy and Identification}
+Initial records were identified across electronic databases and academic search engines. Main technical databases included IEEE Xplore, ScienceDirect, and the ACM Digital Library to ensure high-quality, peer-reviewed engineering content.
+
+Google Scholar was also used to identify relevant gray literature (e.g. university theses) and to perform backward and forward citation chaining, ensuring comprehensive coverage.
+
+Key search strings used across these platforms included:
+\begin{itemize}
+  \item \texttt{"FPGA" AND "Intrusion Detection" AND "DoS"}
+  \item \texttt{"Real-time Packet Parsing" AND "AXI-Stream"}
+  \item \texttt{"Hardware-accelerated SYN Flood Mitigation"}
+\end{itemize}
+
+A total of [Insert Number] records were initially identified through these combined searches.
+
+\subsection{Intrusion Detection Systems}
+Intrusion Detection Systems (IDS) are security mechanisms designed to monitor and analyse system or network activity for signs of malicious behaviour. An intrusion is typically defined as any action that attempts to compromise the confidentiality, integrity, or availability of a system resource~\cite{biermann_comparison_2001, noauthor_special_nodate}. As preventative security measures such as authentication and access control cannot eliminate all threats, IDS operate as a second line of defence by identifying attacks that bypass these protections~\cite{biermann_comparison_2001, butun_survey_2014}.
+
+IDS can be broadly classified into two primary detection approaches: signature-based detection, which identifies known attack patterns using predefined rules, and anomaly-based detection, which detects deviations from normal system behaviour~\cite{butun_survey_2014, liao_intrusion_2013}. While signature-based methods provide high accuracy for known threats, they are ineffective against zero-day attacks\footnote{a cyberattack that exploits a software, hardware, or firmware vulnerability unknown to the developers or vendors}, whereas anomaly-based approaches can detect previously unseen intrusions but often suffer from high false positive rates. More advanced classifications extend these approaches to include stateful protocol analysis, which evaluates network behaviour against established protocol standards~\cite{liao_intrusion_2013}.
+
+IDS' can also be deployed in various forms, including host-based and network-based systems, depending on the monitoring requirements and system architecture. In recent years, machine learning and deep learning techniques have been used more often for intrusion detection, enabling improved detection of evolving and complex attack patterns, although these approaches introduce challenges related to computational cost and dataset quality just to name two~\cite{gupta_systematic_2022}.
+
+Despite the wide range of detection techniques available, no single approach is capable of addressing all intrusion types effectively, highlighting the need for hybrid systems that balance detection accuracy, efficiency, and adaptability in modern high-speed network environments~\cite{biermann_comparison_2001, khraisat_survey_2019}.
+
+
+
+\subsection{DoS and DDoS Detection Techniques}
+Denial-of-Service (DoS) and Distributed Denial-of-Service (DDoS) attacks are among the most disruptive forms of cyber threats, aiming to exhaust system resources or network bandwidth to prevent legitimate users from accessing services~\cite{su_comprehensive_2024}. These attacks are typically launched using multiple distributed sources, often in the form of botnets, which generate large volumes of malicious traffic to overwhelm a target system~\cite{bawany_ddos_2017}. The increasing scale, frequency, and sophistication of DDoS attacks have made their detection and mitigation a critical area of research.
+
+A wide range of detection techniques have been proposed in literature, broadly categorised into statistical, anomaly-based, and machine learning approaches. Statistical methods are among the most widely used due to their relatively low computational overhead and suitability for real-time detection. These approaches analyse network traffic characteristics such as packet rates, source distributions, and use entropy\footnote{a measure of disorder, chaos, or randomness within a system} to measure deviations from normal behaviour. For example, entropy-based techniques detect anomalies by measuring changes in the randomness of packet attributes, as attack traffic often exhibits unique statistical patterns when compared to legitimate traffic~\cite{feinstein_statistical_2003}. Correlation and distribution-based methods analyse the relationships between network traffic features, such as packet rates, source and destination addresses, and protocol usage, to identify patterns that differ from normal behaviour. During a DoS attack, these relationships often change significantly, for example, DoS attacks can introduce unusual correlations between traffic flows which can help to distinguish attack traffic from normal traffic.
+
+However, anomaly-based approaches often struggle to generalise accurately, leading to high false positive rates when legitimate but previously unseen behaviour happens~\cite{noauthor_usenix_nodate}. These methods are dependent on accurate modelling of normal traffic patterns, which can vary significantly across different network environments. Approaches such as fuzzy estimators have been proposed to improve detection accuracy while maintaining real-time performance constraints \cite{shiaeles_real_2012}. However, defining reliable thresholds and maintaining low false positive rates remain challenges.
+
+More recently, real-time detection has become a requirement due to the rapid evolution of high-volume attacks. Detection systems need to work quickly and use minimal computational resources, even when analysing high-speed network traffic.. Statistical techniques are often preferred in this context, as they can operate on a reduced set of traffic features and provide fast response times. For example, correlation-based detection methods implemented on hardware platforms have shown the ability to identify DoS attacks within microseconds, showing the importance of lightweight detection strategies for high-performance systems \cite{hoque_real-time_2017}.
+
+Despite the variety of approaches available, DoS detection remains challenging due to the increasing sophistication of attacks, including low-rate and stealthy attacks that mimic legitimate traffic patterns. There is also oftentimes a trade-off between detection accuracy, computational complexity, and real-time performance. These challenges motivate the need for efficient, low-latency detection mechanisms that can operate in high-speed environments, particularly in hardware-accelerated systems.
+
+\subsection{Software-Based Intrusion Detection Systems}
+Software-based intrusion detection systems are the most widely deployed form of IDS, usually running on general-purpose processors to monitor and analyse network traffic or system activity. In network-based intrusion detection systems (NIDS), software monitors packets traversing the network and analyses them for signs of malicious behaviour. These systems inspect network traffic by capturing and analysing packets allowing observation and detection of suspicious activities within the network~\cite{noauthor_pdf_nodate, kumar_survey_nodate}.
+
+Signature-based software IDS work by comparing incoming traffic against a database of known attack signatures. These signatures may include specific byte patterns, protocol anomalies, or combinations of packet header fields, and are used to detect previously identified threats with high accuracy~\cite{kumar_survey_nodate, abdulganiyu_systematic_2023}. For example, pattern matching techniques are commonly applied to packet payloads to identify known malicious content. In contrast, anomaly-based systems establish a model of normal network behaviour and flag deviations from this baseline as potential intrusions~\cite{kumar_survey_nodate, abdulganiyu_systematic_2023}. While signature-based detection is effective for known threats, anomaly-based detection enables the identification of previously unseen attacks, although it often results in higher false positive rates.
+
+Software IDS are typically deployed in a variety of configurations, including monitoring traffic at network gateways or across entire networks. Popular implementations such as Snort and Suricata demonstrate the flexibility of software-based approaches, incorporating components such as packet sniffers, preprocessors, detection engines, and alerting mechanisms to analyse and respond to network traffic~\cite{park_performance_2017}. These systems are widely adopted due to their ease of deployment, configurability, and ability to update detection rules as new threats emerge.
+
+However, software-based IDS face significant limitations, particularly in high-speed network environments. As network traffic volume increases, IDS must process a large number of packets in real time, placing substantial computational demands on general-purpose processors. Studies have shown that software IDS such as Snort may be unable to process all incoming packets at high speeds, leading to packet loss and reduced detection accuracy~\cite{noauthor_pdf_nodate}. For example, Snort has been observed to drop packets as traffic volume increases, limiting its effectiveness in high-throughput environments~\cite{noauthor_pdf_nodate}. Additionally, many traditional IDS implementations rely on single-threaded processing, which further restricts scalability and performance under heavy network loads~\cite{park_performance_2017}.
+
+These challenges highlight the difficulty of achieving both high detection accuracy and real-time performance using software-only solutions. As modern networks continue to operate at increasingly high speeds and face large-scale attacks such as DDoS, the limitations of software-based IDS motivate the need for more efficient and scalable approaches, including hardware-accelerated intrusion detection systems.
+
+\subsection{FPGA-Based Intrusion Detection Systems}
+Field Programmable Gate Arrays (FPGAs) are increasingly used in intrusion detection systems where fast processing of high-speed network traffic is required. Unlike software-based IDS, which process packets sequentially on general-purpose processors, FPGA-based systems can perform multiple operations in parallel. This allows them to achieve higher throughput and lower latency, making them well suited for detecting large-scale attacks such as DDoS.
+
+FPGAs are particularly effective for packet-level processing, where tasks such as packet parsing and classification must be performed at line rate. Modern FPGA implementations have demonstrated the ability to process traffic at speeds of up to hundreds of gigabits per second, supporting packet parsing at rates of 100--400~Gb/s and handling hundreds of millions of packets per second~\cite{attig_400_2011}. These capabilities are achieved through highly parallel and pipelined architectures, where packet data is processed continuously as it flows through the system, rather than being handled sequentially in software.
+
+One of the main advantages of FPGA-based IDS is their ability to perform packet processing at line rate. Modern FPGA platforms can capture, parse, and analyse network packets directly in hardware without relying on the operating system, reducing overhead and improving performance~\cite{shanmugam_denial_2019}. This allows packet capture and classification to be performed without packet loss, even at very high data rates, which is a major limitation in software-based systems. Additionally, FPGA architectures support true parallelism, enabling multiple detection operations to be executed concurrently, further improving detection efficiency.
+
+Several studies have demonstrated the effectiveness of FPGA-based approaches for real-time intrusion detection. For example, FPGA implementations have been shown to detect DDoS attacks within microseconds, significantly outperforming software-based systems in terms of detection speed~\cite{hoque_real-time_2017}. Similarly, hardware-accelerated detectors are capable of identifying a wide range of DDoS attack types within milliseconds, including short-duration “hit-and-run” attacks that often evade traditional detection systems~\cite{nagy_detecting_2018, nagy_low-reaction_2018}. These attacks are particularly challenging for software IDS due to their short duration and high intensity, highlighting the importance of low-latency detection mechanisms.
+
+Another important advantage of FPGA-based IDS is their ability to handle extremely high traffic throughput. Hardware-based systems can process hundreds of millions of packets per second, significantly exceeding the capabilities of software-based solutions, which are often limited by CPU processing speed~\cite{nagy_detecting_2018}. This makes FPGA-based approaches particularly suitable for deployment in high-speed networks and data centre environments, where large volumes of traffic must be analysed in real time.
+
+In addition to performance improvements, FPGAs also offer flexibility through reconfigurability. Unlike application-specific integrated circuits (ASICs), FPGA designs can be modified and updated after deployment, allowing detection algorithms to adapt to evolving threats without requiring hardware replacement~\cite{shanmugam_denial_2019}. This balance between performance and flexibility makes FPGAs an attractive platform for modern intrusion detection systems.
+
+Despite these advantages, FPGA-based IDS also present certain challenges, including increased development complexity and the need for specialised hardware design expertise. However, the significant improvements in detection speed, throughput, and real-time performance make FPGA-based solutions a compelling alternative to traditional software-based IDS, particularly for applications involving high-speed networks and large-scale DDoS attack detection.
+
+\subsection{Real-Time Packet Processing Techniques}
+Real-time packet processing refers to the ability to inspect and handle packets as they arrive, without introducing significant delay or relying on large amounts of buffering. This is important in intrusion detection because delays in packet analysis can allow malicious traffic to reach the target before the system has time to respond. In high-speed networks, packet processing systems must therefore operate close to line rate while still carrying out tasks such as parsing, classification, filtering, and feature extraction.
+
+A common approach is to divide packet processing into a pipeline. In this structure, each stage performs a specific task, such as extracting header fields, classifying traffic, applying rules, or forwarding results to later modules. Pipelining allows multiple packets to be processed at the same time, with different packets occupying different stages of the pipeline. This improves throughput compared with processing each packet fully before starting the next one~\cite{nguyen_real-time_2005, attig_400_2011}.
+
+Streaming-based processing is also widely used in real-time systems. Rather than storing full packets and processing them later, packets are treated as a continuous stream of data. This reduces memory requirements and allows decisions to be made while traffic is still moving through the system~\cite{bulajoul_network_2013}. Stream processing is especially useful for network monitoring and packet-level analytics, where traffic must be analysed continuously and at high speed~\cite{yazdinejad_high-performance_2020}.
+
+Hardware-based packet processing can further improve performance by using parallel and pipelined architectures. For example, FPGA-based packet parsers can process packet headers as they pass through the device, using wide data paths and multiple pipeline stages to support very high throughput~\cite{attig_400_2011}. This makes FPGA-based packet processing suitable for intrusion detection systems that must analyse traffic in real time, particularly under high-volume attacks such as DoS and DDoS.
+
+However, real-time packet processing also introduces design challenges. Systems must balance throughput, latency, memory usage, and flexibility. More complex processing rules may improve detection capability, but they can also increase processing delay and resource usage. For this reason, lightweight feature extraction and efficient pipeline design are important when building real-time IDS systems.
+
+
+\subsection{Research Gap}
+The literature shows that intrusion detection systems are essential for identifying malicious activity, particularly in the context of DoS and DDoS attacks. Software-based IDS are widely used due to their flexibility and ease of deployment; however, they often struggle to process high volumes of network traffic in real time, leading to performance bottlenecks and reduced detection accuracy. This limitation becomes more significant as modern networks operate at increasingly high speeds.
+
+Hardware-based approaches, particularly those using FPGAs, have been proposed to address these performance issues. These systems take advantage of parallel processing and pipelined architectures to achieve significantly higher throughput and lower latency compared to software-based solutions. Existing FPGA-based implementations demonstrate the ability to process packets at line rate and detect attacks within very short time frames.
+
+However, much of the existing work focuses primarily on improving throughput and processing speed, with less emphasis on designing efficient and lightweight detection mechanisms that are suitable for real-time deployment. In particular, there is limited exploration of FPGA-based systems that balance detection accuracy, resource utilisation, and latency, especially for detecting high-volume attacks such as DDoS.
+
+This highlights a need for intrusion detection systems that can operate efficiently in real time while maintaining reliable detection performance. Therefore, this project focuses on the design and implementation of a lightweight FPGA-based intrusion detection system for real-time DoS and DDoS detection in high-speed network environments.

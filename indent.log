@@ -1,8 +1,8 @@
 INFO:  ANSI Code Page: 1252
 INFO:  latexindent.exe version 3.24.7, 2025-08-15, a script to indent .tex files
        latexindent.exe lives here: C:/texlive/2025/bin/windows/
-       Thu Apr 30 00:40:38 2026
-       Filename: f:/EE695-Capstone-Project-Final-Report/EE694-Capstone-Project-Final-Report/Sections/System Design and Development/__latexindent_temp_development.tex
+       Sun May  3 01:23:05 2026
+       Filename: f:/EE695-Capstone-Project-Final-Report/EE694-Capstone-Project-Final-Report/Sections/Literature Review/__latexindent_temp_Lit.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
@@ -17,9 +17,9 @@ INFO:  YAML reading settings
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
 INFO:  YAML settings read: -y switch
-       YAML setting: defaultIndent:'    '
-       single-quoted string found in -y switch: '    ', substitute to     
-       Updating mainSettings with defaultIndent:     
+       YAML setting: defaultIndent:'  '
+       single-quoted string found in -y switch: '  ', substitute to   
+       Updating mainSettings with defaultIndent:   
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation
 INFO:  Phase 3: indenting objects

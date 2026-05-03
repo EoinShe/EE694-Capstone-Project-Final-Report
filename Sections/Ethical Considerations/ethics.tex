@@ -1,0 +1,19 @@
+The development and deployment of an FPGA-based Intrusion Detection System (IDS) requires a balance between network security, resource efficiency, and the protection of legitimate users. This section addresses the ethical responsibilities associated with mitigating Denial of Service (DoS) attacks and the operational safety protocols followed during the project.
+
+\subsection{Societal Impact and Service Availability}
+Denial of Service attacks are fundamentally acts of intentional harm designed to disrupt the availability of essential services. By overwhelming a system, attackers can paralyse businesses, healthcare infrastructure, and public services, leading to significant societal disruption and financial loss. From an ethical standpoint, the defense of these systems is a necessity to maintain the productivity and well-being of the users who depend on them. 
+
+However, the implementation of automated defenses introduces the risk of collateral damage. An ethical IDS must act responsibly by ensuring that legitimate traffic is not caught in a "false positive" detection. If a mitigation strategy is too aggressive, it risks mirroring the attack itself by denying access to honest users. This project addresses this by using configurable thresholds and high-speed hardware parsing to ensure that detection is as precise as possible, “ensuring network resources are effectively used by legitimate users..
+
+\subsection{Sustainability and Environmental Efficiency}
+The continuous monitoring required for real-time network security demands significant electrical resources. While the widespread adoption of high-performance hardware in data centers increases global power demand, the choice of an FPGA-based architecture offers a more sustainable path than traditional software-based defenses. 
+
+Traditional CPUs and GPUs are often inefficient for packet-level processing due to sequential instruction execution and higher power-per-packet ratios. FPGAs provide a hardware-accelerated alternative that delivers high throughput with lower energy consumption. By tailoring the hardware logic specifically to network traffic patterns, the system achieves a higher level of performance efficiency. This alignment with sustainability goals ensures that the protection of network infrastructure does not come at an unnecessary cost to environmental resources.
+
+\subsection{Operational Safety and Equipment Handling}
+Proper power management and grounding are essential to maintain equipment health and prevent electrical hasards. During the testing and deployment on the Xilinx VC707 platform, the workspace was kept clear of unnecessary equipment to minimise physical risks such as overheating or accidental damage to the board.
+
+\subsection{Controlled Testing and Data Integrity}
+Testing a DoS mitigation system requires the generation of malicious traffic patterns, which could potentially disrupt external networks if not properly managed. To address this, all experimental scenarios were conducted within an isolated test environment (vmware virtual machine). This made sure that the synthetic and replayed traffic remained contained, preventing any unintended disruption to university or public infrastructure.
+
+Additionally, the use of anonymised datasets such as CICIDS2017 ensured that no real user data was compromised during the evaluation of the system. By restricting the hardware parser to protocol headers and utilising isolated network segments, the project maintains a strict boundary between experimental testing and real-world network operations, ensuring that the research is carried out in a safe and responsible manner.

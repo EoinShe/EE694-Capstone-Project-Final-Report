@@ -27,6 +27,8 @@
   \usepackage{amssymb}
   \usepackage{calligra}  % Script font package
   \usepackage{tikz}
+  \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % not needed if using modern LaTeX, but safe
   \usetikzlibrary{shapes, arrows.meta, positioning, calc}
   \setcounter{secnumdepth}{4} % Enable numbering for \paragraph (3.4.1.1)
   \setcounter{tocdepth}{4}    % Show \paragraph in Table of Contents
@@ -127,6 +129,7 @@
 }
 
 \title{\textbf{FPGA-based Intrusion Detection for DoS Attack \\[1ex]}}
+\vspace{50cm}
 \author{\textbf{\textit{Eoin Sheerin}} \\ \textbf{\textit{ID: 20465956}} \\ \textbf{\textit{eoin.sheerin.2021@mumail.ie}}}
 \date{}
 \begin{document}
@@ -145,7 +148,7 @@
 
     \vspace{0.8cm}
 
-    Submitted to the Department of Electronic Engineering in partial fulfilment of the requirements for the Master of Electronic Engineering Meng(Hons) degree
+    Submitted to the Department of Electronic Engineering in partial fulfilment of the requirements for the Master of Electronic Engineering MEng(Hons) degree
 
     \vspace{0.8cm}
 
@@ -213,10 +216,30 @@
 \pagebreak
 \section{\textbf{Ethical Considerations}} \label{sec:Ethics}
 \thispagestyle{plain} % This hides the header and line for ONLY this page
+\input{Sections/Ethical Considerations/ethics.tex}
 \pagebreak 
 \section{Conclusions and Future Work} \label{sec: Conclusions}
 \thispagestyle{plain} % This hides the header and line for ONLY this page
 
+
 \pagebreak
-\includepdf[pages=2, pagecommand={}]{Sections/Appendix/RA_Form}
+\section*{References}
+\printbibliography[heading=none]
+\pagebreak
+\appendix
+%  Add a main "Appendices" entry to the Table of Contents
+\addcontentsline{toc}{section}{Appendices}
+\section{Code For Developed System}
+The full code for the entire developed system is available to view online at~\cite{eoin_eoinsheee695-capstone-project-fpga-ids-system_2026}
+
+\pagebreak
+\section{Video of System}
+
+\pagebreak
+\includepdf[
+    pages=2, 
+    scale=0.95, 
+    pagecommand={\section{Risk Assessment Form}}, 
+    offset=0 -1.5cm
+]{Sections/Appendix/RA_Form}
 \end{document}
